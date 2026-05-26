@@ -21,7 +21,7 @@ const projects = [
     description:
       "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
     image: "/projects/ldr-lamp.jpg",
-    tags: ["LDR", "Arduino", "Sensor", "Automation"],
+    tags: ["LDR", "Arduino", "Sensor", "Automation","C++"],
     github: "#",
     demo: "#",
   },
@@ -39,7 +39,7 @@ const projects = [
     description:
       "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
     image: "/projects/rfid-attendance.jpg",
-    tags: ["RFID", "ESP32", "IoT", "Database", "WiFi"],
+    tags: ["RFID", "ESP32", "IoT", "Database", "WiFi","C++"],
     github: "#",
     demo: "#",
   },
@@ -48,7 +48,7 @@ const projects = [
     description:
       "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
     image: "/projects/seven-segment.jpg",
-    tags: ["Seven Segment", "RTC", "STM32", "Electronics"],
+    tags: ["Seven Segment", "RTC", "STM32", "Electronics","C++"],
     github: "#",
     demo: "#",
   },
@@ -57,7 +57,7 @@ const projects = [
     description:
       "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
     image: "/projects/school-gate.jpg",
-    tags: ["Automation", "UI", "Arduino", "IoT"],
+    tags: ["Automation", "UI", "Arduino", "IoT","C++"],
     github: "#",
     demo: "#",
   },
@@ -66,7 +66,7 @@ const projects = [
     description:
       "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
     image: "/projects/rc-car.jpg",
-    tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver"],
+    tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver","C++"],
     github: "#",
     demo: "#",
   },
