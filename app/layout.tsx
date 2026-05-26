@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Muhamad Abid Maulana | Electronics Engineer & IoT Developer',
+  title: 'Muhamad Abid Maulana | Electronics Engineer',
   description: 'Portfolio profesional Muhamad Abid Maulana - Electronics Engineer, Embedded Systems Developer, dan IoT Developer. Spesialisasi dalam Arduino, ESP32, PCB Design, dan pengembangan sistem IoT.',
   keywords: ['Electronics Engineer', 'IoT Developer', 'Embedded Systems', 'Arduino', 'ESP32', 'PCB Design', 'Indonesia'],
   authors: [{ name: 'Muhamad Abid Maulana' }],
