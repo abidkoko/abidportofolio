@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'id_ID',
-    title: 'Muhamad Abid Maulana | Electronics Engineer & IoT Developer',
+    title: 'Muhamad Abid Maulana | Electronics Engineer',
     description: 'Portfolio profesional - Electronics Engineer, Embedded Systems Developer, dan IoT Developer',
     siteName: 'Muhamad Abid Maulana Portfolio',
   },
