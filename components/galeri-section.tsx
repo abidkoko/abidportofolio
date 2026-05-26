@@ -6,18 +6,18 @@ import { useState } from "react"
 import { X } from "lucide-react"
 
 const galleryImages = [
-  "/gallery/full 3d.jpeg",
-  "/gallery/full 4d.jpeg",
-  "/gallery/IMG_20240531_215143.jpg",
-  "/gallery/gate.png",
-  "/gallery/keadaan beklum di tap.jpeg",
   "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
-  "/gallery/ldr.png",
-  "/gallery/rfid.jpeg",
+  "/gallery/IMG_20240531_215143.jpg",
   "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
-  "/gallery/top 3d.jpeg",
-  "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
-  "/gallery/top 3d.jpeg",
+  "/gallery/sevensch.png",
+  "/gallery/seven.png",
+  "/gallery/seven3d.png",
+  "/gallery/rfidsch.png",
+  "/gallery/rfidbrd.png",
+  "/gallery/rfid3d.png",
+  "/gallery/gate3dd.jpg",
+  "/gallery/gatebrdd.jpg",
+  "/gallery/car3d.jpg",
 ]
 
 export function GallerySection() {

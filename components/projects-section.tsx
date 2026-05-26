@@ -38,21 +38,21 @@ const projects = [
     title: "Digital Seven Segment Clock",
     description:
       "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
-    image: "/gallery/seven.png",
+    image: "/gallery/seven3d.png",
     tags: ["Seven Segment", "RTC", "STM32", "Electronics", "C++"],
   },
   {
     title: "Smart School Gate System",
     description:
       "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
-    image: "/gallery/gate.png",
+    image: "/gallery/gate3dd.jpg",
     tags: ["Automation", "Arduino", "IoT", "RFID", "C++"],
   },
   {
     title: "Bluetooth RC Car",
     description:
       "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
-    image: "/projects/rc-car.jpg",
+    image: "/gallery/car3d.jpg",
     tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"],
   },
 ]
