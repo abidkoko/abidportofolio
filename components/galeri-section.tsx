@@ -7,13 +7,15 @@ import { X } from "lucide-react"
 
 const galleryImages = [
   "/gallery/full 3d.jpeg",
-  "/public/gallery/full 4d.jpeg",
+  "/gallery/full 4d.jpeg",
   "/gallery/IMG_20240531_215143.jpg",
   "/gallery/gate.png",
   "/gallery/keadaan beklum di tap.jpeg",
   "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
   "/gallery/ldr.png",
   "/gallery/rfid.jpeg",
+  "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
+  "/gallery/top 3d.jpeg",
   "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
   "/gallery/top 3d.jpeg",
 ]
