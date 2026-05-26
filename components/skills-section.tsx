@@ -17,7 +17,6 @@ const skills = [
   { name: "Embedded C/C++", level: 90, category: "Programming" },
   { name: "PLC Schneider", level: 85, category: "Programming" },
   { name: "PLC Omron", level: 90, category: "Programming" },
-  { name: "MQTT/HTTP", level: 82, category: "Protocols" },
 ]
 
 export function SkillsSection() {
@@ -32,6 +31,7 @@ export function SkillsSection() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
+
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
