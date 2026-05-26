@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Linkedin, Instagram, Download, ArrowRight, Mail } from "lucide-react"
+import { Linkedin, Instagram, MessageCircle, Download, ArrowRight, Mail } from "lucide-react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 
