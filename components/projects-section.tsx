@@ -24,7 +24,7 @@ const projects = [
     title: "IoT Smart Plant Watering",
     description:
       "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
-    image: "/projects/watering.jpg",
+    image: "/gallery/water.jpeg",
     tags: ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"],
   },
   {
