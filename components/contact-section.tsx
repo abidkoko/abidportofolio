@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import { Send, Linkedin, Instagram, MessageCircle, Mail, MapPin, Phone } from "lucide-react"
+import { Send, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react"
 
 export function ContactSection() {
   const ref = useRef(null)
