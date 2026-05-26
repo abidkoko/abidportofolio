@@ -5,17 +5,19 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 
 const skills = [
+  { name: "Problem Sovling", level: 92 },
+  { name: "Troubleshooting", level: 92 },
   { name: "Arduino", level: 95, category: "Microcontroller" },
   { name: "ESP32", level: 93, category: "Microcontroller" },
   { name: "STM32", level: 87, category: "Microcontroller" },
   { name: "IoT Systems", level: 88, category: "Systems" },
-  { name: "PCB Design", level: 90, category: "Hardware" },
-  { name: "Embedded C/C++", level: 90, category: "Programming" },
+  { name: "PCB Design", level: 95, category: "Hardware" },
   { name: "Sensor Integration", level: 92, category: "Hardware" },
-  { name: "MQTT/HTTP", level: 82, category: "Protocols" },
   { name: "AutoDesk Eagle", level: 95, category: "Software" },
+  { name: "Embedded C/C++", level: 90, category: "Programming" },
   { name: "PLC Schneider", level: 85, category: "Programming" },
   { name: "PLC Omron", level: 90, category: "Programming" },
+  { name: "MQTT/HTTP", level: 82, category: "Protocols" },
 ]
 
 export function SkillsSection() {
