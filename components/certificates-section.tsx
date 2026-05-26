@@ -11,7 +11,7 @@ const certificates = [
     title: "Lomba Kompetensi Siswa (LKS) Bidang Electronics",
     issuer: "Kementrian Menteri Pendidikan Dasar dan Menengah",
     date: "2025",
-    image: "/certificates/iot-cert.jpg",
+    image: "/LKSE-ABID.pdf",
   },
 ]
 
