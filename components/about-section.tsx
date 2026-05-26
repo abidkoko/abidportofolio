@@ -85,7 +85,7 @@ export function AboutSection() {
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Saya merupakan lulusan Teknik Elektronika Industri
-                yang memiliki minat besar dalam pengembangan sistem IoT,
+                yang memiliki minat besar dalam pengembangan sistem Internet of Things (IoT),
                 embedded system, dan otomasi berbasis mikrokontroler.
               </p>
 
@@ -139,7 +139,7 @@ export function AboutSection() {
                 </div>
 
                 <p className="font-medium text-foreground">
-                  IoT, Embedded System, Arduino & ESP32
+                  Internet of Things (IoT), Embedded System, Arduino & ESP32
                 </p>
               </div>
             </div>
