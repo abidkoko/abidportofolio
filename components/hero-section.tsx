@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Linkedin, Instagram, MessageCircle, Download, ArrowRight, Mail } from "lucide-react"
+import { Linkedin, Instagram, Download, ArrowRight, Mail } from "lucide-react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 
@@ -77,7 +77,7 @@ export function HeroSection() {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-24">
           {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -85,7 +85,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative"
           >
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-[420px] lg:h-[420px]">
               {/* Animated glow ring */}
               <motion.div
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary"
@@ -110,7 +110,7 @@ export function HeroSection() {
           </motion.div>
 
           {/* Text Content */}
-          <div className="text-center lg:text-left max-w-2xl">
+          <div className="text-center lg:text-left max-w-3xl">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
