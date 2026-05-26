@@ -18,7 +18,7 @@ const timeline = [
     company: "PT PLN (Persero) GITET Bandung Selatan",
     location: "Bandung, Indonesia",
     description:
-      "Membantu pemeliharaan peralatan transmisi 500kV serta inspeksi grounding dan sistem kelistrikan.",
+      "Membantu dalam pemeliharaan peralatan transmisi 500 kV dan Berpartisipasi dalam inspeksi sistem grounding dan kelistrikan.",
     type: "work",
   },
   {
@@ -139,7 +139,7 @@ export function AboutSection() {
                 </div>
 
                 <p className="font-medium text-foreground">
-                  IoT Development, Embedded System, Arduino & ESP32
+                  IoT, Embedded System, Arduino & ESP32
                 </p>
               </div>
             </div>
