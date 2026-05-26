@@ -6,17 +6,17 @@ import { useState } from "react"
 import { X } from "lucide-react"
 
 const galleryImages = [
-  "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
-  "/gallery/IMG_20240531_215143.jpg",
   "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
   "/gallery/sevensch.png",
-  "/gallery/seven.png",
-  "/gallery/seven3d.png",
   "/gallery/rfidsch.png",
-  "/gallery/rfidbrd.png",
+  "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
   "/gallery/rfid3d.png",
-  "/gallery/gate3dd.jpg",
+  "/gallery/rfidbrd.png",
+  "/gallery/IMG_20240531_215143.jpg",
+  "/gallery/seven3d.png",
+  "/gallery/seven.png",
   "/gallery/gatebrdd.jpg",
+  "/gallery/gate3dd.jpg",
   "/gallery/car3d.jpg",
 ]
 
