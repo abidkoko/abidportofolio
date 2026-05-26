@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import { Send, Linkedin, Instagram, MessageCircle, Mail, MapPin } from "lucide-react"
+import { Send, Linkedin, Instagram, MessageCircle, Mail, MapPin, Phone } from "lucide-react"
 
 export function ContactSection() {
   const ref = useRef(null)
@@ -22,14 +22,39 @@ export function ContactSection() {
   }
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "btlabd52@gmail.com", href: "mailto:btlabd52@gmail.com" },
-    { icon: MapPin, label: "Lokasi", value: "Bandung, Indonesia", href: "#" },
+    {
+      icon: Mail,
+      label: "Email",
+      value: "btlabd52@gmail.com",
+      href: "mailto:btlabd52@gmail.com",
+    },
+    {
+      icon: Phone,
+      label: "WhatsApp",
+      value: "+62 812 2343 2566",
+      href: "https://wa.me/6281223432566",
+    },
+    {
+      icon: MapPin,
+      label: "Lokasi",
+      value: "Bandung, Indonesia",
+      href: "#",
+    },
   ]
 
   const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a", color: "hover:bg-blue-600" },
-    { icon: Instagram, label: "Instagram", href: "https://instagram.com/abidmauna", color: "hover:bg-pink-600" },
-    { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/6281223432566" },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a",
+      color: "hover:bg-blue-600",
+    },
+    {
+      icon: Instagram,
+      label: "Instagram",
+      href: "https://instagram.com/abidmauna",
+      color: "hover:bg-pink-600",
+    },
   ]
 
   return (
