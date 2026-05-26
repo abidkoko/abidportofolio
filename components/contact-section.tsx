@@ -129,7 +129,7 @@ export function ContactSection() {
                   rows={4}
                   required
                   className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-300 resize-none"
-                  placeholder="Tulis pesan Anda di sini..."
+                  placeholder="Tulis pesan Anda di sini atau Beri tahu saya tentang projek..."
                 />
               </div>
               <motion.button
