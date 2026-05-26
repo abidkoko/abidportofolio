@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Linkedin, Instagram, MessageCircle, Download, ArrowRight, Mail } from "lucide-react"
+import { Linkedin, Instagram, Download, ArrowRight, Mail } from "lucide-react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 
@@ -228,7 +228,6 @@ export function HeroSection() {
               {[
                 { icon: Linkedin, label: "Linkedin", href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a", color: "hover:bg-blue-600" },
                 { icon: Instagram, label: "Instagram", href: "https://instagram.com/abidmauna", color: "hover:bg-pink-600" },
-                { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/6281223432566" },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
