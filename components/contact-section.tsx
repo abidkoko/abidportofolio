@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
 import { Send, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react"
 
 export function ContactSection() {
@@ -64,7 +65,7 @@ export function ContactSection() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-[150px]" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
