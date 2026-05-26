@@ -7,10 +7,15 @@ import Image from "next/image"
 
 const roles = [
   "Teknik Elektronika",
-  "Pengembang IoT",
+  "Internet of Things (IoT) Developer",
   "Electronics Enthusiast",
-  "Dasar PLC dan Mikrokontroler",
-  "Instalasi/Perakitan Kabel Listrik",
+  "PLC and Microcontroller ProgrammingPLC dan Mikrokontroler",
+  "Electrical Installation and Wiring Assembly",
+  "Responsibility",
+  "Problem Solving",
+  "Quality Control",
+  "Operations",
+  "Communication",
 ]
 
 export function HeroSection() {
