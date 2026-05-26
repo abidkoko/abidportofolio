@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Linkedin, Instagram, MessageCircle, Heart } from "lucide-react"
+import { Linkedin, Instagram, Heart } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -9,7 +9,6 @@ export function Footer() {
   const socials = [
     { icon: Linkedin, label: "Linkedin", href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a", color: "hover:bg-blue-600" },
     { icon: Instagram, label: "Instagram", href: "https://instagram.com/abidmauna", color: "hover:bg-pink-600" },
-    { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/6281223432566" },
   ]
 
   const navLinks = [
