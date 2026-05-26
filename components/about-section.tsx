@@ -61,10 +61,8 @@ export function AboutSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Tentang Saya
-            </span>
+          <h2 className="text-4xl font-bold gradient-text">
+            Tentang Saya
           </h2>
 
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
