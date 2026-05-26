@@ -7,6 +7,7 @@ import { useRef } from "react"
 const skills = [
   { name: "Arduino", level: 95, category: "Microcontroller" },
   { name: "ESP32", level: 93, category: "Microcontroller" },
+  { name: "STM32", level: 87, category: "Microcontroller" },
   { name: "IoT Systems", level: 88, category: "Systems" },
   { name: "PCB Design", level: 90, category: "Hardware" },
   { name: "Embedded C/C++", level: 90, category: "Programming" },
