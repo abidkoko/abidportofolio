@@ -82,16 +82,26 @@ export function GallerySection() {
 
         {/* Modal */}
         {selectedImage && (
-          <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
-
+          <div
+            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)} // klik background untuk close
+          >
+            {/* Close Button */}
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-6 right-6 text-white hover:text-primary transition"
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 
+                 bg-black/60 hover:bg-black/80 
+                 text-white rounded-full p-2 
+                 transition"
             >
-              <X className="w-8 h-8" />
+              <X className="w-6 h-6 sm:w-8 sm:h-8" />
             </button>
 
-            <div className="relative w-full max-w-5xl aspect-video">
+            {/* Image container */}
+            <div
+              className="relative w-full max-w-5xl aspect-video"
+              onClick={(e) => e.stopPropagation()} // biar klik gambar tidak nutup
+            >
               <Image
                 src={selectedImage}
                 alt="Preview"
@@ -99,7 +109,6 @@ export function GallerySection() {
                 className="object-contain rounded-2xl"
               />
             </div>
-
           </div>
         )}
 
