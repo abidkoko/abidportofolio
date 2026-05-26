@@ -8,52 +8,67 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "Smart Home IoT System",
-    description: "Sistem otomasi rumah pintar berbasis ESP32 dengan kontrol via aplikasi mobile dan dashboard web real-time.",
-    image: "/projects/smart-home.jpg",
-    tags: ["ESP32", "MQTT", "React", "Node.js"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "Power Supply",
+    description:
+      "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
+    image: "/projects/psu.jpg",
+    tags: ["Electronics", "Power Supply", "PCB", "Arduino"],
+    github: "#",
+    demo: "#",
   },
   {
-    title: "Weather Station",
-    description: "Stasiun cuaca otomatis dengan multiple sensor yang mengirim data ke cloud untuk monitoring dan analisis.",
-    image: "/projects/weather-station.jpg",
-    tags: ["Arduino", "LoRa", "Firebase", "Python"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "Automatic LDR Lighting System",
+    description:
+      "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
+    image: "/projects/ldr-lamp.jpg",
+    tags: ["LDR", "Arduino", "Sensor", "Automation"],
+    github: "#",
+    demo: "#",
   },
   {
-    title: "Industrial Monitoring",
-    description: "Sistem monitoring industri untuk memantau kondisi mesin dan lingkungan pabrik secara real-time.",
-    image: "/projects/industrial.jpg",
-    tags: ["ESP32", "Modbus", "InfluxDB", "Grafana"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "IoT Smart Plant Watering",
+    description:
+      "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
+    image: "/projects/watering.jpg",
+    tags: ["ESP32", "IoT", "Soil Sensor", "WiFi"],
+    github: "#",
+    demo: "#",
   },
   {
-    title: "Smart Agriculture",
-    description: "Solusi pertanian pintar dengan sensor kelembaban tanah, pH, dan sistem irigasi otomatis.",
-    image: "/projects/agriculture.jpg",
-    tags: ["Arduino", "Solar Panel", "GSM", "ThingSpeak"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "RFID IoT Attendance System",
+    description:
+      "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
+    image: "/projects/rfid-attendance.jpg",
+    tags: ["RFID", "ESP32", "IoT", "Database", "WiFi"],
+    github: "#",
+    demo: "#",
   },
   {
-    title: "RFID Access Control",
-    description: "Sistem kontrol akses berbasis RFID dengan logging aktivitas dan integrasi database.",
-    image: "/projects/rfid.jpg",
-    tags: ["ESP32", "RFID", "MySQL", "PHP"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "Digital Seven Segment Clock",
+    description:
+      "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
+    image: "/projects/seven-segment.jpg",
+    tags: ["Seven Segment", "RTC", "STM32", "Electronics"],
+    github: "#",
+    demo: "#",
   },
   {
-    title: "Energy Monitor",
-    description: "Alat monitoring konsumsi energi listrik dengan fitur analisis dan rekomendasi penghematan.",
-    image: "/projects/energy.jpg",
-    tags: ["Arduino", "CT Sensor", "Blynk", "OLED"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "Smart School Gate Implementation",
+    description:
+      "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
+    image: "/projects/school-gate.jpg",
+    tags: ["Automation", "UI", "Arduino", "IoT"],
+    github: "#",
+    demo: "#",
+  },
+  {
+    title: "Bluetooth RC Car",
+    description:
+      "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
+    image: "/projects/rc-car.jpg",
+    tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver"],
+    github: "#",
+    demo: "#",
   },
 ]
 
@@ -108,7 +123,7 @@ export function ProjectsSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                
+
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                   <motion.a
@@ -144,7 +159,7 @@ export function ProjectsSection() {
                 <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
                   {project.description}
                 </p>
-                
+
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
