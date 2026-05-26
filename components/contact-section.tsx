@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import { Send, Github, Instagram, MessageCircle, Mail, MapPin } from "lucide-react"
+import { Send, Linkedin, Instagram, MessageCircle, Mail, MapPin } from "lucide-react"
 
 export function ContactSection() {
   const ref = useRef(null)
@@ -27,7 +27,7 @@ export function ContactSection() {
   ]
 
   const socials = [
-    { icon: Github, label: "GitHub", href: "https://github.com" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a", color: "hover:bg-blue-600" },
     { icon: Instagram, label: "Instagram", href: "https://instagram.com/abidmauna", color: "hover:bg-pink-600" },
     { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/6281223432566" },
   ]
