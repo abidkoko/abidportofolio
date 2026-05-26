@@ -17,7 +17,7 @@ export function Footer() {
     { label: "Keahlian", href: "#skills" },
     { label: "Project", href: "#projects" },
     { label: "Sertifikat", href: "#certificates" },
-      { label: "Dokumentasi", href: "#galeri" },
+    { label: "Dokumentasi", href: "#galeri" },
     { label: "Kontak", href: "#contact" },
   ]
 
@@ -28,7 +28,7 @@ export function Footer() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-32 bg-primary/5 blur-[100px]" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center">
           {/* Logo/Name */}
           <motion.a

@@ -28,7 +28,7 @@ export function GallerySection() {
       id="galeri"
       className="relative py-20 sm:py-32 overflow-hidden"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Title */}
         <motion.div

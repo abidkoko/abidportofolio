@@ -28,7 +28,7 @@ export function CertificatesSection() {
         <div className="absolute top-1/3 right-0 w-72 h-72 bg-accent/5 rounded-full blur-[100px]" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

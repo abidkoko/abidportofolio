@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
-import emailjs from "@emailjs/browser"
 import { Send, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react"
 
 export function ContactSection() {
