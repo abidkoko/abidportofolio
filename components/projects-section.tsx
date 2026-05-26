@@ -8,13 +8,13 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "Power Supply Unit",
+    title: "Power Supply",
     description:
       "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
     image: "/projects/psu.jpg",
     tags: ["Electronics", "Power Supply", "PCB", "Arduino"],
-    github: "#",
-    demo: "#",
+    // github: "#",
+    // demo: "#",
   },
   {
     title: "Automatic LDR Lighting System",
@@ -22,7 +22,7 @@ const projects = [
       "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
     image: "/projects/ldr-lamp.jpg",
     tags: ["LDR", "Arduino", "Sensor", "Automation", "C++"],
-    github: "#",
+    // github: "#",
     demo: "#",
   },
   {
@@ -31,8 +31,8 @@ const projects = [
       "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
     image: "/projects/watering.jpg",
     tags: ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"],
-    github: "#",
-    demo: "#",
+    // github: "#",
+    // demo: "#",
   },
   {
     title: "RFID IoT Attendance System",
@@ -41,7 +41,7 @@ const projects = [
     image: "/projects/rfid-attendance.jpg",
     tags: ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"],
     github: "#",
-    demo: "#",
+    // demo: "#",
   },
   {
     title: "Digital Seven Segment Clock",
@@ -50,16 +50,16 @@ const projects = [
     image: "/projects/seven-segment.jpg",
     tags: ["Seven Segment", "RTC", "STM32", "Electronics", "C++"],
     github: "#",
-    demo: "#",
+    // demo: "#",
   },
   {
     title: "Smart School Gate System",
     description:
       "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
-    image: "/projects/school-gate.jpg",
+    image: "/gallery/gate.png",
     tags: ["Automation", "Arduino", "IoT", "RFID", "C++"],
     github: "#",
-    demo: "#",
+    // demo: "#",
   },
   {
     title: "Bluetooth RC Car",
