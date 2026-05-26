@@ -130,12 +130,52 @@ export function CertificatesSection() {
               </div>
 
               {/* Certificate Info */}
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-2">
+              <div className="p-6 space-y-4">
+
+                {/* Issuer */}
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <Award className="w-5 h-5 text-primary" />
+                  </div>
+
+                  <div>
+                    <p className="text-sm text-primary font-medium">
+                      {selectedCert.issuer}
+                    </p>
+
+                    <p className="text-xs text-muted-foreground">
+                      {selectedCert.date}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-2xl font-bold text-foreground leading-tight">
                   {selectedCert.title}
                 </h3>
-                <p className="text-muted-foreground mb-1">{selectedCert.issuer}</p>
-                <p className="text-sm text-primary font-mono">{selectedCert.date}</p>
+
+                {/* Description */}
+                <p className="text-muted-foreground leading-relaxed">
+                  Juara 1 dalam kompetisi elektronika tingkat Kabupaten/Kota Bandung,
+                  menunjukan keunggulan dalam desain rangkaian dan demonstrasi.
+                </p>
+
+                {/* Credential Box */}
+                <div className="glass rounded-xl p-4 border border-primary/10">
+                  <p className="text-xs text-muted-foreground mb-1">
+                    Credential ID
+                  </p>
+
+                  <p className="text-primary font-mono text-sm">
+                    LKS-2025-GOLD-001
+                  </p>
+                </div>
+
+                {/* Verify Button */}
+                <button className="text-primary hover:text-cyan-300 transition-colors duration-300 text-sm font-medium">
+                  ↗ Verifikasi Sertifikat
+                </button>
+
               </div>
             </motion.div>
           </motion.div>
