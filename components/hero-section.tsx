@@ -151,7 +151,7 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-muted-foreground text-base sm:text-lg mb-8 leading-relaxed"
             >
-              Saya adalah seorang Teknik elektronika yang bersemangat dalam menciptakan solusi IoT inovatif, sistem embedded.
+              Seorang Teknik elektronika yang bersemangat dalam menciptakan solusi IoT inovatif, sistem embedded.
               Mengubah ide menjadi kenyataan melalui kode dan rangkaian elektronika.
             </motion.p>
 
