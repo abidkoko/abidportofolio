@@ -10,7 +10,7 @@ const navItems = [
   { label: "Keahlian", href: "#skills" },
   { label: "Project", href: "#projects" },
   { label: "Sertifikat", href: "#certificates" },
-  { label: "Galeri", href: "#galeri" },
+  { label: "Dokumentasi", href: "#galeri" },
   { label: "Kontak", href: "#contact" },
 ]
 

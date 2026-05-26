@@ -34,15 +34,14 @@ export function GallerySection() {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Galeri Project
+              Dokumentasi
             </span>
           </h2>
 
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
 
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Dokumentasi project elektronika, embedded system,
-            IoT, dan kegiatan engineering lainnya.
+            Sekilas tentang ruang kerja, proyek, dan perjalanan saya dalam mewujudkan ide menjadi kenyataan.
           </p>
         </motion.div>
 

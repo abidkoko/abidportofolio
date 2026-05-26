@@ -17,6 +17,7 @@ export function Footer() {
     { label: "Keahlian", href: "#skills" },
     { label: "Project", href: "#projects" },
     { label: "Sertifikat", href: "#certificates" },
+      { label: "Dokumentasi", href: "#galeri" },
     { label: "Kontak", href: "#contact" },
   ]
 
