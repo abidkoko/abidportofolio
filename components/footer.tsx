@@ -7,7 +7,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socials = [
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a", color: "hover:bg-blue-600" },
+    { icon: Linkedin, label: "Linkedin", href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a", color: "hover:bg-blue-600" },
     { icon: Instagram, label: "Instagram", href: "https://instagram.com/abidmauna", color: "hover:bg-pink-600" },
     { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/6281223432566" },
   ]
