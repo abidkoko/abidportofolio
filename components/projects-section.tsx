@@ -10,14 +10,14 @@ const projects = [
     title: "Power Supply",
     description:
       "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
-    image: "/projects/psu.jpg",
+    image: "/gallery/psu.png",
     tags: ["Electronics", "Power Supply", "PCB", "Arduino"],
   },
   {
     title: "Automatic LDR Lighting System",
     description:
       "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
-    image: "/projects/ldr-lamp.jpg",
+    image: "/gallery/ldr.png",
     tags: ["LDR", "Arduino", "Sensor", "Automation", "C++"],
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     title: "Digital Seven Segment Clock",
     description:
       "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
-    image: "/projects/seven-segment.jpg",
+    image: "/gallery/seven.png",
     tags: ["Seven Segment", "RTC", "STM32", "Electronics", "C++"],
   },
   {
