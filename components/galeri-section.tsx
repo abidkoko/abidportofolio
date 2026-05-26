@@ -19,7 +19,7 @@ export function GallerySection() {
 
   return (
     <section
-      id="gallery"
+      id="galeri"
       className="relative py-20 sm:py-32 overflow-hidden"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
