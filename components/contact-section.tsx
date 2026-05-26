@@ -199,6 +199,7 @@ export function ContactSection() {
                 className="pt-6"
               >
                 <p className="text-sm text-muted-foreground mb-4">Temukan saya di:</p>
+
                 <div className="flex gap-3">
                   {socials.map((social, index) => (
                     <motion.a
@@ -217,6 +218,36 @@ export function ContactSection() {
                       <social.icon className="w-5 h-5" />
                     </motion.a>
                   ))}
+                </div>
+              </motion.div>
+
+              {/* Availability Status */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: 1 }}
+                className="mt-8"
+              >
+                <div className="glass rounded-2xl p-5 border border-primary/20">
+                  <div className="flex items-center gap-4">
+
+                    {/* Green Dot */}
+                    <div className="relative">
+                      <div className="w-4 h-4 bg-green-500 rounded-full" />
+                      <div className="absolute inset-0 w-4 h-4 bg-green-500 rounded-full animate-ping opacity-75" />
+                    </div>
+
+                    <div>
+                      <h4 className="text-lg font-semibold text-foreground">
+                        Saat Ini Tersedia
+                      </h4>
+
+                      <p className="text-muted-foreground text-sm">
+                        Terbuka untuk freelance & kolaborasi
+                      </p>
+                    </div>
+
+                  </div>
                 </div>
               </motion.div>
             </div>
