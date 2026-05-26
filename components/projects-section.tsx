@@ -31,7 +31,7 @@ const projects = [
     title: "RFID IoT Attendance System",
     description:
       "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
-    image: "/gallery/rfid.jpeg",
+    image: "/gallery/rfid3d.png",
     tags: ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"],
   },
   {
