@@ -1,62 +1,59 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { useInView } from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import {
   GraduationCap,
   Briefcase,
-  Languages,
   MapPin,
+  Languages,
   Cpu,
+  Calendar,
 } from "lucide-react"
+
+const timeline = [
+  {
+    year: "2026",
+    title: "Praktik Kerja Lapangan",
+    company: "PT PLN (Persero) GITET Bandung Selatan",
+    location: "Bandung, Indonesia",
+    description:
+      "Membantu pemeliharaan peralatan transmisi 500kV serta inspeksi grounding dan sistem kelistrikan.",
+    type: "work",
+  },
+  {
+    year: "2026",
+    title: "Teknik Elektronika Industri",
+    company: "SMKN 1 Katapang",
+    location: "Bandung, Indonesia",
+    description:
+      "Lulusan Teknik Elektronika Industri dengan fokus pada embedded system dan IoT.",
+    type: "education",
+  },
+]
 
 export function AboutSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
-
-  const infoCards = [
-    {
-      icon: GraduationCap,
-      title: "Education",
-      value: "SMKN 1 Katapang",
-      desc: "Teknik Elektronika Industri",
-    },
-    {
-      icon: Briefcase,
-      title: "Experience",
-      value: "IoT & Embedded Projects",
-      desc: "Arduino, ESP32, Automation",
-    },
-    {
-      icon: Languages,
-      title: "Language",
-      value: "Indonesia",
-      desc: "Basic English",
-    },
-    {
-      icon: MapPin,
-      title: "Location",
-      value: "Bandung, Indonesia",
-      desc: "Available for collaboration",
-    },
-    {
-      icon: Cpu,
-      title: "Specialization",
-      value: "IoT & Electronics",
-      desc: "Embedded Systems Development",
-    },
-  ]
+  const isInView = useInView(ref, {
+    once: true,
+    margin: "-100px",
+  })
 
   return (
-    <section id="about" className="relative py-20 sm:py-32 overflow-hidden">
+    <section
+      id="about"
+      className="relative py-20 sm:py-32 overflow-hidden"
+    >
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 -left-32 w-64 h-64 bg-primary/5 rounded-full blur-[100px]" />
         <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-accent/5 rounded-full blur-[100px]" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
+      <div
+        className="container mx-auto px-4 sm:px-6 lg:px-8"
+        ref={ref}
+      >
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -73,72 +70,148 @@ export function AboutSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="glass rounded-2xl p-6 sm:p-8"
+            className="glass rounded-2xl p-6 sm:p-8 lg:p-10"
           >
-            <h3 className="text-2xl font-bold text-primary mb-6">
+            <h3 className="text-2xl font-semibold text-primary mb-6">
               Teknik Elektronika Industri
             </h3>
 
-            <div className="space-y-5 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Saya adalah lulusan Teknik Elektronika Industri yang memiliki
-                minat besar dalam pengembangan sistem IoT, embedded systems,
-                dan otomasi berbasis mikrokontroler.
+                Saya merupakan lulusan Teknik Elektronika Industri
+                yang memiliki minat besar dalam pengembangan sistem IoT,
+                embedded system, dan otomasi berbasis mikrokontroler.
               </p>
 
               <p>
-                Berpengalaman dalam pembuatan proyek berbasis Arduino dan ESP32
-                seperti sistem penyiraman otomatis, absensi RFID, kontrol
-                Bluetooth, dan berbagai implementasi elektronika lainnya.
+                Berpengalaman membuat berbagai proyek seperti
+                sistem penyiraman otomatis IoT, absensi RFID,
+                lampu otomatis LDR, jam digital seven segment,
+                dan mobil remote berbasis Bluetooth.
               </p>
 
               <p>
-                Saya senang mempelajari teknologi baru dan mengembangkan solusi
-                inovatif yang dapat membantu aktivitas sehari-hari melalui
-                integrasi perangkat keras dan perangkat lunak.
+                Saya senang mempelajari teknologi baru serta
+                mengembangkan solusi inovatif melalui kombinasi
+                perangkat keras dan perangkat lunak.
               </p>
+            </div>
+
+            {/* INFO */}
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              <div className="glass rounded-xl p-4 border border-primary/10">
+                <div className="flex items-center gap-2 mb-2">
+                  <MapPin className="w-4 h-4 text-primary" />
+                  <p className="text-sm text-muted-foreground">
+                    Lokasi
+                  </p>
+                </div>
+
+                <p className="font-medium text-foreground">
+                  Bandung, Indonesia
+                </p>
+              </div>
+
+              <div className="glass rounded-xl p-4 border border-primary/10">
+                <div className="flex items-center gap-2 mb-2">
+                  <Languages className="w-4 h-4 text-primary" />
+                  <p className="text-sm text-muted-foreground">
+                    Bahasa
+                  </p>
+                </div>
+
+                <p className="font-medium text-foreground">
+                  Indonesia, English
+                </p>
+              </div>
+
+              <div className="glass rounded-xl p-4 border border-primary/10 col-span-2">
+                <div className="flex items-center gap-2 mb-2">
+                  <Cpu className="w-4 h-4 text-primary" />
+                  <p className="text-sm text-muted-foreground">
+                    Spesialisasi
+                  </p>
+                </div>
+
+                <p className="font-medium text-foreground">
+                  IoT Development, Embedded System, Arduino & ESP32
+                </p>
+              </div>
             </div>
           </motion.div>
 
-          {/* RIGHT */}
+          {/* RIGHT TIMELINE */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="grid sm:grid-cols-2 gap-4"
+            className="relative"
           >
-            {infoCards.map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="glass rounded-2xl p-5 border border-white/5 hover:border-primary/40 transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
+            <div className="flex items-center gap-2 mb-8">
+              <Calendar className="w-5 h-5 text-primary" />
 
-                <p className="text-sm text-muted-foreground mb-1">
-                  {item.title}
-                </p>
+              <h3 className="text-2xl font-semibold text-foreground">
+                Edukasi & Pengalaman
+              </h3>
+            </div>
 
-                <h4 className="text-base font-semibold text-foreground">
-                  {item.value}
-                </h4>
+            {/* LINE */}
+            <div className="absolute left-5 top-16 bottom-0 w-px bg-primary/20" />
 
-                <p className="text-sm text-muted-foreground mt-1">
-                  {item.desc}
-                </p>
-              </motion.div>
-            ))}
+            <div className="space-y-8">
+              {timeline.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.5 + index * 0.1,
+                  }}
+                  className="relative pl-14"
+                >
+                  {/* DOT */}
+                  <div className="absolute left-0 top-1 w-10 h-10 rounded-full bg-background border border-primary/40 flex items-center justify-center">
+                    {item.type === "education" ? (
+                      <GraduationCap className="w-5 h-5 text-primary" />
+                    ) : (
+                      <Briefcase className="w-5 h-5 text-primary" />
+                    )}
+                  </div>
+
+                  {/* CARD */}
+                  <div className="glass rounded-2xl p-6 border border-primary/10 hover:border-primary/30 transition-all duration-300">
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
+                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
+                        {item.year}
+                      </span>
+
+                      <span className="text-xs text-muted-foreground">
+                        {item.location}
+                      </span>
+                    </div>
+
+                    <h4 className="text-lg font-semibold text-foreground mb-1">
+                      {item.title}
+                    </h4>
+
+                    <p className="text-primary text-sm mb-3">
+                      {item.company}
+                    </p>
+
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
