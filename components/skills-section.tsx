@@ -6,10 +6,9 @@ import { useRef } from "react"
 
 const skills = [
   { name: "Arduino", level: 95, category: "Microcontroller" },
-  { name: "ESP32", level: 90, category: "Microcontroller" },
+  { name: "ESP32", level: 93, category: "Microcontroller" },
   { name: "IoT Systems", level: 88, category: "Systems" },
-  { name: "PCB Design", level: 85, category: "Hardware" },
-  { name: "Python", level: 80, category: "Programming" },
+  { name: "PCB Design", level: 90, category: "Hardware" },
   { name: "Embedded C", level: 85, category: "Programming" },
   { name: "Sensor Integration", level: 92, category: "Hardware" },
   { name: "MQTT/HTTP", level: 82, category: "Protocols" },
@@ -88,7 +87,7 @@ export function SkillsSection() {
         >
           <p className="text-sm text-muted-foreground mb-4">Tools & Technologies lainnya:</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {["KiCad", "Altium", "VS Code", "PlatformIO", "Node-RED", "Firebase", "Blynk", "ThingSpeak"].map((tool, index) => (
+            {["AutoDesk Eagle", "AutoDesk Fusion", "VS Code", "VS Studio", "Node-RED", "Firebase", "Blynk", "ThingSpeak", "MQTT"].map((tool, index) => (
               <motion.span
                 key={tool}
                 initial={{ opacity: 0, scale: 0.8 }}
