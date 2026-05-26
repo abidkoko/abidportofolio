@@ -85,8 +85,8 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative"
           >
-            <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-[480px] lg:h-[480px]">
-              {/* Animated glow ring
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-[420px] lg:h-[420px]">
+              {/* Animated glow ring */}
               <motion.div
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary"
                 animate={{ rotate: 360 }}
@@ -94,11 +94,10 @@ export function HeroSection() {
                 style={{ padding: '3px' }}
               >
                 <div className="w-full h-full rounded-full bg-background" />
-              </motion.div> */}
-
+              </motion.div>
 
               {/* Profile image placeholder */}
-              <div className="absolute inset-0 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+              <div className="absolute inset-2 rounded-full overflow-hidden border-2 border-primary/30 animate-pulse-glow">
                 <Image
                   src="/pasfoto.jpeg"
                   alt="Muhamad Abid Maulana"
