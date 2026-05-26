@@ -70,7 +70,7 @@ export function AboutSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}

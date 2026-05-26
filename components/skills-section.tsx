@@ -25,7 +25,7 @@ export function SkillsSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ export function SkillsSection() {
                 </div>
                 <span className="text-sm font-mono text-primary">{skill.level}%</span>
               </div>
-
+              
               {/* Progress bar */}
               <div className="h-2 bg-secondary rounded-full overflow-hidden">
                 <motion.div
