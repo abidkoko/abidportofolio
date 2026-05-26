@@ -14,42 +14,42 @@ const projects = [
     tags: ["Electronics", "Power Supply", "PCB", "Arduino"],
   },
   {
-    title: "Automatic LDR Lighting System",
+    title: "LDR-Based Automatic Lighting System",
     description:
       "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
     image: "/gallery/ldr.png",
     tags: ["LDR", "Arduino", "Sensor", "Automation", "C++"],
   },
   {
-    title: "IoT Smart Plant Watering",
-    description:
-      "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
-    image: "/gallery/water.jpeg",
-    tags: ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"],
-  },
-  {
-    title: "RFID IoT Attendance System",
-    description:
-      "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
-    image: "/gallery/rfid3d.png",
-    tags: ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"],
-  },
-  {
-    title: "Digital Seven Segment Clock",
+    title: "7-Segment Digital Clock System",
     description:
       "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
     image: "/gallery/seven3d.png",
     tags: ["Seven Segment", "RTC", "STM32", "Electronics", "C++"],
   },
   {
-    title: "Smart School Gate System",
+    title: "IoT-Based Smart Plant Watering System",
+    description:
+      "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
+    image: "/gallery/water.jpeg",
+    tags: ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"],
+  },
+  {
+    title: "RFID-Based IoT Attendance System",
+    description:
+      "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
+    image: "/gallery/rfid3d.png",
+    tags: ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"],
+  },
+  {
+    title: "Automated School Gate Control System",
     description:
       "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
     image: "/gallery/gate3dd.jpg",
     tags: ["Automation", "Arduino", "IoT", "RFID", "C++"],
   },
   {
-    title: "Bluetooth RC Car",
+    title: "Bluetooth-Controlled RC Car",
     description:
       "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
     image: "/gallery/car3d.jpg",
@@ -64,7 +64,7 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="relative py-20 sm:py-32 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
-        
+
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -97,7 +97,7 @@ export function ProjectsSection() {
               whileHover={{ y: -8 }}
               className="group glass rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-400/40 transition-all duration-500"
             >
-              
+
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
