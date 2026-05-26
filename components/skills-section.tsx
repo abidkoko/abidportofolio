@@ -12,6 +12,7 @@ const skills = [
   { name: "Embedded C", level: 85, category: "Programming" },
   { name: "Sensor Integration", level: 92, category: "Hardware" },
   { name: "MQTT/HTTP", level: 82, category: "Protocols" },
+  { name: "AutoDesk Eagle", level: 95, category: "Software" },
 ]
 
 export function SkillsSection() {
@@ -64,7 +65,7 @@ export function SkillsSection() {
                 </div>
                 <span className="text-sm font-mono text-primary">{skill.level}%</span>
               </div>
-              
+
               {/* Progress bar */}
               <div className="h-2 bg-secondary rounded-full overflow-hidden">
                 <motion.div
@@ -87,7 +88,7 @@ export function SkillsSection() {
         >
           <p className="text-sm text-muted-foreground mb-4">Tools & Technologies lainnya:</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {["AutoDesk Eagle", "AutoDesk Fusion", "VS Code", "VS Studio", "Node-RED", "Firebase", "Blynk", "ThingSpeak", "MQTT"].map((tool, index) => (
+            {["AutoDesk Fusion", "VS Code", "VS Studio", "Node-RED", "Firebase", "Blynk", "ThingSpeak", "MQTT"].map((tool, index) => (
               <motion.span
                 key={tool}
                 initial={{ opacity: 0, scale: 0.8 }}
