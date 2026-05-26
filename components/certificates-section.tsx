@@ -69,7 +69,7 @@ export function CertificatesSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                
+
                 {/* Award icon */}
                 <div className="absolute top-3 right-3 p-2 glass rounded-full">
                   <Award className="w-4 h-4 text-primary" />
@@ -83,6 +83,9 @@ export function CertificatesSection() {
                 </h3>
                 <p className="text-sm text-muted-foreground mb-1">{cert.issuer}</p>
                 <p className="text-xs text-primary font-mono">{cert.date}</p>
+                <p className="text-xs text-muted-foreground mt-2">
+                  Klik untuk melihat sertifikat
+                </p>
               </div>
             </motion.div>
           ))}
