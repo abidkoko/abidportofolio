@@ -9,7 +9,7 @@ import Image from "next/image"
 const certificates = [
   {
     title: "Lomba Kompetensi Siswa (LKS) Bidang Electronics",
-    issuer: "Kementrian Menteri Pendidikan Dasar dan Menengah",
+    issuer: "Kementrian Pendidikan Dasar dan Menengah",
     date: "2025",
     image: "/certificates/LKSE-ABID1.jpg",
   },
@@ -156,7 +156,7 @@ export function CertificatesSection() {
 
                 {/* Description */}
                 <p className="text-muted-foreground leading-relaxed">
-                  Juara 1 dalam kompetisi elektronika tingkat Kabupaten/Kota Bandung,
+                  Juara 1 dalam kompetisi elektronika tingkat Kabupaten/Kota,
                   menunjukan keunggulan dalam desain rangkaian dan demonstrasi.
                 </p>
 
