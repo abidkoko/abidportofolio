@@ -90,16 +90,15 @@ export function AboutSection() {
               </p>
 
               <p>
-                Berpengalaman membuat berbagai proyek seperti
-                sistem penyiraman otomatis IoT, absensi RFID,
-                lampu otomatis LDR, jam digital seven segment,
-                dan mobil remote berbasis Bluetooth.
+                Keahlian utama saya meliputi pengembangan firmware untuk mikrokontroler seperti
+                Arduino dan ESP32, desain rangkaian elektronika, serta integrasi sensor dan aktuator
+                untuk berbagai proyek IoT dan sistem otomatisasi.
               </p>
 
               <p>
-                Saya senang mempelajari teknologi baru serta
-                mengembangkan solusi inovatif melalui kombinasi
-                perangkat keras dan perangkat lunak.
+                Saya percaya bahwa teknologi embedded system dan IoT memiliki potensi besar
+                dalam membantu kehidupan sehari-hari dan industri modern, serta terus berusaha
+                mengembangkan kemampuan di bidang teknologi dan inovasi elektronika.
               </p>
             </div>
 
