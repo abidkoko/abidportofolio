@@ -170,12 +170,6 @@ export function CertificatesSection() {
                     LKS-2025-GOLD-001
                   </p>
                 </div>
-
-                {/* Verify Button */}
-                <button className="text-primary hover:text-cyan-300 transition-colors duration-300 text-sm font-medium">
-                  ↗ Verifikasi Sertifikat
-                </button>
-
               </div>
             </motion.div>
           </motion.div>
