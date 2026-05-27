@@ -83,35 +83,42 @@ export function GallerySection() {
         {/* Modal */}
         {selectedImage && (
           <div
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)} // klik background untuk close
+            className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
           >
-            {/* Close Button */}
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 sm:top-6 sm:right-6 
-                 bg-black/60 hover:bg-black/80 
-                 text-white rounded-full p-2 
-                 transition"
-            >
-              <X className="w-6 h-6 sm:w-8 sm:h-8" />
-            </button>
-
-            {/* Image container */}
             <div
-              className="relative w-full max-w-5xl aspect-video"
-              onClick={(e) => e.stopPropagation()} // biar klik gambar tidak nutup
+              className="relative max-w-4xl w-full"
+              onClick={(e) => e.stopPropagation()}
             >
+              {/* Tombol Close */}
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="
+          absolute -top-3 -right-3 z-50
+          bg-white text-black
+          rounded-full p-2 shadow-xl
+          hover:scale-110 transition
+        "
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              {/* Gambar */}
               <Image
                 src={selectedImage}
                 alt="Preview"
-                fill
-                className="object-contain rounded-2xl"
+                width={1600}
+                height={1200}
+                className="
+          w-full
+          max-h-[85vh]
+          object-contain
+          rounded-2xl
+        "
               />
             </div>
           </div>
         )}
-
       </div>
     </section>
   )
