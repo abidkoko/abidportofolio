@@ -18,7 +18,7 @@ const projects = [
     description:
       "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
     image: "/gallery/ldr.png",
-    tags: ["LDR", "Arduino", "Sensor", "Automation", "C++"],
+    tags: ["LDR", "Arduino", "Sensor", "Automation"],
   },
   {
     title: "7-Segment Digital Clock System",
