@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { Send, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react"
+import emailjs from "@emailjs/browser"
 
 export function ContactSection() {
   const ref = useRef(null)
@@ -14,11 +15,27 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+
+    const form = e.currentTarget
+
+    try {
+      await emailjs.sendForm(
+        "service_m11dvzr",
+        "template_sfqpy7e",
+        form,
+        "jzZaWZe0pvtwx5zEN"
+      )
+
+      setIsSubmitted(true)
+      form.reset()
+
+      setTimeout(() => setIsSubmitted(false), 3000)
+    } catch (error) {
+      console.error(error)
+      alert("Gagal mengirim pesan")
+    }
+
     setIsSubmitting(false)
-    setIsSubmitted(true)
-    setTimeout(() => setIsSubmitted(false), 3000)
   }
 
   const contactInfo = [
@@ -100,7 +117,7 @@ export function ContactSection() {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   required
                   className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-300"
                   placeholder="Nama lengkap Anda"
@@ -113,7 +130,7 @@ export function ContactSection() {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="from_email"
                   required
                   className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-300"
                   placeholder="email@example.com"
