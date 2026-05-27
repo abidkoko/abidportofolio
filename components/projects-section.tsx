@@ -20,7 +20,7 @@ const projects = [
       "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
     image: "/gallery/ldr.png",
     tags: ["LDR", "Arduino", "Sensor", "Automation"],
-    github: "",
+    github: "https://github.com/abidkoko/LDR-Based-Automatic-Lighting-System",
   },
   {
     title: "7-Segment Digital Clock System",
@@ -28,7 +28,7 @@ const projects = [
       "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
     image: "/gallery/seven3d.png",
     tags: ["Seven Segment", "RTC", "STM32", "Electronics", "C++"],
-    github: "",
+    github: "https://github.com/abidkoko/7-Segment-Digital-Clock-System",
   },
   {
     title: "IoT-Based Smart Plant Watering System",
@@ -44,7 +44,7 @@ const projects = [
       "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
     image: "/gallery/rfid3d.png",
     tags: ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"],
-    github: "",
+    github: "https://github.com/abidkoko/RFID-Based-IoT-Attendance-System",
   },
   {
     title: "Automated School Gate Control System",
@@ -52,7 +52,7 @@ const projects = [
       "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
     image: "/gallery/gate3dd.jpg",
     tags: ["Automation", "Arduino", "IoT", "RFID", "C++"],
-    github: "",
+    github: "https://github.com/abidkoko/Automated-School-Gate-Control-System",
   },
   {
     title: "Bluetooth-Controlled RC Car",
@@ -60,7 +60,7 @@ const projects = [
       "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
     image: "/gallery/car3d.jpg",
     tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"],
-    github: "",
+    github: "https://github.com/abidkoko/RC-CAR-BLUETOOTH",
   },
 ]
 
