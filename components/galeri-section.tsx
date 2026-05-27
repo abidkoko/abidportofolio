@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { X } from "lucide-react"
 
 const galleryImages = [
@@ -22,17 +22,6 @@ const galleryImages = [
 
 export function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
-  useEffect(() => {
-    if (selectedImage) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = "auto"
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"
-    }
-  }, [selectedImage])
 
   return (
     <section
@@ -94,43 +83,30 @@ export function GallerySection() {
         {/* Modal */}
         {selectedImage && (
           <div
-            className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)} // klik background untuk close
           >
             {/* Close Button */}
             <button
               onClick={() => setSelectedImage(null)}
-              className="
-        absolute top-4 right-4 sm:top-6 sm:right-6
-        z-50
-        bg-white/10 backdrop-blur-md
-        border border-white/20
-        hover:bg-white/20
-        text-white
-        rounded-full
-        p-3
-        transition-all duration-300
-      "
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 
+                 bg-black/60 hover:bg-black/80 
+                 text-white rounded-full p-2 
+                 transition"
             >
-              <X className="w-6 h-6" />
+              <X className="w-6 h-6 sm:w-8 sm:h-8" />
             </button>
 
-            {/* Image Wrapper */}
+            {/* Image container */}
             <div
-              className="relative w-full h-full flex items-center justify-center"
-              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-5xl aspect-video"
+              onClick={(e) => e.stopPropagation()} // biar klik gambar tidak nutup
             >
               <Image
                 src={selectedImage}
                 alt="Preview"
-                width={1600}
-                height={1200}
-                className="
-          max-w-full
-          max-h-[90vh]
-          object-contain
-          rounded-2xl
-        "
+                fill
+                className="object-contain rounded-2xl"
               />
             </div>
           </div>
