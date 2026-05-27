@@ -12,6 +12,7 @@ const projects = [
       "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
     image: "/gallery/psu.png",
     tags: ["Electronics", "Power Supply", "PCB", "Arduino"],
+    github: "",
   },
   {
     title: "LDR-Based Automatic Lighting System",
@@ -35,6 +36,7 @@ const projects = [
       "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
     image: "/gallery/water.jpeg",
     tags: ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"],
+    github: "",
   },
   {
     title: "RFID-Based IoT Attendance System",
@@ -138,16 +140,17 @@ export function ProjectsSection() {
                 </div>
 
                 {/* GitHub Button */}
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block mt-5 text-center px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium hover:bg-cyan-500/20 transition-all duration-300"
-                >
-                  View on GitHub
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block mt-5 text-center px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium hover:bg-cyan-500/20 transition-all duration-300"
+                  >
+                    View on GitHub
+                  </a>
+                )}
               </div>
-
             </motion.div>
           ))}
         </div>
