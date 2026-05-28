@@ -169,7 +169,7 @@ export function HeroSection() {
             >
               {/* Download CV Button - Neon Cyan Glow */}
               <motion.a
-                href="/CV_M_ABID.pdf"
+                href="/CV_M_Abid_Maulana.pdf"
                 download="Muhamad_Abid_Maulana_CV.pdf"
                 className="group relative px-8 py-3.5 bg-transparent border-2 border-primary rounded-xl font-semibold overflow-hidden transition-all duration-500"
                 whileHover={{ scale: 1.02 }}
