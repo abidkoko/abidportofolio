@@ -62,6 +62,14 @@ const projects = [
     tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"],
     github: "https://github.com/abidkoko/RC-CAR-BLUETOOTH",
   },
+  {
+    title: "Analog Line Follower Robot",
+    description:
+      "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator. Proyek ini menampilkan implementasi dasar sistem kontrol elektronik dengan respon gerak yang cepat dan stabil.",
+    image: "/gallery/LF3d.jpg",
+    tags: ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"],
+    github: "https://github.com/abidkoko/Line-Follower-Analog",
+  },
 ]
 
 export function ProjectsSection() {
