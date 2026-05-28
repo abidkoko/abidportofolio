@@ -8,13 +8,14 @@ const skills = [
   { name: "Arduino", level: 95, category: "Microcontroller" },
   { name: "ESP32", level: 93, category: "Microcontroller" },
   { name: "STM32", level: 87, category: "Microcontroller" },
+  { name: "Embedded C/C++", level: 90, category: "Programming" },
+  { name: "PLC Schneider", level: 85, category: "Programming" },
+  { name: "PLC Omron", level: 90, category: "Programming" },
   { name: "Internet of Things (IoT) Systems", level: 88, category: "Systems" },
   { name: "PCB Design", level: 95, category: "Hardware" },
   { name: "Sensor Integration", level: 92, category: "Hardware" },
   { name: "AutoDesk Eagle", level: 95, category: "Software" },
-  { name: "Embedded C/C++", level: 90, category: "Programming" },
-  { name: "PLC Schneider", level: 85, category: "Programming" },
-  { name: "PLC Omron", level: 90, category: "Programming" },
+  { name: "Microsoft Office", level: 95, category: "Word, Excel, Power Point" },
 ]
 
 export function SkillsSection() {
