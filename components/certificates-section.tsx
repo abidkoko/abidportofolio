@@ -26,7 +26,7 @@ const certificates = [
     image: "/certificates/LKSE-ABID1.jpg",
 
     description:
-      "Berpartisipasi dalam kompetisi LKS bidang Electronics dengan kemampuan dalam perancangan rangkaian elektronika, troubleshooting, dan mikrokontroler.",
+      "Juara 1 dalam kompetisi LKS bidang Electronics dengan kemampuan dalam perancangan rangkaian elektronika, troubleshooting, dan mikrokontroler.",
 
     credential: "LKS-2025-ELEC",
   },
