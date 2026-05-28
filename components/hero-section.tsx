@@ -11,7 +11,7 @@ const roles = [
   "Internet of Things (IoT) Developer",
   "Electronics Enthusiast",
   "PLC and Microcontroller Programming",
-  "Electrical InstallatioN",
+  "Electrical Installation",
   "Wiring Assembly",
   "Responsibility",
   "Problem Solving",
@@ -169,7 +169,7 @@ export function HeroSection() {
             >
               {/* Download CV Button - Neon Cyan Glow */}
               <motion.a
-                href="public/certificates/CV-M-ABID-ENG.pdf"
+                href="public/CV_M_ABID.pdf"
                 download="Muhamad_Abid_Maulana_CV.pdf"
                 className="group relative px-8 py-3.5 bg-transparent border-2 border-primary rounded-xl font-semibold overflow-hidden transition-all duration-500"
                 whileHover={{ scale: 1.02 }}
