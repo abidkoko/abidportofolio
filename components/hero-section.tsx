@@ -16,7 +16,6 @@ const roles = [
   "Responsibility",
   "Problem Solving",
   "Quality Control",
-  "Operations",
   "Communication",
 ]
 
