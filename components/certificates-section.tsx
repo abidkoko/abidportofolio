@@ -11,19 +11,36 @@ const certificates = [
     title: "TOEIC (Test of English for International Communication)",
     issuer: "ETS (Educational Testing Service)",
     date: "2025",
-    image: "",
+    image: "/certificates/toeic.jpg",
+
+    description:
+      "Berhasil memperoleh skor TOEIC yang menunjukkan kemampuan komunikasi bahasa Inggris dalam konteks profesional dan internasional.",
+
+    credential: "TOEIC-785",
   },
+
   {
     title: "Lomba Kompetensi Siswa (LKS) Bidang Electronics",
     issuer: "Kementrian Pendidikan Dasar dan Menengah",
     date: "2025",
     image: "/certificates/LKSE-ABID1.jpg",
+
+    description:
+      "Berpartisipasi dalam kompetisi LKS bidang Electronics dengan kemampuan dalam perancangan rangkaian elektronika, troubleshooting, dan mikrokontroler.",
+
+    credential: "LKS-2025-ELEC",
   },
+
   {
     title: "Olimpiade Sains Pemuda Indonesia (OSPI) Bidang Bahasa Inggris",
     issuer: "Pusat Kejuaraan Sains Nasional (PUSKANAS)",
     date: "2023",
-    image: "",
+    image: "/certificates/ospi.jpg",
+
+    description:
+      "Berhasil meraih Medali Perak pada ajang OSPI 2023 bidang Bahasa Inggris tingkat nasional.",
+
+    credential: "OSPI-2023-SILVER",
   },
 ]
 
@@ -56,8 +73,8 @@ export function CertificatesSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
             Dokumentasi sertifikat, pelatihan, dan prestasi yang mencerminkan dedikasi saya dalam mengembangkan keterampilan di bidang teknologi,
-            engineering, dan komunikasi bahasa Inggris secara berkelanjutan.          
-            </p>
+            engineering, dan komunikasi bahasa Inggris secara berkelanjutan.
+          </p>
         </motion.div>
 
         {/* Certificates Grid */}
@@ -169,8 +186,7 @@ export function CertificatesSection() {
 
                 {/* Description */}
                 <p className="text-muted-foreground leading-relaxed">
-                  Juara 1 dalam kompetisi elektronika tingkat Kabupaten/Kota,
-                  menunjukan keunggulan dalam desain rangkaian dan demonstrasi.
+                  {selectedCert.description}
                 </p>
 
                 {/* Credential Box */}
@@ -180,7 +196,7 @@ export function CertificatesSection() {
                   </p>
 
                   <p className="text-primary font-mono text-sm">
-                    LKS-2025-GOLD-001
+                    {selectedCert.credential}
                   </p>
                 </div>
               </div>
