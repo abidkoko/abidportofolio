@@ -11,12 +11,12 @@ const certificates = [
     title: "TOEIC (Test of English for International Communication)",
     issuer: "ETS (Educational Testing Service)",
     date: "2025",
-    image: "/certificates/toeic.jpg",
+    image: "/certificates/TOEIC-ENG1.jpg",
 
     description:
       "Berhasil memperoleh skor TOEIC yang menunjukkan kemampuan komunikasi bahasa Inggris dalam konteks profesional dan internasional.",
 
-    credential: "TOEIC-785",
+    credential: "TOEIC-590",
   },
 
   {
@@ -35,7 +35,7 @@ const certificates = [
     title: "Olimpiade Sains Pemuda Indonesia (OSPI) Bidang Bahasa Inggris",
     issuer: "Pusat Kejuaraan Sains Nasional (PUSKANAS)",
     date: "2023",
-    image: "/certificates/ospi.jpg",
+    image: "/certificates/OSPI-ENG1.jpg",
 
     description:
       "Berhasil meraih Medali Perak pada ajang OSPI 2023 bidang Bahasa Inggris tingkat nasional.",
