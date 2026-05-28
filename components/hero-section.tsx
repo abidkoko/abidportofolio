@@ -6,11 +6,13 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 
 const roles = [
-  "Teknik Elektronika",
+  "Electronics Engineering",
+  "Electrical Technician",
   "Internet of Things (IoT) Developer",
   "Electronics Enthusiast",
-  "PLC and Microcontroller ProgrammingPLC dan Mikrokontroler",
-  "Electrical Installation and Wiring Assembly",
+  "PLC and Microcontroller Programming",
+  "Electrical InstallatioN",
+  "Wiring Assembly",
   "Responsibility",
   "Problem Solving",
   "Quality Control",
@@ -156,7 +158,7 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-muted-foreground text-base sm:text-lg mb-8 leading-relaxed"
             >
-              Seorang Teknik elektronika yang bersemangat dalam menciptakan solusi IoT inovatif, sistem embedded.
+              Saya adalah Technician Elektronika Industri yang menciptakan solusi IoT inovatif, sistem embedded.
               Mengubah ide menjadi kenyataan melalui kode dan rangkaian elektronika.
             </motion.p>
 

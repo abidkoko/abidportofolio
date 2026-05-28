@@ -88,7 +88,7 @@ export function ProjectsSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full" />
 
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Kumpulan proyek elektronika dan IoT yang menunjukkan kemampuan
+            Proyek elektronika dan IoT yang menunjukkan kemampuan
             saya dalam pengembangan embedded system, automation, dan teknologi modern.
           </p>
         </motion.div>

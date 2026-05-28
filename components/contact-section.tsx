@@ -96,7 +96,7 @@ export function ContactSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Punya proyek yang ingin dibuat atau ingin berbincang? Saya dengan senang hati ingin mendengar dari Anda.
+            Memiliki proyek yang ingin direalisasikan atau ingin berdiskusi? Saya dengan senang hati ingin mendengar dari Anda.
             Isi formulir di bawah atau hubungi saya melalui media sosial.          </p>
         </motion.div>
 

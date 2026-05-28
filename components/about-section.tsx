@@ -14,11 +14,11 @@ import {
 const timeline = [
   {
     year: "2026",
-    title: "Praktik Kerja Lapangan",
+    title: "Kerja Lapangan",
     company: "PT PLN (Persero) GITET Bandung Selatan",
     location: "Bandung, Indonesia",
     description:
-      "Membantu dalam pemeliharaan peralatan transmisi 500 kV dan Berpartisipasi dalam inspeksi sistem grounding dan kelistrikan.",
+      "Tugas pokok saya memelihara peralatan transmisi 500 kV dan Melakukan inspeksi sistem grounding dan kelistrikan.",
     type: "work",
   },
   {
@@ -27,7 +27,7 @@ const timeline = [
     company: "SMKN 1 Katapang",
     location: "Bandung, Indonesia",
     description:
-      "Lulusan Teknik Elektronika Industri dengan fokus pada embedded system dan IoT.",
+      "Lulusan Terbaik Teknik Elektronika Industri dengan fokus pada embedded system dan IoT.",
     type: "education",
   },
 ]
@@ -84,7 +84,7 @@ export function AboutSection() {
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Saya merupakan lulusan Teknik Elektronika Industri
+                Saya adalah lulusan Terbaik Teknik Elektronika Industri
                 yang memiliki minat besar dalam pengembangan sistem Internet of Things (IoT),
                 embedded system, dan otomasi berbasis mikrokontroler.
               </p>

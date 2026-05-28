@@ -5,8 +5,6 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 
 const skills = [
-  { name: "Problem Sovling", level: 92 },
-  { name: "Troubleshooting", level: 92 },
   { name: "Arduino", level: 95, category: "Microcontroller" },
   { name: "ESP32", level: 93, category: "Microcontroller" },
   { name: "STM32", level: 87, category: "Microcontroller" },
