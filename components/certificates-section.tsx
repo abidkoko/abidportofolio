@@ -8,10 +8,22 @@ import Image from "next/image"
 
 const certificates = [
   {
+    title: "TOEIC (Test of English for International Communication)",
+    issuer: "ETS (Educational Testing Service)",
+    date: "2025",
+    image: "",
+  },
+  {
     title: "Lomba Kompetensi Siswa (LKS) Bidang Electronics",
     issuer: "Kementrian Pendidikan Dasar dan Menengah",
     date: "2025",
     image: "/certificates/LKSE-ABID1.jpg",
+  },
+  {
+    title: "Olimpiade Sains Pemuda Indonesia (OSPI) Bidang Bahasa Inggris",
+    issuer: "Pusat Kejuaraan Sains Nasional (PUSKANAS)",
+    date: "2023",
+    image: "",
   },
 ]
 
@@ -43,8 +55,9 @@ export function CertificatesSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Pengakuan atas keahlian dan pembelajaran berkelanjutan saya di bidang elektronika, pengembangan IoT, dan rekayasa perangkat lunak.
-          </p>
+            Dokumentasi sertifikat, pelatihan, dan prestasi yang mencerminkan dedikasi saya dalam mengembangkan keterampilan di bidang teknologi,
+            engineering, dan komunikasi bahasa Inggris secara berkelanjutan.          
+            </p>
         </motion.div>
 
         {/* Certificates Grid */}
