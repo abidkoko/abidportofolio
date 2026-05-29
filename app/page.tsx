@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+import { content } from "@/content"
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
@@ -8,18 +12,21 @@ import { GallerySection } from "@/components/galeri-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
-export default function Home() {
+export default function Page() {
+  const [lang, setLang] = useState<"id" | "en">("id")
+
   return (
-    <main className="relative min-h-screen overflow-hidden">
-      <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <CertificatesSection />
-      <GallerySection />
-      <ContactSection />
-      <Footer />
-    </main>
+    <>
+      <Navbar lang={lang} setLang={setLang} />
+
+      <HeroSection lang={lang} />
+      <AboutSection lang={lang} />
+      <SkillsSection lang={lang} />
+      <ProjectsSection lang={lang} />
+      <CertificatesSection lang={lang} />
+      <GallerySection lang={lang} />
+      <ContactSection lang={lang} />
+      <Footer lang={lang} />
+    </>
   )
 }

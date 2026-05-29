@@ -4,17 +4,29 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
-const navItems = [
-  { label: "Home", href: "#hero" },
-  { label: "Tentang Saya", href: "#about" },
-  { label: "Keahlian", href: "#skills" },
-  { label: "Project", href: "#projects" },
-  { label: "Sertifikat", href: "#certificates" },
-  { label: "Dokumentasi", href: "#galeri" },
-  { label: "Kontak", href: "#contact" },
-]
+const navItems = {
+  id: [
+    { label: "Home", href: "#hero" },
+    { label: "Tentang Saya", href: "#about" },
+    { label: "Keahlian", href: "#skills" },
+    { label: "Project", href: "#projects" },
+    { label: "Sertifikat", href: "#certificates" },
+    { label: "Dokumentasi", href: "#galeri" },
+    { label: "Kontak", href: "#contact" },
+  ],
 
-export function Navigation() {
+  en: [
+    { label: "Home", href: "#hero" },
+    { label: "About Me", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
+    { label: "Certificates", href: "#certificates" },
+    { label: "Gallery", href: "#galeri" },
+    { label: "Contact", href: "#contact" },
+  ],
+}
+
+export function Navigation({ lang, setLang }) { {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
