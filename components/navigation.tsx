@@ -4,6 +4,11 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
+type NavigationProps = {
+  language: string
+  setLanguage: (lang: string) => void
+}
+
 const navItems = [
   { label: "Home", href: "#hero" },
   { label: "Tentang Saya", href: "#about" },
@@ -14,7 +19,10 @@ const navItems = [
   { label: "Kontak", href: "#contact" },
 ]
 
-export function Navigation() {
+export function Navigation({
+  language,
+  setLanguage,
+}: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -22,8 +30,11 @@ export function Navigation() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
+
     window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+
+    return () =>
+      window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
@@ -32,11 +43,13 @@ export function Navigation() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass py-3" : "py-5"
-          }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled ? "glass py-3" : "py-5"
+        }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="flex items-center justify-between">
+
             {/* Logo */}
             <motion.a
               href="#hero"
@@ -53,18 +66,47 @@ export function Navigation() {
                   key={item.label}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.4 }}
+                  transition={{
+                    delay: index * 0.1,
+                    duration: 0.4,
+                  }}
                 >
                   <a
                     href={item.href}
                     className="px-4 py-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
                   >
                     {item.label}
+
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-1/2" />
                   </a>
                 </motion.li>
               ))}
             </ul>
+
+            {/* Language Switch */}
+            <div className="hidden md:flex items-center gap-2 mr-4">
+              <button
+                onClick={() => setLanguage("id")}
+                className={`text-sm transition ${
+                  language === "id"
+                    ? "text-cyan-400"
+                    : "text-white"
+                }`}
+              >
+                🇮🇩 ID
+              </button>
+
+              <button
+                onClick={() => setLanguage("en")}
+                className={`text-sm transition ${
+                  language === "en"
+                    ? "text-cyan-400"
+                    : "text-white"
+                }`}
+              >
+                🇺🇸 EN
+              </button>
+            </div>
 
             {/* CTA Button */}
             <motion.a
@@ -79,10 +121,15 @@ export function Navigation() {
             {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 text-foreground"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
+              onClick={() =>
+                setIsMobileMenuOpen(!isMobileMenuOpen)
+              }
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </nav>
         </div>
@@ -99,32 +146,69 @@ export function Navigation() {
             className="fixed top-16 left-0 right-0 z-40 glass md:hidden"
           >
             <nav className="container mx-auto px-4 py-6">
+
+              {/* Mobile Language */}
+              <div className="flex items-center gap-4 mb-4 px-4">
+                <button
+                  onClick={() => setLanguage("id")}
+                  className={`text-sm ${
+                    language === "id"
+                      ? "text-cyan-400"
+                      : "text-white"
+                  }`}
+                >
+                  🇮🇩 Indonesia
+                </button>
+
+                <button
+                  onClick={() => setLanguage("en")}
+                  className={`text-sm ${
+                    language === "en"
+                      ? "text-cyan-400"
+                      : "text-white"
+                  }`}
+                >
+                  🇺🇸 English
+                </button>
+              </div>
+
               <ul className="flex flex-col gap-2">
                 {navItems.map((item, index) => (
                   <motion.li
                     key={item.label}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05, duration: 0.3 }}
+                    transition={{
+                      delay: index * 0.05,
+                      duration: 0.3,
+                    }}
                   >
                     <a
                       href={item.href}
                       className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={() =>
+                        setIsMobileMenuOpen(false)
+                      }
                     >
                       {item.label}
                     </a>
                   </motion.li>
                 ))}
+
                 <motion.li
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: navItems.length * 0.05, duration: 0.3 }}
+                  transition={{
+                    delay: navItems.length * 0.05,
+                    duration: 0.3,
+                  }}
                 >
                   <a
                     href="#contact"
                     className="block px-4 py-3 mt-2 bg-primary text-primary-foreground text-center font-medium rounded-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() =>
+                      setIsMobileMenuOpen(false)
+                    }
                   >
                     Hire Me
                   </a>

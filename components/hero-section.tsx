@@ -18,7 +18,7 @@ const roles = [
   "Communication",
 ]
 
-export function HeroSection() {
+export function HeroSection({ t }: any) {
   const [currentRole, setCurrentRole] = useState(0)
   const [displayText, setDisplayText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
@@ -122,7 +122,7 @@ export function HeroSection() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-muted-foreground text-sm sm:text-base mb-4"
             >
-              Selamat datang di portfolio saya
+              {t.heroWelcome}
             </motion.p>
 
             <motion.h1
@@ -156,8 +156,7 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-muted-foreground text-base sm:text-lg mb-8 leading-relaxed"
             >
-              Saya adalah Technician Elektronika Industri yang menciptakan solusi IoT inovatif, sistem embedded.
-              Mengubah ide menjadi kenyataan melalui kode dan rangkaian elektronika.
+              {t.heroDescription}
             </motion.p>
 
             {/* CTA Buttons */}
@@ -182,7 +181,7 @@ export function HeroSection() {
 
                 <span className="relative z-10 flex items-center justify-center gap-2 text-primary group-hover:text-primary-foreground transition-colors duration-300">
                   <Download className="w-5 h-5 group-hover:animate-bounce" />
-                  Download CV
+                  {t.downloadCV}
                 </span>
               </motion.a>
 
@@ -199,7 +198,7 @@ export function HeroSection() {
                 <div className="absolute inset-0 blur-xl bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-60 transition-opacity duration-500 -z-10" />
 
                 <span className="relative z-10 flex items-center justify-center gap-2 text-primary-foreground">
-                  Lihat Project
+                  {t.viewProjects}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
               </motion.a>
@@ -218,7 +217,7 @@ export function HeroSection() {
 
                 <span className="relative z-10 flex items-center justify-center gap-2 text-foreground/80 group-hover:text-foreground transition-colors duration-300">
                   <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-                  Hubungi Saya
+                  {t.contactMe}
                 </span>
               </motion.a>
             </motion.div>
