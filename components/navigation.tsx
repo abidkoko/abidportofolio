@@ -4,29 +4,17 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
-const navItems = {
-  id: [
-    { label: "Home", href: "#hero" },
-    { label: "Tentang Saya", href: "#about" },
-    { label: "Keahlian", href: "#skills" },
-    { label: "Project", href: "#projects" },
-    { label: "Sertifikat", href: "#certificates" },
-    { label: "Dokumentasi", href: "#galeri" },
-    { label: "Kontak", href: "#contact" },
-  ],
+const navItems = [
+  { label: "Home", href: "#hero" },
+  { label: "Tentang Saya", href: "#about" },
+  { label: "Keahlian", href: "#skills" },
+  { label: "Project", href: "#projects" },
+  { label: "Sertifikat", href: "#certificates" },
+  { label: "Dokumentasi", href: "#galeri" },
+  { label: "Kontak", href: "#contact" },
+]
 
-  en: [
-    { label: "Home", href: "#hero" },
-    { label: "About Me", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Certificates", href: "#certificates" },
-    { label: "Gallery", href: "#galeri" },
-    { label: "Contact", href: "#contact" },
-  ],
-}
-
-export function Navigation({ lang, setLang }) { {
+export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -34,7 +22,9 @@ export function Navigation({ lang, setLang }) { {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
+
     window.addEventListener("scroll", handleScroll)
+
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -44,11 +34,13 @@ export function Navigation({ lang, setLang }) { {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass py-3" : "py-5"
-          }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled ? "glass py-3" : "py-5"
+        }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="flex items-center justify-between">
+
             {/* Logo */}
             <motion.a
               href="#hero"
@@ -65,13 +57,17 @@ export function Navigation({ lang, setLang }) { {
                   key={item.label}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.4 }}
+                  transition={{
+                    delay: index * 0.1,
+                    duration: 0.4,
+                  }}
                 >
                   <a
                     href={item.href}
                     className="px-4 py-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
                   >
                     {item.label}
+
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-1/2" />
                   </a>
                 </motion.li>
@@ -91,10 +87,16 @@ export function Navigation({ lang, setLang }) { {
             {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 text-foreground"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              onClick={() =>
+                setIsMobileMenuOpen(!isMobileMenuOpen)
+              }
               aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </nav>
         </div>
@@ -117,26 +119,37 @@ export function Navigation({ lang, setLang }) { {
                     key={item.label}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05, duration: 0.3 }}
+                    transition={{
+                      delay: index * 0.05,
+                      duration: 0.3,
+                    }}
                   >
                     <a
                       href={item.href}
                       className="block px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-300"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={() =>
+                        setIsMobileMenuOpen(false)
+                      }
                     >
                       {item.label}
                     </a>
                   </motion.li>
                 ))}
+
                 <motion.li
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: navItems.length * 0.05, duration: 0.3 }}
+                  transition={{
+                    delay: navItems.length * 0.05,
+                    duration: 0.3,
+                  }}
                 >
                   <a
                     href="#contact"
                     className="block px-4 py-3 mt-2 bg-primary text-primary-foreground text-center font-medium rounded-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() =>
+                      setIsMobileMenuOpen(false)
+                    }
                   >
                     Hire Me
                   </a>

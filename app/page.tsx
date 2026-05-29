@@ -1,7 +1,3 @@
-"use client"
-
-import { useState } from "react"
-import { content } from "@/content"
 import { Navigation } from "@/components/navigation"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
@@ -13,20 +9,18 @@ import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
 export default function Page() {
-  const [lang, setLang] = useState<"id" | "en">("id")
-
   return (
     <>
-      <Navbar lang={lang} setLang={setLang} />
+      <Navigation />
 
-      <HeroSection lang={lang} />
-      <AboutSection lang={lang} />
-      <SkillsSection lang={lang} />
-      <ProjectsSection lang={lang} />
-      <CertificatesSection lang={lang} />
-      <GallerySection lang={lang} />
-      <ContactSection lang={lang} />
-      <Footer lang={lang} />
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <CertificatesSection />
+      <GallerySection />
+      <ContactSection />
+      <Footer />
     </>
   )
 }
