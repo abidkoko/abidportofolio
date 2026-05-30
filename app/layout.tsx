@@ -2,13 +2,14 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { LanguageProvider } from "@/context/LanguageContext"
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter'
 })
 
-const geistMono = Geist_Mono({ 
+const geistMono = Geist_Mono({
   subsets: ['latin'],
   variable: '--font-geist-mono'
 })
@@ -52,7 +53,10 @@ export default function RootLayout({
   return (
     <html lang="id" className={`${inter.variable} ${geistMono.variable} bg-background`}>
       <body className="font-sans antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
