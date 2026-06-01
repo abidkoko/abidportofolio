@@ -70,6 +70,14 @@ const projects = [
     tags: ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"],
     github: "https://github.com/abidkoko/Line-Follower-Analog",
   },
+  {
+    title: "Lockout Buzzer System",
+    description:
+      "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis, serta memberikan indikator visual dan suara. Proyek ini menunjukkan penerapan sistem embedded, logika kontrol digital, dan pemrosesan data secara real-time.",
+    image: "/gallery/LBS.jpeg",
+    tags: ["Digital Electronics", "Embedded Systems", "Digital Control", "Real-Time System"],
+    github: "https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM",
+  },
 ]
 
 export function ProjectsSection() {
