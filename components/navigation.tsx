@@ -3,23 +3,20 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import { useLanguage } from "@/context/LanguageContext"
+
+const navItems = [
+  { label: "Home", href: "#hero" },
+  { label: "Tentang Saya", href: "#about" },
+  { label: "Keahlian", href: "#skills" },
+  { label: "Project", href: "#projects" },
+  { label: "Sertifikat", href: "#certificates" },
+  { label: "Dokumentasi", href: "#galeri" },
+  { label: "Kontak", href: "#contact" },
+]
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
-  const { t, language, setLanguage } = useLanguage()
-
-  const navItems = [
-    { label: t.nav.home, href: "#hero" },
-    { label: t.nav.about, href: "#about" },
-    { label: t.nav.skills, href: "#skills" },
-    { label: t.nav.projects, href: "#projects" },
-    { label: t.nav.certificates, href: "#certificates" },
-    { label: t.nav.gallery, href: "#galeri" },
-    { label: t.nav.contact, href: "#contact" },
-  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +24,7 @@ export function Navigation() {
     }
 
     window.addEventListener("scroll", handleScroll)
+
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -69,50 +67,22 @@ export function Navigation() {
                     className="px-4 py-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
                   >
                     {item.label}
+
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-1/2" />
                   </a>
                 </motion.li>
               ))}
             </ul>
 
-            {/* Language Switch + CTA */}
-            <div className="hidden md:flex items-center gap-3">
-
-              {/* Language Buttons */}
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => setLanguage("id")}
-                  className={`px-3 py-1 rounded text-sm transition ${
-                    language === "id"
-                      ? "bg-primary text-white"
-                      : "text-muted-foreground"
-                  }`}
-                >
-                  ID
-                </button>
-
-                <button
-                  onClick={() => setLanguage("en")}
-                  className={`px-3 py-1 rounded text-sm transition ${
-                    language === "en"
-                      ? "bg-primary text-white"
-                      : "text-muted-foreground"
-                  }`}
-                >
-                  EN
-                </button>
-              </div>
-
-              {/* CTA */}
-              <motion.a
-                href="#contact"
-                className="px-5 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg transition-all duration-300 hover:opacity-90"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Hire Me
-              </motion.a>
-            </div>
+            {/* CTA Button */}
+            <motion.a
+              href="#contact"
+              className="hidden md:flex px-5 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg transition-all duration-300 hover:opacity-90"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Hire Me
+            </motion.a>
 
             {/* Mobile Menu Button */}
             <button
@@ -144,33 +114,6 @@ export function Navigation() {
           >
             <nav className="container mx-auto px-4 py-6">
               <ul className="flex flex-col gap-2">
-
-                {/* Language Switch Mobile */}
-                <li className="flex gap-2 mb-2">
-                  <button
-                    onClick={() => setLanguage("id")}
-                    className={`flex-1 py-2 rounded ${
-                      language === "id"
-                        ? "bg-primary text-white"
-                        : "bg-muted"
-                    }`}
-                  >
-                    ID
-                  </button>
-
-                  <button
-                    onClick={() => setLanguage("en")}
-                    className={`flex-1 py-2 rounded ${
-                      language === "en"
-                        ? "bg-primary text-white"
-                        : "bg-muted"
-                    }`}
-                  >
-                    EN
-                  </button>
-                </li>
-
-                {/* Nav Items */}
                 {navItems.map((item, index) => (
                   <motion.li
                     key={item.label}
@@ -193,7 +136,14 @@ export function Navigation() {
                   </motion.li>
                 ))}
 
-                <motion.li>
+                <motion.li
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    delay: navItems.length * 0.05,
+                    duration: 0.3,
+                  }}
+                >
                   <a
                     href="#contact"
                     className="block px-4 py-3 mt-2 bg-primary text-primary-foreground text-center font-medium rounded-lg"
