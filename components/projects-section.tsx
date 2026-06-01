@@ -65,7 +65,7 @@ const projects = [
   {
     title: "Analog Line Follower Robot",
     description:
-      "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator. Proyek ini menampilkan implementasi dasar sistem kontrol elektronik dengan respon gerak yang cepat dan stabil.",
+      "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator.",
     image: "/gallery/LF3d.jpg",
     tags: ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"],
     github: "https://github.com/abidkoko/Line-Follower-Analog",
@@ -73,7 +73,7 @@ const projects = [
   {
     title: "Lockout Buzzer System",
     description:
-      "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis, serta memberikan indikator visual dan suara. Proyek ini menunjukkan penerapan sistem embedded, logika kontrol digital, dan pemrosesan data secara real-time.",
+      "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis, serta memberikan indikator visual dan suara.",
     image: "/gallery/LBS.jpeg",
     tags: ["Digital Electronics", "Embedded Systems", "Digital Control", "Real-Time System"],
     github: "https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM",
