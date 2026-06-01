@@ -9,7 +9,7 @@ const galleryImages = [
   "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
   "/gallery/sevensch.png",
   "/gallery/rfidsch.png",
-  "/gallery/WRLBS.jpeg/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
+  "/gallery/WRLBS.jpeg",
   "/gallery/full 3d.jpeg",
   "/gallery/LBS.jpeg",
   "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
