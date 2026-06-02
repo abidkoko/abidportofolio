@@ -1,6 +1,7 @@
 "use client"
 
-import { motion, useInView } from "framer-motion"
+import { motion } from "framer-motion"
+import { useInView } from "framer-motion"
 import { useRef } from "react"
 import Image from "next/image"
 
@@ -26,108 +27,101 @@ const projects = [
     description:
       "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
     image: "/gallery/seven3d.png",
-    tags: ["Seven Segment", "RTC", "STM32", "C++"],
+    tags: ["Seven Segment", "RTC", "STM32", "Electronics", "C++"],
     github: "https://github.com/abidkoko/7-Segment-Digital-Clock-System",
   },
   {
-    title: "IoT Smart Plant Watering",
+    title: "IoT-Based Smart Plant Watering System",
     description:
-      "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah real-time.",
+      "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
     image: "/gallery/water.jpeg",
-    tags: ["ESP32", "IoT", "Sensor", "WiFi"],
+    tags: ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"],
     github: "",
   },
   {
-    title: "RFID Attendance System",
+    title: "RFID-Based IoT Attendance System",
     description:
-      "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis.",
+      "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
     image: "/gallery/rfid3d.png",
-    tags: ["RFID", "ESP32", "IoT", "Database"],
+    tags: ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"],
     github: "https://github.com/abidkoko/RFID-Based-IoT-Attendance-System",
   },
   {
-    title: "Automated School Gate",
+    title: "Automated School Gate Control System",
     description:
-      "Gerbang otomatis berbasis mikrokontroler untuk sistem keamanan sekolah.",
+      "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
     image: "/gallery/gate3dd.jpg",
-    tags: ["Automation", "Arduino", "RFID"],
+    tags: ["Automation", "Arduino", "IoT", "RFID", "C++"],
     github: "https://github.com/abidkoko/Automated-School-Gate-Control-System",
   },
   {
-    title: "Bluetooth RC Car",
+    title: "Bluetooth-Controlled RC Car",
     description:
-      "Mobil RC berbasis Bluetooth yang dikendalikan via smartphone.",
+      "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
     image: "/gallery/car3d.jpg",
-    tags: ["Bluetooth", "HC-06", "Arduino", "Motor"],
+    tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"],
     github: "https://github.com/abidkoko/RC-CAR-BLUETOOTH",
   },
   {
-    title: "Line Follower Robot",
+    title: "Analog Line Follower Robot",
     description:
-      "Robot line follower analog menggunakan sensor IR dan komparator.",
+      "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator.",
     image: "/gallery/LF3d.jpg",
-    tags: ["IR Sensor", "Motor", "Analog"],
+    tags: ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"],
     github: "https://github.com/abidkoko/Line-Follower-Analog",
   },
   {
     title: "Lockout Buzzer System",
     description:
-      "Sistem buzzer kompetisi dengan lock input otomatis dan indikator cepat.",
+      "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis, serta memberikan indikator visual dan suara.",
     image: "/gallery/LBS.jpeg",
-    tags: ["Embedded", "Digital System", "Real-Time"],
+    tags: ["Digital Electronics", "Embedded Systems", "Digital Control", "Real-Time System"],
     github: "https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM",
   },
 ]
 
 export function ProjectsSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-80px" })
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section
-      id="projects"
-      className="relative py-24 sm:py-32 overflow-visible"
-    >
-      <div
-        ref={ref}
-        className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
-      >
+    <section id="projects" className="relative py-20 sm:py-32 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
 
-        {/* HEADER */}
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Project
             </span>
           </h2>
 
-          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mt-3" />
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full" />
 
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Proyek elektronika dan IoT yang menunjukkan kemampuan saya dalam embedded system,
-            automation, dan teknologi modern.
+            Proyek elektronika dan IoT yang menunjukkan kemampuan
+            saya dalam pengembangan embedded system, automation, dan teknologi modern.
           </p>
         </motion.div>
 
-        {/* GRID */}
+        {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              whileHover={{ y: -6 }}
-              className="group glass rounded-2xl overflow-hidden border border-border/50 hover:border-primary/40 transition-all duration-300"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ y: -8 }}
+              className="group glass rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-400/40 transition-all duration-500"
             >
 
-              {/* IMAGE */}
+              {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src={project.image}
@@ -136,47 +130,45 @@ export function ProjectsSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               </div>
 
-              {/* CONTENT */}
+              {/* Info */}
               <div className="p-5 sm:p-6">
-
-                <h3 className="text-lg font-semibold group-hover:text-primary transition-colors mb-2">
+                <h3 className="text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors duration-300 mb-2">
                   {project.title}
                 </h3>
 
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                <p className="text-sm text-gray-400 mb-4 line-clamp-3">
                   {project.description}
                 </p>
 
-                {/* TAGS */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-1 text-xs rounded-md bg-primary/10 text-primary border border-primary/10"
+                      className="px-2 py-1 text-xs font-medium bg-cyan-500/10 text-cyan-300 rounded-md border border-cyan-500/10"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                {/* BUTTON */}
+                {/* GitHub Button */}
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
-                    className="block text-center px-4 py-2 rounded-lg border border-primary/30 text-primary text-sm hover:bg-primary/10 transition"
+                    rel="noopener noreferrer"
+                    className="block mt-5 text-center px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium hover:bg-cyan-500/20 transition-all duration-300"
                   >
-                    View GitHub
+                    View on GitHub
                   </a>
                 )}
-
               </div>
             </motion.div>
           ))}
-
         </div>
       </div>
     </section>
