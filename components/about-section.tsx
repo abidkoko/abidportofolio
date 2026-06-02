@@ -10,29 +10,11 @@ import {
   Cpu,
   Calendar,
 } from "lucide-react"
-
-const timeline = [
-  {
-    year: "2026",
-    title: "Kerja Lapangan",
-    company: "PT PLN (Persero) GITET Bandung Selatan",
-    location: "Bandung, Indonesia",
-    description:
-      "Tugas pokok saya memelihara peralatan transmisi 500 kV dan Melakukan inspeksi sistem grounding dan kelistrikan.",
-    type: "work",
-  },
-  {
-    year: "2026",
-    title: "Teknik Elektronika Industri",
-    company: "SMKN 1 Katapang",
-    location: "Bandung, Indonesia",
-    description:
-      "Lulusan Terbaik Teknik Elektronika Industri dengan fokus pada embedded system dan IoT.",
-    type: "education",
-  },
-]
+import { useLanguage } from "@/context/language-context"
 
 export function AboutSection() {
+  const { t } = useLanguage()
+
   const ref = useRef(null)
   const isInView = useInView(ref, {
     once: true,
@@ -54,7 +36,7 @@ export function AboutSection() {
         className="container mx-auto px-4 sm:px-6 lg:px-8"
         ref={ref}
       >
-        {/* Header */}
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -63,7 +45,7 @@ export function AboutSection() {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Tentang Saya
+              {t.about.title}
             </span>
           </h2>
 
@@ -71,6 +53,7 @@ export function AboutSection() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+
           {/* LEFT */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -79,41 +62,27 @@ export function AboutSection() {
             className="glass rounded-2xl p-6 sm:p-8 lg:p-10"
           >
             <h3 className="text-2xl font-semibold text-primary mb-6">
-              Teknik Elektronika Industri
+              {t.about.subtitle}
             </h3>
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Saya adalah lulusan Terbaik Teknik Elektronika Industri
-                yang memiliki minat besar dalam pengembangan sistem Internet of Things (IoT),
-                embedded system, dan otomasi berbasis mikrokontroler.
-              </p>
-
-              <p>
-                Keahlian utama saya meliputi pengembangan firmware untuk mikrokontroler seperti
-                Arduino dan ESP32, desain rangkaian elektronika, serta integrasi sensor dan aktuator
-                untuk berbagai proyek IoT dan sistem otomatisasi.
-              </p>
-
-              <p>
-                Saya percaya bahwa teknologi embedded system dan IoT memiliki potensi besar
-                dalam membantu kehidupan sehari-hari dan industri modern, serta terus berusaha
-                mengembangkan kemampuan di bidang teknologi dan inovasi elektronika.
-              </p>
+              <p>{t.about.description1}</p>
+              <p>{t.about.description2}</p>
+              <p>{t.about.description3}</p>
             </div>
 
             {/* INFO */}
             <div className="grid grid-cols-2 gap-4 mt-8">
+
               <div className="glass rounded-xl p-4 border border-primary/10">
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin className="w-4 h-4 text-primary" />
                   <p className="text-sm text-muted-foreground">
-                    Lokasi
+                    {t.about.location}
                   </p>
                 </div>
-
                 <p className="font-medium text-foreground">
-                  Bandung, Indonesia
+                  {t.about.locationValue}
                 </p>
               </div>
 
@@ -121,12 +90,11 @@ export function AboutSection() {
                 <div className="flex items-center gap-2 mb-2">
                   <Languages className="w-4 h-4 text-primary" />
                   <p className="text-sm text-muted-foreground">
-                    Bahasa
+                    {t.about.language}
                   </p>
                 </div>
-
                 <p className="font-medium text-foreground">
-                  Indonesia, English
+                  {t.about.languageValue}
                 </p>
               </div>
 
@@ -134,14 +102,14 @@ export function AboutSection() {
                 <div className="flex items-center gap-2 mb-2">
                   <Cpu className="w-4 h-4 text-primary" />
                   <p className="text-sm text-muted-foreground">
-                    Spesialisasi
+                    {t.about.specialization}
                   </p>
                 </div>
-
                 <p className="font-medium text-foreground">
-                  Internet of Things (IoT), Embedded System, Arduino & ESP32
+                  {t.about.specializationValue}
                 </p>
               </div>
+
             </div>
           </motion.div>
 
@@ -156,7 +124,7 @@ export function AboutSection() {
               <Calendar className="w-5 h-5 text-primary" />
 
               <h3 className="text-2xl font-semibold text-foreground">
-                Edukasi & Pengalaman
+                {t.about.timeline.title}
               </h3>
             </div>
 
@@ -164,7 +132,7 @@ export function AboutSection() {
             <div className="absolute left-5 top-16 bottom-0 w-px bg-primary/20" />
 
             <div className="space-y-8">
-              {timeline.map((item, index) => (
+              {t.about.timeline.items.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -212,6 +180,7 @@ export function AboutSection() {
               ))}
             </div>
           </motion.div>
+
         </div>
       </div>
     </section>
