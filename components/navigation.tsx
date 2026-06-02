@@ -36,9 +36,8 @@ export function Navigation() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "glass py-3" : "py-5"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass py-3" : "py-5"
+          }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="flex items-center justify-between">
@@ -164,13 +163,17 @@ export function Navigation() {
                   }}
                 >
                   <button
-                    onClick={() =>
-                      setLanguage(language === "id" ? "en" : "id")
-                    }
-                    className="w-full px-4 py-3 mt-2 border rounded-lg flex items-center justify-center gap-2"
+                    onClick={() => setLanguage(language === "id" ? "en" : "id")}
+                    className="px-3 py-2 rounded-lg border text-sm flex items-center gap-2 hover:bg-primary/10 transition"
+                    aria-label="Change Language"
                   >
-                    <span>{languageInfo.flag}</span>
-                    <span>{languageInfo.code.toUpperCase()}</span>
+                    <span className={language === "id" ? "font-bold text-primary" : "text-muted-foreground"}>
+                      ID
+                    </span>
+                    <span>|</span>
+                    <span className={language === "en" ? "font-bold text-primary" : "text-muted-foreground"}>
+                      EN
+                    </span>
                   </button>
                 </motion.li>
 
