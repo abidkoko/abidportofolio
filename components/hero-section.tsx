@@ -149,44 +149,100 @@ export function HeroSection() {
               {t.hero.description}
             </motion.p>
 
-            {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
-              <a
+              {/* DOWNLOAD CV */}
+              <motion.a
                 href="/CV_M_Abid_Maulana.pdf"
                 download
-                className="px-6 py-3 border border-primary rounded-xl text-primary"
+                whileTap={{ scale: 0.92 }}
+                whileHover={{ scale: 1.03 }}
+                className="relative px-6 py-3 rounded-xl
+               border border-cyan-400/40
+               bg-white/5 backdrop-blur-md
+               text-cyan-300 font-medium
+               overflow-hidden
+               transition-all duration-300"
               >
+                {/* click ripple glow */}
+                <span className="absolute inset-0 bg-cyan-400/20 scale-0 group-active:scale-100 transition-transform duration-300 rounded-xl" />
+
                 <Download className="inline w-4 h-4 mr-2" />
                 {t.hero.downloadCV}
-              </a>
+              </motion.a>
 
-              <a
+
+              {/* VIEW PROJECTS */}
+              <motion.a
                 href="#projects"
-                className="px-6 py-3 bg-primary text-black rounded-xl"
+                whileTap={{ scale: 0.92 }}
+                whileHover={{ scale: 1.05 }}
+                className="relative px-6 py-3 rounded-xl
+               bg-gradient-to-r from-cyan-400 to-blue-500
+               text-black font-semibold
+               shadow-[0_0_25px_rgba(34,211,238,0.4)]
+               hover:shadow-[0_0_45px_rgba(34,211,238,0.7)]
+               transition-all duration-300 overflow-hidden"
               >
+                {/* shine animation */}
+                <span className="absolute inset-0 -translate-x-full hover:translate-x-full bg-white/20 transition-transform duration-700" />
+
                 <ArrowRight className="inline w-4 h-4 mr-2" />
                 {t.hero.viewProjects}
-              </a>
+              </motion.a>
 
-              <a
+
+              {/* CONTACT */}
+              <motion.a
                 href="#contact"
-                className="px-6 py-3 border rounded-xl"
+                whileTap={{ scale: 0.92 }}
+                whileHover={{ scale: 1.03 }}
+                className="relative px-6 py-3 rounded-xl
+               glass border border-white/10
+               text-white/80 backdrop-blur-md
+               hover:border-cyan-400/40 hover:text-white
+               transition-all duration-300 overflow-hidden"
               >
                 <Mail className="inline w-4 h-4 mr-2" />
                 {t.hero.contactMe}
-              </a>
+              </motion.a>
 
             </div>
 
-            {/* SOCIAL */}
             <div className="flex gap-4 mt-6 justify-center lg:justify-start">
-              <a href="https://www.linkedin.com/in/muhamad-abid-maulana-4a528234a/" target="_blank">
-                <Linkedin />
-              </a>
-              <a href="https://www.instagram.com/abidmauna" target="_blank">
-                <Instagram />
-              </a>
+
+              <motion.a
+                href="https://www.linkedin.com/in/muhamad-abid-maulana-4a528234a/"
+                target="_blank"
+                whileHover={{ scale: 1.15, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-11 h-11 flex items-center justify-center rounded-full
+               bg-white/5 backdrop-blur-md
+               border border-white/10
+               text-muted-foreground
+               hover:text-white hover:border-cyan-400/60
+               hover:bg-cyan-400/10
+               transition-all duration-300"
+              >
+                <Linkedin className="w-5 h-5" />
+              </motion.a>
+
+              <motion.a
+                href="https://www.instagram.com/abidmauna"
+                target="_blank"
+                whileHover={{ scale: 1.15, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-11 h-11 flex items-center justify-center rounded-full
+               bg-white/5 backdrop-blur-md
+               border border-white/10
+               text-muted-foreground
+               hover:text-white hover:border-pink-400/60
+               hover:bg-pink-400/10
+               transition-all duration-300"
+              >
+                <Instagram className="w-5 h-5" />
+              </motion.a>
+
             </div>
 
           </div>
