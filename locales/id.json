@@ -130,7 +130,7 @@
     "viewOnGithub": "View on GitHub",
     "items": [
       {
-        "title": "Power Supply",
+        "title": "Catu Daya",
         "description": "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
         "image": "/gallery/psu.png",
         "tags": [
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "title": "LDR-Based Automatic Lighting System",
+        "title": "Sistem Pencahayaan Otomatis Berbasis LDR",
         "description": "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
         "image": "/gallery/ldr.png",
         "tags": [
@@ -153,7 +153,7 @@
         "github": "https://github.com/abidkoko/LDR-Based-Automatic-Lighting-System"
       },
       {
-        "title": "7-Segment Digital Clock System",
+        "title": "Sistem Jam Digital 7-Segmen",
         "description": "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
         "image": "/gallery/seven3d.png",
         "tags": [
@@ -166,7 +166,7 @@
         "github": "https://github.com/abidkoko/7-Segment-Digital-Clock-System"
       },
       {
-        "title": "IoT-Based Smart Plant Watering System",
+        "title": "Sistem Penyiraman Tanaman Pintar Berbasis IoT",
         "description": "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
         "image": "/gallery/water.jpeg",
         "tags": [
@@ -178,7 +178,7 @@
         ]
       },
       {
-        "title": "RFID-Based IoT Attendance System",
+        "title": "Sistem Absensi IoT Berbasis RFID",
         "description": "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
         "image": "/gallery/rfid3d.png",
         "tags": [
@@ -192,7 +192,7 @@
         "github": "https://github.com/abidkoko/RFID-Based-IoT-Attendance-System"
       },
       {
-        "title": "Automated School Gate Control System",
+        "title": "Sistem Kendali Gerbang Sekolah Otomatis",
         "description": "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
         "image": "/gallery/gate3dd.jpg",
         "tags": [
@@ -205,7 +205,7 @@
         "github": "https://github.com/abidkoko/Automated-School-Gate-Control-System"
       },
       {
-        "title": "Bluetooth-Controlled RC Car",
+        "title": "Mobil RC Kendali Bluetooth",
         "description": "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
         "image": "/gallery/car3d.jpg",
         "tags": [
@@ -218,7 +218,7 @@
         "github": "https://github.com/abidkoko/RC-CAR-BLUETOOTH"
       },
       {
-        "title": "Analog Line Follower Robot",
+        "title": "Robot Line Follower Analog",
         "description": "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator.",
         "image": "/gallery/LF3d.jpg",
         "tags": [
@@ -230,7 +230,7 @@
         "github": "https://github.com/abidkoko/Line-Follower-Analog"
       },
       {
-        "title": "Lockout Buzzer System",
+        "title": "Sistem Bel Cerdas Cermat",
         "description": "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis.",
         "image": "/gallery/LBS.jpeg",
         "tags": [
