@@ -2,15 +2,13 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import { LanguageProvider } from '@/contexts/language-context'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter'
-})
-
-const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-geist-mono'
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+const poppins = Poppins({ 
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-poppins"
 })
 
 export const metadata: Metadata = {
