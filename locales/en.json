@@ -66,6 +66,16 @@
     "title": "Skills",
     "description": "Complete toolkit for building innovative electronics projects, IoT solutions, and modern web applications.",
     "otherTools": "Other Tools & Technologies:",
+    "tools": [
+      "AutoDesk Fusion",
+      "VS Code",
+      "VS Studio",
+      "Node-RED",
+      "Firebase",
+      "Blynk",
+      "ThingSpeak",
+      "MQTT"
+    ],
     "items": [
       {
         "name": "Arduino",
