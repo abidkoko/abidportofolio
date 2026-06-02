@@ -45,8 +45,8 @@ export default function RootLayout({
 
         {process.env.NODE_ENV === 'production' && <Analytics />}
 
-        <div className="fixed inset-0 -z-10">
-          {/* base dark */}
+        <div className="fixed inset-0 pointer-events-none">
+                    {/* base dark */}
           <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
 
           {/* neon glow layer */}
