@@ -7,34 +7,48 @@ const skills = [
   { name: "Arduino", level: 95, category: "Microcontroller" },
   { name: "ESP32", level: 93, category: "Microcontroller" },
   { name: "STM32", level: 87, category: "Microcontroller" },
+
   { name: "Embedded C/C++", level: 90, category: "Programming" },
   { name: "PLC Schneider", level: 85, category: "Programming" },
   { name: "PLC Omron", level: 90, category: "Programming" },
-  { name: "IoT Systems", level: 88, category: "Systems" },
+
+  { name: "IoT System Design", level: 88, category: "Systems" },
+
   { name: "PCB Design", level: 95, category: "Hardware" },
   { name: "Sensor Integration", level: 92, category: "Hardware" },
+
   { name: "AutoDesk Eagle", level: 95, category: "Software" },
-  { name: "Microsoft Office", level: 95, category: "Office" },
+  { name: "Microsoft Office", level: 95, category: "Productivity" },
+]
+
+const tools = [
+  "AutoDesk Fusion 360",
+  "Visual Studio Code",
+  "Visual Studio",
+  "Node-RED",
+  "Firebase",
+  "Blynk IoT",
+  "ThingSpeak",
+  "MQTT",
 ]
 
 export function SkillsSection() {
-  const ref = useRef<HTMLDivElement | null>(null)
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const isInView = useInView(ref, {
-    once: true,
-    margin: "-100px",
-  })
+  const categories = ["Microcontroller", "Programming", "Systems", "Hardware", "Software", "Productivity"]
 
   return (
     <section id="skills" className="relative py-20 sm:py-32 overflow-hidden">
-      {/* Background */}
+
+      {/* background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
       </div>
 
       <div ref={ref} className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        {/* HEADER */}
+
+        {/* TITLE */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -50,7 +64,7 @@ export function SkillsSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
 
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Toolkit untuk membangun sistem elektronik, IoT, dan embedded system modern.
+            Toolkit lengkap untuk membangun sistem embedded, IoT, dan solusi elektronika modern.
           </p>
         </motion.div>
 
@@ -62,9 +76,10 @@ export function SkillsSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              whileHover={{ scale: 1.03, y: -4 }}
-              className="glass rounded-xl p-5 group border border-transparent hover:border-primary/40 transition-all"
+              whileHover={{ scale: 1.03, y: -5 }}
+              className="glass rounded-xl p-5 sm:p-6 group"
             >
+
               <div className="flex justify-between items-start mb-3">
                 <div>
                   <h3 className="font-semibold group-hover:text-primary transition-colors">
@@ -80,56 +95,51 @@ export function SkillsSection() {
                 </span>
               </div>
 
-              {/* BAR */}
+              {/* progress */}
               <div className="h-2 bg-secondary rounded-full overflow-hidden">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-primary to-accent"
+                  className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
                   initial={{ width: 0 }}
                   animate={isInView ? { width: `${skill.level}%` } : {}}
                   transition={{
                     duration: 1,
                     delay: 0.4 + index * 0.05,
+                    ease: "easeOut",
                   }}
                 />
               </div>
+
             </motion.div>
           ))}
         </div>
 
-        {/* TAGS */}
+        {/* TOOLS */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 1 }}
-          className="mt-12 text-center"
+          className="mt-14 text-center"
         >
           <p className="text-sm text-muted-foreground mb-4">
-            Tools & Technologies:
+            Tools & Technologies
           </p>
 
           <div className="flex flex-wrap justify-center gap-2">
-            {[
-              "Fusion 360",
-              "VS Code",
-              "Node-RED",
-              "Firebase",
-              "Blynk",
-              "MQTT",
-              "ThingSpeak",
-            ].map((tool, i) => (
+            {tools.map((tool, index) => (
               <motion.span
                 key={tool}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ delay: 1.1 + i * 0.05 }}
+                transition={{ delay: 1.1 + index * 0.05 }}
                 whileHover={{ scale: 1.1 }}
-                className="px-3 py-1 text-xs glass rounded-full hover:text-primary transition"
+                className="px-3 py-1 text-xs glass rounded-full text-muted-foreground hover:text-primary transition"
               >
                 {tool}
               </motion.span>
             ))}
           </div>
         </motion.div>
+
       </div>
     </section>
   )
