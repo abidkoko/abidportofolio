@@ -4,36 +4,36 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { X } from "lucide-react"
-
-const galleryImages = [
-  "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
-  "/gallery/sevensch.png",
-  "/gallery/rfidsch.png",
-  "/gallery/WRLBS.jpeg",
-  "/gallery/full 3d.jpeg",
-  "/gallery/LBS.jpeg",
-  "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
-  "/gallery/rfid3d.png",
-  "/gallery/rfidbrd.png",
-  "/gallery/IMG_20240531_215143.jpg",
-  "/gallery/seven3d.png",
-  "/gallery/seven.png",
-  "/gallery/gatebrdd.jpg",
-  "/gallery/gate3dd.jpg",
-  "/gallery/car3d.jpg",
-]
+import { useLanguage } from "@/context/language-context"
 
 export function GallerySection() {
+  const { t } = useLanguage()
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
+  const galleryImages: string[] = [
+    "/gallery/SKEMATIK PENYIRAM TANAMAN OTOMATIS.png",
+    "/gallery/sevensch.png",
+    "/gallery/rfidsch.png",
+    "/gallery/WRLBS.jpeg",
+    "/gallery/full 3d.jpeg",
+    "/gallery/LBS.jpeg",
+    "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
+    "/gallery/rfid3d.png",
+    "/gallery/rfidbrd.png",
+    "/gallery/IMG_20240531_215143.jpg",
+    "/gallery/seven3d.png",
+    "/gallery/seven.png",
+    "/gallery/gatebrdd.jpg",
+    "/gallery/gate3dd.jpg",
+    "/gallery/car3d.jpg",
+  ]
+
   return (
-    <section
-      id="galeri"
-      className="relative py-20 sm:py-32 overflow-hidden"
-    >
+    <section id="galeri" className="relative py-20 sm:py-32 overflow-hidden">
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        {/* Title */}
+        {/* TITLE */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,19 +42,17 @@ export function GallerySection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Dokumentasi
-            </span>
+            {t.gallery.title}
           </h2>
 
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
 
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Sekilas tentang ruang kerja, proyek, dan perjalanan saya dalam mewujudkan ide menjadi kenyataan.
+            {t.gallery.description}
           </p>
         </motion.div>
 
-        {/* Gallery Grid */}
+        {/* GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {galleryImages.map((image, index) => (
@@ -62,7 +60,7 @@ export function GallerySection() {
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
               className="group relative overflow-hidden rounded-2xl glass cursor-pointer"
@@ -83,7 +81,7 @@ export function GallerySection() {
 
         </div>
 
-        {/* Modal */}
+        {/* MODAL */}
         {selectedImage && (
           <div
             className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
@@ -93,35 +91,26 @@ export function GallerySection() {
               className="relative max-w-4xl w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Tombol Close */}
+
               <button
                 onClick={() => setSelectedImage(null)}
-                className="
-          absolute -top-3 -right-3 z-50
-          bg-white text-black
-          rounded-full p-2 shadow-xl
-          hover:scale-110 transition
-        "
+                className="absolute -top-3 -right-3 z-50 bg-white text-black rounded-full p-2 shadow-xl hover:scale-110 transition"
               >
                 <X className="w-5 h-5" />
               </button>
 
-              {/* Gambar */}
               <Image
                 src={selectedImage}
                 alt="Preview"
                 width={1600}
                 height={1200}
-                className="
-          w-full
-          max-h-[85vh]
-          object-contain
-          rounded-2xl
-        "
+                className="w-full max-h-[85vh] object-contain rounded-2xl"
               />
+
             </div>
           </div>
         )}
+
       </div>
     </section>
   )
