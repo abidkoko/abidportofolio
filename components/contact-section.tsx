@@ -5,8 +5,11 @@ import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { Send, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react"
 import emailjs from "@emailjs/browser"
+import { useLanguage } from "@/context/language-context"
 
 export function ContactSection() {
+  const { t } = useLanguage()
+
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -32,7 +35,7 @@ export function ContactSection() {
       setTimeout(() => setIsSubmitted(false), 3000)
     } catch (error) {
       console.error(error)
-      alert("Gagal mengirim pesan")
+      alert(t.contact.sendFailed)
     }
 
     setIsSubmitting(false)
@@ -41,7 +44,7 @@ export function ContactSection() {
   const contactInfo = [
     {
       icon: Mail,
-      label: "Email",
+      label: t.contact.email,
       value: "btlabd52@gmail.com",
       href: "mailto:btlabd52@gmail.com",
     },
@@ -53,7 +56,7 @@ export function ContactSection() {
     },
     {
       icon: MapPin,
-      label: "Lokasi",
+      label: t.contact.location,
       value: "Bandung, Indonesia",
       href: "#",
     },
@@ -64,25 +67,20 @@ export function ContactSection() {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://linkedin.com/in/muhamad-abid-maulana-4a528234a",
-      color: "hover:bg-blue-600",
     },
     {
       icon: Instagram,
       label: "Instagram",
       href: "https://instagram.com/abidmauna",
-      color: "hover:bg-pink-600",
     },
   ]
 
   return (
     <section id="contact" className="relative py-20 sm:py-32 overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-[150px]" />
-      </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
-        {/* Section Header */}
+
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -91,182 +89,141 @@ export function ContactSection() {
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Mari Terhubung
+              {t.contact.title}
             </span>
           </h2>
+
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
+
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Memiliki proyek yang ingin direalisasikan atau ingin berdiskusi? Saya dengan senang hati ingin mendengar dari Anda.
-            Isi formulir di bawah atau hubungi saya melalui media sosial.          </p>
+            {t.contact.description}
+          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Form */}
+
+          {/* FORM */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
             className="glass rounded-2xl p-6 sm:p-8"
           >
-            <h3 className="text-xl font-semibold text-foreground mb-6">Kirim Pesan</h3>
+            <h3 className="text-xl font-semibold mb-6">
+              {t.contact.sendMessage}
+            </h3>
+
             <form onSubmit={handleSubmit} className="space-y-5">
+
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
-                  Nama
+                <label className="text-sm text-muted-foreground">
+                  {t.contact.name}
                 </label>
+
                 <input
-                  type="text"
-                  id="name"
                   name="from_name"
                   required
-                  className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-300"
-                  placeholder="Nama lengkap Anda"
+                  className="w-full mt-2 px-4 py-3 bg-secondary/50 border border-border rounded-lg"
+                  placeholder={t.contact.namePlaceholder}
                 />
               </div>
+
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
-                  Email
+                <label className="text-sm text-muted-foreground">
+                  {t.contact.email}
                 </label>
+
                 <input
-                  type="email"
-                  id="email"
                   name="from_email"
                   required
-                  className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-300"
-                  placeholder="email@example.com"
+                  className="w-full mt-2 px-4 py-3 bg-secondary/50 border border-border rounded-lg"
+                  placeholder={t.contact.emailPlaceholder}
                 />
               </div>
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
-                  Pesan
+                <label className="text-sm text-muted-foreground">
+                  {t.contact.message}
                 </label>
+
                 <textarea
-                  id="message"
                   name="message"
                   rows={4}
                   required
-                  className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-300 resize-none"
-                  placeholder="Tulis pesan Anda di sini atau Beri tahu saya tentang projek..."
+                  className="w-full mt-2 px-4 py-3 bg-secondary/50 border border-border rounded-lg"
+                  placeholder={t.contact.messagePlaceholder}
                 />
               </div>
-              <motion.button
+
+              <button
                 type="submit"
                 disabled={isSubmitting || isSubmitted}
-                className="w-full py-3 px-6 bg-primary text-primary-foreground font-semibold rounded-lg flex items-center justify-center gap-2 transition-all duration-300 hover:opacity-90 disabled:opacity-70"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+                className="w-full py-3 bg-primary text-primary-foreground rounded-lg flex justify-center gap-2"
               >
-                {isSubmitting ? (
-                  <>
-                    <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
-                    Mengirim...
-                  </>
-                ) : isSubmitted ? (
-                  <>
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    Terkirim!
-                  </>
-                ) : (
-                  <>
-                    <Send className="w-5 h-5" />
-                    Kirim Pesan
-                  </>
-                )}
-              </motion.button>
+                {isSubmitting
+                  ? t.contact.sending
+                  : isSubmitted
+                  ? t.contact.sent
+                  : t.contact.sendButton}
+              </button>
+
             </form>
           </motion.div>
 
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col justify-center"
-          >
-            <div className="space-y-6">
-              {/* Contact details */}
-              {contactInfo.map((info, index) => (
-                <motion.a
-                  key={info.label}
-                  href={info.href}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
-                  className="flex items-center gap-4 p-4 glass rounded-xl hover:border-primary/50 transition-all duration-300 group"
-                >
-                  <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors duration-300">
-                    <info.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">{info.label}</p>
-                    <p className="text-foreground font-medium group-hover:text-primary transition-colors duration-300">
-                      {info.value}
-                    </p>
-                  </div>
-                </motion.a>
-              ))}
+          {/* INFO */}
+          <div className="flex flex-col justify-center space-y-6">
 
-              {/* Social links */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: 0.7 }}
-                className="pt-6"
+            {contactInfo.map((info) => (
+              <a
+                key={info.label}
+                href={info.href}
+                className="flex items-center gap-4 p-4 glass rounded-xl"
               >
-                <p className="text-sm text-muted-foreground mb-4">Temukan saya di:</p>
-                <div className="flex gap-3">
-                  {socials.map((social, index) => (
-                    <motion.a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-4 glass rounded-xl text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300"
-                      whileHover={{ scale: 1.1, y: -3 }}
-                      whileTap={{ scale: 0.95 }}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={isInView ? { opacity: 1, y: 0 } : {}}
-                      transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}
-                      aria-label={social.label}
-                    >
-                      <social.icon className="w-5 h-5" />
-                    </motion.a>
-                  ))}
+                <info.icon className="w-5 h-5 text-primary" />
+
+                <div>
+                  <p className="text-sm text-muted-foreground">
+                    {info.label}
+                  </p>
+                  <p className="font-medium">{info.value}</p>
                 </div>
-              </motion.div>
-              {/* Availability Status */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: 1 }}
-                className="mt-8"
-              >
-                <div className="glass rounded-2xl p-5 border border-primary/20">
-                  <div className="flex items-center gap-4">
+              </a>
+            ))}
 
-                    <div className="relative">
-                      <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+            <div>
+              <p className="text-sm text-muted-foreground mb-3">
+                {t.contact.findMeOn}
+              </p>
 
-                      <div className="absolute inset-0 w-4 h-4 bg-green-500 rounded-full animate-ping opacity-75"></div>
-                    </div>
-
-                    <div>
-                      <h4 className="text-lg font-semibold text-foreground">
-                        Saat Ini Tersedia
-                      </h4>
-
-                      <p className="text-muted-foreground text-sm">
-                        Terbuka untuk freelance & kolaborasi
-                      </p>
-                    </div>
-
-                  </div>
-                </div>
-              </motion.div>
+              <div className="flex gap-3">
+                {socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    className="p-3 glass rounded-xl"
+                  >
+                    <s.icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
             </div>
-          </motion.div>
+
+            {/* STATUS */}
+            <div className="glass p-5 rounded-xl border border-green-500/20">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+                <div>
+                  <p className="font-semibold">
+                    {t.contact.available}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {t.contact.availableDesc}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

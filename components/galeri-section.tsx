@@ -27,13 +27,10 @@ export function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (
-    <section
-      id="galeri"
-      className="relative py-20 sm:py-32 overflow-hidden"
-    >
+    <section id="galeri" className="relative py-20 sm:py-32 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
-        {/* Title */}
+        {/* TITLE */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,15 +51,14 @@ export function GallerySection() {
           </p>
         </motion.div>
 
-        {/* Gallery Grid */}
+        {/* GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
           {galleryImages.map((image, index) => (
             <motion.div
-              key={index}
+              key={image}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
               className="group relative overflow-hidden rounded-2xl glass cursor-pointer"
@@ -80,49 +76,38 @@ export function GallerySection() {
               </div>
             </motion.div>
           ))}
-
         </div>
-
-        {/* Modal */}
-        {selectedImage && (
-          <div
-            className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)}
-          >
-            <div
-              className="relative max-w-4xl w-full"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Tombol Close */}
-              <button
-                onClick={() => setSelectedImage(null)}
-                className="
-          absolute -top-3 -right-3 z-50
-          bg-white text-black
-          rounded-full p-2 shadow-xl
-          hover:scale-110 transition
-        "
-              >
-                <X className="w-5 h-5" />
-              </button>
-
-              {/* Gambar */}
-              <Image
-                src={selectedImage}
-                alt="Preview"
-                width={1600}
-                height={1200}
-                className="
-          w-full
-          max-h-[85vh]
-          object-contain
-          rounded-2xl
-        "
-              />
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* MODAL */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative max-w-4xl w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* CLOSE */}
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-3 -right-3 z-50 bg-white text-black rounded-full p-2 shadow-xl hover:scale-110 transition"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* IMAGE */}
+            <Image
+              src={selectedImage}
+              alt="Preview"
+              width={1600}
+              height={1200}
+              className="w-full max-h-[85vh] object-contain rounded-2xl"
+            />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
