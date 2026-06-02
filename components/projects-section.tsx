@@ -4,91 +4,22 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import Image from "next/image"
-
-const projects = [
-  {
-    title: "Power Supply",
-    description:
-      "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
-    image: "/gallery/psu.png",
-    tags: ["Electronics", "Power Supply", "PCB", "Arduino"],
-    github: "",
-  },
-  {
-    title: "LDR-Based Automatic Lighting System",
-    description:
-      "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
-    image: "/gallery/ldr.png",
-    tags: ["LDR", "Arduino", "Sensor", "Automation"],
-    github: "https://github.com/abidkoko/LDR-Based-Automatic-Lighting-System",
-  },
-  {
-    title: "7-Segment Digital Clock System",
-    description:
-      "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
-    image: "/gallery/seven3d.png",
-    tags: ["Seven Segment", "RTC", "STM32", "Electronics", "C++"],
-    github: "https://github.com/abidkoko/7-Segment-Digital-Clock-System",
-  },
-  {
-    title: "IoT-Based Smart Plant Watering System",
-    description:
-      "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
-    image: "/gallery/water.jpeg",
-    tags: ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"],
-    github: "",
-  },
-  {
-    title: "RFID-Based IoT Attendance System",
-    description:
-      "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
-    image: "/gallery/rfid3d.png",
-    tags: ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"],
-    github: "https://github.com/abidkoko/RFID-Based-IoT-Attendance-System",
-  },
-  {
-    title: "Automated School Gate Control System",
-    description:
-      "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
-    image: "/gallery/gate3dd.jpg",
-    tags: ["Automation", "Arduino", "IoT", "RFID", "C++"],
-    github: "https://github.com/abidkoko/Automated-School-Gate-Control-System",
-  },
-  {
-    title: "Bluetooth-Controlled RC Car",
-    description:
-      "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
-    image: "/gallery/car3d.jpg",
-    tags: ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"],
-    github: "https://github.com/abidkoko/RC-CAR-BLUETOOTH",
-  },
-  {
-    title: "Analog Line Follower Robot",
-    description:
-      "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator.",
-    image: "/gallery/LF3d.jpg",
-    tags: ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"],
-    github: "https://github.com/abidkoko/Line-Follower-Analog",
-  },
-  {
-    title: "Lockout Buzzer System",
-    description:
-      "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis, serta memberikan indikator visual dan suara.",
-    image: "/gallery/LBS.jpeg",
-    tags: ["Digital Electronics", "Embedded Systems", "Digital Control", "Real-Time System"],
-    github: "https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM",
-  },
-]
+import { useLanguage } from "@/context/language-context"
 
 export function ProjectsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
+  const { t } = useLanguage()
+
+  const projects = t.projects?.items ?? []
+
   return (
     <section id="projects" className="relative py-20 sm:py-32 overflow-hidden">
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
 
-        {/* Header */}
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -96,22 +27,20 @@ export function ProjectsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Project
-            </span>
+            {t.projects.title}
           </h2>
 
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full" />
 
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Proyek elektronika dan IoT yang menunjukkan kemampuan
-            saya dalam pengembangan embedded system, automation, dan teknologi modern.
+            {t.projects.description}
           </p>
         </motion.div>
 
-        {/* Grid */}
+        {/* GRID */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {projects.map((project, index) => (
+
+          {projects.map((project: any, index: number) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 40 }}
@@ -121,7 +50,7 @@ export function ProjectsSection() {
               className="group glass rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-400/40 transition-all duration-500"
             >
 
-              {/* Image */}
+              {/* IMAGE */}
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src={project.image}
@@ -133,8 +62,9 @@ export function ProjectsSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               </div>
 
-              {/* Info */}
+              {/* CONTENT */}
               <div className="p-5 sm:p-6">
+
                 <h3 className="text-lg font-semibold text-white group-hover:text-cyan-400 transition-colors duration-300 mb-2">
                   {project.title}
                 </h3>
@@ -143,9 +73,9 @@ export function ProjectsSection() {
                   {project.description}
                 </p>
 
-                {/* Tags */}
+                {/* TAGS */}
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
+                  {project.tags?.map((tag: string) => (
                     <span
                       key={tag}
                       className="px-2 py-1 text-xs font-medium bg-cyan-500/10 text-cyan-300 rounded-md border border-cyan-500/10"
@@ -155,7 +85,7 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                {/* GitHub Button */}
+                {/* GITHUB */}
                 {project.github && (
                   <a
                     href={project.github}
@@ -163,13 +93,16 @@ export function ProjectsSection() {
                     rel="noopener noreferrer"
                     className="block mt-5 text-center px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium hover:bg-cyan-500/20 transition-all duration-300"
                   >
-                    View on GitHub
+                    {t.projects.viewOnGithub}
                   </a>
                 )}
+
               </div>
             </motion.div>
           ))}
+
         </div>
+
       </div>
     </section>
   )
