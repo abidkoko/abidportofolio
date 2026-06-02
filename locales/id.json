@@ -66,7 +66,16 @@
     "title": "Keahlian",
     "description": "Toolkit lengkap untuk membangun proyek elektronika inovatif, solusi IoT, dan aplikasi web modern.",
     "otherTools": "Tools & Technologies lainnya:",
-    "tools": ["AutoDesk Fusion", "VS Code", "VS Studio", "Node-RED", "Firebase", "Blynk", "ThingSpeak", "MQTT"],
+    "tools": [
+      "AutoDesk Fusion",
+      "VS Code",
+      "VS Studio",
+      "Node-RED",
+      "Firebase",
+      "Blynk",
+      "ThingSpeak",
+      "MQTT"
+    ],
     "items": [
       {
         "name": "Arduino",
