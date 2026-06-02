@@ -45,6 +45,12 @@ export function HeroSection() {
 
       <div className="absolute inset-0 animated-gradient" />
 
+      {/* LIGHT BOOST LAYER */}
+      <div className="absolute inset-0 bg-white/10 dark:bg-black/30" />
+
+      {/* GLOW VIGNETTE biar lebih cinematic */}
+      <div className="absolute inset-0 bg-radial-gradient from-white/30 via-transparent to-transparent opacity-70" />
+      
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-24">
 
