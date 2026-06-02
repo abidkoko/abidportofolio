@@ -43,33 +43,7 @@ export function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
-      <div className="absolute inset-0 bg-white/5" />
-
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-
-        <motion.div
-          className="absolute w-[500px] h-[500px] rounded-full bg-cyan-400/20 blur-[120px]"
-          style={{ top: "10%", left: "10%" }}
-          animate={{ x: [0, 60, 0], y: [0, 40, 0] }}
-          transition={{ duration: 10, repeat: Infinity }}
-        />
-
-        <motion.div
-          className="absolute w-[400px] h-[400px] rounded-full bg-purple-500/20 blur-[120px]"
-          style={{ bottom: "10%", right: "10%" }}
-          animate={{ x: [0, -50, 0], y: [0, -30, 0] }}
-          transition={{ duration: 12, repeat: Infinity }}
-        />
-
-        <motion.div
-          className="absolute w-[300px] h-[300px] rounded-full bg-blue-400/20 blur-[100px]"
-          style={{ top: "40%", right: "30%" }}
-          animate={{ scale: [1, 1.2, 1] }}
-          transition={{ duration: 8, repeat: Infinity }}
-        />
-
-      </div>
+      <div className="absolute inset-0 animated-gradient" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-24">
