@@ -36,24 +36,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className={`${inter.variable} ${geistMono.variable} bg-background`}>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased relative z-10">
 
-        {/* 🔥 INI FIX UTAMA */}
         <LanguageProvider>
           {children}
         </LanguageProvider>
 
         {process.env.NODE_ENV === 'production' && <Analytics />}
 
-        <div className="fixed inset-0 pointer-events-none">
-                    {/* base dark */}
+        <div className="fixed inset-0 -z-10 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
 
-          {/* neon glow layer */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.15),transparent_60%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(168,85,247,0.12),transparent_60%)]" />
 
-          {/* soft noise / light overlay */}
           <div className="absolute inset-0 bg-white/5" />
         </div>
 
