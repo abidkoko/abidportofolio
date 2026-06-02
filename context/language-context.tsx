@@ -59,6 +59,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang)
+    localStorage.setItem("language", lang)
   }
 
   const languageInfo = languages.find(l => l.code === language) || languages[0]
