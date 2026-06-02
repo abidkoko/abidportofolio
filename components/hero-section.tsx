@@ -155,10 +155,10 @@ export function HeroSection() {
 
             {/* SOCIAL */}
             <div className="flex gap-4 mt-6 justify-center lg:justify-start">
-              <a href="https://linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com/in/muhamad-abid-maulana-4a528234a/" target="_blank">
                 <Linkedin />
               </a>
-              <a href="https://instagram.com" target="_blank">
+              <a href="https://www.instagram.com/abidmauna" target="_blank">
                 <Instagram />
               </a>
             </div>
