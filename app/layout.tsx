@@ -45,6 +45,18 @@ export default function RootLayout({
 
         {process.env.NODE_ENV === 'production' && <Analytics />}
 
+        <div className="fixed inset-0 -z-10">
+          {/* base dark */}
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
+
+          {/* neon glow layer */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.15),transparent_60%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(168,85,247,0.12),transparent_60%)]" />
+
+          {/* soft noise / light overlay */}
+          <div className="absolute inset-0 bg-white/5" />
+        </div>
+
       </body>
     </html>
   )
