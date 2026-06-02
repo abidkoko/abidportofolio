@@ -132,7 +132,7 @@
       {
         "title": "Power Supply",
         "description": "A variable electronic power supply designed for laboratory practice and electronic circuit testing needs.",
-        "image": "",
+        "image": "/gallery/psu.png",
         "tags": [
           "Electronics",
           "Power Supply",
@@ -143,7 +143,7 @@
       {
         "title": "LDR-Based Automatic Lighting System",
         "description": "An automatic lighting system based on LDR sensor that can adjust lighting according to environmental conditions.",
-        "image": "",
+        "image": "/gallery/ldr.png",
         "tags": [
           "LDR",
           "Arduino",
@@ -155,7 +155,7 @@
       {
         "title": "7-Segment Digital Clock System",
         "description": "A digital clock based on seven segment display with modern design and stable time accuracy.",
-        "image": "",
+        "image": "/gallery/seven3d.png",
         "tags": [
           "Seven Segment",
           "RTC",
@@ -168,7 +168,7 @@
       {
         "title": "IoT-Based Smart Plant Watering System",
         "description": "An IoT-based automatic plant watering system with real-time soil moisture monitoring.",
-        "image": "",
+        "image": "/gallery/water.jpeg",
         "tags": [
           "ESP32",
           "IoT",
@@ -180,7 +180,7 @@
       {
         "title": "RFID-Based IoT Attendance System",
         "description": "A smart attendance system based on RFID and IoT with automatic data storage and online monitoring.",
-        "image": "",
+        "image": "/gallery/rfid3d.png",
         "tags": [
           "RFID",
           "ESP32",
@@ -194,7 +194,7 @@
       {
         "title": "Automated School Gate Control System",
         "description": "Implementation of an automatic school gate based on microcontroller to improve security and access efficiency.",
-        "image": "",
+        "image": "/gallery/gate3dd.jpg",
         "tags": [
           "Automation",
           "Arduino",
@@ -207,7 +207,7 @@
       {
         "title": "Bluetooth-Controlled RC Car",
         "description": "A Bluetooth-based remote control car that can be controlled via smartphone app wirelessly.",
-        "image": "",
+        "image": "/gallery/car3d.jpg",
         "tags": [
           "Bluetooth",
           "HC-06",
@@ -220,7 +220,7 @@
       {
         "title": "Analog Line Follower Robot",
         "description": "An analog-based line follower robot designed to follow paths automatically using infrared sensors and comparator circuits.",
-        "image": "",
+        "image": "/gallery/LF3d.jpg",
         "tags": [
           "Line Follower",
           "IR Sensor",
@@ -232,7 +232,7 @@
       {
         "title": "Lockout Buzzer System",
         "description": "A smart buzzer system for quiz competitions that can detect the fastest participant and automatically lock other inputs.",
-        "image": "",
+        "image": "/gallery/LBS.jpeg",
         "tags": [
           "Digital Electronics",
           "Embedded Systems",

@@ -132,7 +132,7 @@
       {
         "title": "Power Supply",
         "description": "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
-        "image": "",
+        "image": "/gallery/psu.png",
         "tags": [
           "Electronics",
           "Power Supply",
@@ -143,7 +143,7 @@
       {
         "title": "LDR-Based Automatic Lighting System",
         "description": "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
-        "image": "",
+        "image": "/gallery/ldr.png",
         "tags": [
           "LDR",
           "Arduino",
@@ -155,7 +155,7 @@
       {
         "title": "7-Segment Digital Clock System",
         "description": "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
-        "image": "",
+        "image": "/gallery/seven3d.png",
         "tags": [
           "Seven Segment",
           "RTC",
@@ -168,7 +168,7 @@
       {
         "title": "IoT-Based Smart Plant Watering System",
         "description": "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
-        "image": "",
+        "image": "/gallery/water.jpeg",
         "tags": [
           "ESP32",
           "IoT",
@@ -180,7 +180,7 @@
       {
         "title": "RFID-Based IoT Attendance System",
         "description": "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
-        "image": "",
+        "image": "/gallery/rfid3d.png",
         "tags": [
           "RFID",
           "ESP32",
@@ -194,7 +194,7 @@
       {
         "title": "Automated School Gate Control System",
         "description": "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
-        "image": "",
+        "image": "/gallery/gate3dd.jpg",
         "tags": [
           "Automation",
           "Arduino",
@@ -207,7 +207,7 @@
       {
         "title": "Bluetooth-Controlled RC Car",
         "description": "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
-        "image": "",
+        "image": "/gallery/car3d.jpg",
         "tags": [
           "Bluetooth",
           "HC-06",
@@ -220,7 +220,7 @@
       {
         "title": "Analog Line Follower Robot",
         "description": "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator.",
-        "image": "",
+        "image": "/gallery/LF3d.jpg",
         "tags": [
           "Line Follower",
           "IR Sensor",
@@ -232,7 +232,7 @@
       {
         "title": "Lockout Buzzer System",
         "description": "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis.",
-        "image": "",
+        "image": "/gallery/LBS.jpeg",
         "tags": [
           "Digital Electronics",
           "Embedded Systems",
