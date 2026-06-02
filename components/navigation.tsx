@@ -3,18 +3,21 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-
-const navItems = [
-  { label: "Home", href: "#hero" },
-  { label: "Tentang Saya", href: "#about" },
-  { label: "Keahlian", href: "#skills" },
-  { label: "Project", href: "#projects" },
-  { label: "Sertifikat", href: "#certificates" },
-  { label: "Dokumentasi", href: "#galeri" },
-  { label: "Kontak", href: "#contact" },
-]
+import { useLanguage } from "@/context/language-context"
 
 export function Navigation() {
+  const { t, language, setLanguage, languageInfo } = useLanguage()
+
+  const navItems = [
+    { label: t.nav.home, href: "#hero" },
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.skills, href: "#skills" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.certificates, href: "#certificates" },
+    { label: t.nav.gallery, href: "#galeri" },
+    { label: t.nav.contact, href: "#contact" },
+  ]
+
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -24,7 +27,6 @@ export function Navigation() {
     }
 
     window.addEventListener("scroll", handleScroll)
-
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -67,24 +69,39 @@ export function Navigation() {
                     className="px-4 py-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
                   >
                     {item.label}
-
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-1/2" />
                   </a>
                 </motion.li>
               ))}
             </ul>
 
-            {/* CTA Button */}
-            <motion.a
-              href="#contact"
-              className="hidden md:flex px-5 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg transition-all duration-300 hover:opacity-90"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Hire Me
-            </motion.a>
+            {/* RIGHT SIDE (LANG + CTA) */}
+            <div className="hidden md:flex items-center gap-3">
 
-            {/* Mobile Menu Button */}
+              {/* LANGUAGE SWITCH */}
+              <button
+                onClick={() =>
+                  setLanguage(language === "id" ? "en" : "id")
+                }
+                className="px-3 py-2 rounded-lg border text-sm flex items-center gap-2 hover:bg-primary/10 transition"
+              >
+                <span>{languageInfo.flag}</span>
+                <span>{languageInfo.code.toUpperCase()}</span>
+              </button>
+
+              {/* CTA BUTTON */}
+              <motion.a
+                href="#contact"
+                className="px-5 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg transition-all duration-300 hover:opacity-90"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {t.nav.hireMe}
+              </motion.a>
+
+            </div>
+
+            {/* MOBILE MENU BUTTON */}
             <button
               className="md:hidden p-2 text-foreground"
               onClick={() =>
@@ -102,7 +119,7 @@ export function Navigation() {
         </div>
       </motion.header>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -114,6 +131,7 @@ export function Navigation() {
           >
             <nav className="container mx-auto px-4 py-6">
               <ul className="flex flex-col gap-2">
+
                 {navItems.map((item, index) => (
                   <motion.li
                     key={item.label}
@@ -136,6 +154,7 @@ export function Navigation() {
                   </motion.li>
                 ))}
 
+                {/* LANGUAGE MOBILE */}
                 <motion.li
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -144,6 +163,19 @@ export function Navigation() {
                     duration: 0.3,
                   }}
                 >
+                  <button
+                    onClick={() =>
+                      setLanguage(language === "id" ? "en" : "id")
+                    }
+                    className="w-full px-4 py-3 mt-2 border rounded-lg flex items-center justify-center gap-2"
+                  >
+                    <span>{languageInfo.flag}</span>
+                    <span>{languageInfo.code.toUpperCase()}</span>
+                  </button>
+                </motion.li>
+
+                {/* CTA MOBILE */}
+                <motion.li>
                   <a
                     href="#contact"
                     className="block px-4 py-3 mt-2 bg-primary text-primary-foreground text-center font-medium rounded-lg"
@@ -151,9 +183,10 @@ export function Navigation() {
                       setIsMobileMenuOpen(false)
                     }
                   >
-                    Hire Me
+                    {t.nav.hireMe}
                   </a>
                 </motion.li>
+
               </ul>
             </nav>
           </motion.div>

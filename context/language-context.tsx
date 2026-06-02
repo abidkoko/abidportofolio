@@ -18,7 +18,7 @@ export interface LanguageInfo {
 
 export const languages: LanguageInfo[] = [
   { code: "id", name: "Indonesia", nativeName: "Indonesia", flag: "🇮🇩", dir: "ltr" },
-  { code: "en", name: "English", nativeName: "English", flag: "🇺k", dir: "ltr" },
+  { code: "en", name: "English", nativeName: "English", flag: "🇬🇧", dir: "ltr" },
 ]
 
 const translations: Record<Language, typeof id> = {
