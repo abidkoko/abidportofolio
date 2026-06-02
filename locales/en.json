@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "welcome": "Welcome to my portfolio",
+    "roles": [
+      "Electronics Engineering",
+      "Electrical Technician",
+      "Internet of Things (IoT) Developer",
+      "Electronics Enthusiast",
+      "PLC and Microcontroller Programming",
+      "Electrical Installation",
+      "Wiring Assembly",
+      "Responsibility",
+      "Problem Solving",
+      "Communication"
+    ],
+    "description": "I am an Industrial Electronics Technician who creates innovative IoT solutions and embedded systems. Turning ideas into reality through code and electronics circuits.",
+    "downloadCV": "Download CV",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Industrial Electronics Engineering",
+    "description1": "I am a top graduate of Industrial Electronics Engineering with a great interest in developing Internet of Things (IoT) systems, embedded systems, and microcontroller-based automation.",
+    "description2": "My main expertise includes firmware development for microcontrollers such as Arduino and ESP32, electronic circuit design, and sensor and actuator integration for various IoT projects and automation systems.",
+    "description3": "I believe that embedded systems and IoT technology have great potential in helping daily life and modern industry, and I continue to develop my skills in technology and electronic innovation.",
+    "location": "Location",
+    "locationValue": "Bandung, Indonesia",
+    "language": "Languages",
+    "languageValue": "Indonesian, English",
+    "specialization": "Specialization",
+    "specializationValue": "Internet of Things (IoT), Embedded System, Arduino & ESP32",
+    "timeline": {
+      "title": "Education & Experience",
+      "items": [
+        {
+          "year": "2026",
+          "title": "Field Work",
+          "company": "PT PLN (Persero) GITET South Bandung",
+          "location": "Bandung, Indonesia",
+          "description": "My main duties include maintaining 500 kV transmission equipment and conducting inspections of grounding and electrical systems.",
+          "type": "work"
+        },
+        {
+          "year": "2026",
+          "title": "Industrial Electronics Engineering",
+          "company": "SMKN 1 Katapang",
+          "location": "Bandung, Indonesia",
+          "description": "Top graduate of Industrial Electronics Engineering with a focus on embedded systems and IoT.",
+          "type": "education"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "Complete toolkit for building innovative electronics projects, IoT solutions, and modern web applications.",
+    "otherTools": "Other Tools & Technologies:",
+    "items": [
+      { "name": "Arduino", "level": 95, "category": "Microcontroller" },
+      { "name": "ESP32", "level": 93, "category": "Microcontroller" },
+      { "name": "STM32", "level": 87, "category": "Microcontroller" },
+      { "name": "Embedded C/C++", "level": 90, "category": "Programming" },
+      { "name": "PLC Schneider", "level": 85, "category": "Programming" },
+      { "name": "PLC Omron", "level": 90, "category": "Programming" },
+      { "name": "Internet of Things (IoT) Systems", "level": 88, "category": "Systems" },
+      { "name": "PCB Design", "level": 95, "category": "Hardware" },
+      { "name": "Sensor Integration", "level": 92, "category": "Hardware" },
+      { "name": "AutoDesk Eagle", "level": 95, "category": "Software" },
+      { "name": "Microsoft Office", "level": 95, "category": "Word, Excel, Power Point" }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Electronics and IoT projects that showcase my capabilities in embedded system development, automation, and modern technology.",
+    "viewOnGithub": "View on GitHub",
+    "items": [
+      {
+        "title": "Power Supply",
+        "description": "A variable electronic power supply designed for laboratory practice and electronic circuit testing needs.",
+        "tags": ["Electronics", "Power Supply", "PCB", "Arduino"]
+      },
+      {
+        "title": "LDR-Based Automatic Lighting System",
+        "description": "An automatic lighting system based on LDR sensor that can adjust lighting according to environmental conditions.",
+        "tags": ["LDR", "Arduino", "Sensor", "Automation"]
+      },
+      {
+        "title": "7-Segment Digital Clock System",
+        "description": "A digital clock based on seven segment display with modern design and stable time accuracy.",
+        "tags": ["Seven Segment", "RTC", "STM32", "Electronics", "C++"]
+      },
+      {
+        "title": "IoT-Based Smart Plant Watering System",
+        "description": "An IoT-based automatic plant watering system with real-time soil moisture monitoring.",
+        "tags": ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"]
+      },
+      {
+        "title": "RFID-Based IoT Attendance System",
+        "description": "A smart attendance system based on RFID and IoT with automatic data storage and online monitoring.",
+        "tags": ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"]
+      },
+      {
+        "title": "Automated School Gate Control System",
+        "description": "Implementation of an automatic school gate based on microcontroller to improve security and access efficiency.",
+        "tags": ["Automation", "Arduino", "IoT", "RFID", "C++"]
+      },
+      {
+        "title": "Bluetooth-Controlled RC Car",
+        "description": "A Bluetooth-based remote control car that can be controlled via smartphone app wirelessly.",
+        "tags": ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"]
+      },
+      {
+        "title": "Analog Line Follower Robot",
+        "description": "An analog-based line follower robot designed to follow paths automatically using infrared sensors and comparator circuits.",
+        "tags": ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"]
+      },
+      {
+        "title": "Lockout Buzzer System",
+        "description": "A smart buzzer system for quiz competitions that can detect the fastest participant and automatically lock other inputs.",
+        "tags": ["Digital Electronics", "Embedded Systems", "Digital Control", "Real-Time System"]
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Certificates",
+    "description": "Documentation of certificates, training, and achievements that reflect my dedication to developing skills in technology, engineering, and English communication continuously.",
+    "clickToView": "Click to view certificate",
+    "credentialId": "Credential ID",
+    "items": [
+      {
+        "title": "TOEIC (Test of English for International Communication)",
+        "issuer": "ETS (Educational Testing Service)",
+        "date": "2025",
+        "description": "Successfully achieved a TOEIC score that demonstrates English communication ability in professional and international contexts.",
+        "credential": "TOEIC-590"
+      },
+      {
+        "title": "Student Competency Competition (LKS) Electronics Field",
+        "issuer": "Ministry of Basic and Secondary Education",
+        "date": "2025",
+        "description": "1st place in the LKS Electronics competition with skills in electronic circuit design, troubleshooting, and microcontrollers.",
+        "credential": "LKS-2025-ELEC"
+      },
+      {
+        "title": "Indonesian Youth Science Olympiad (OSPI) English Field",
+        "issuer": "National Science Championship Center (PUSKANAS)",
+        "date": "2023",
+        "description": "Successfully won a Silver Medal at the 2023 OSPI national level English competition.",
+        "credential": "OSPI-2023-SILVER"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "A glimpse of my workspace, projects, and journey in turning ideas into reality."
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "description": "Have a project you want to realize or want to discuss? I would love to hear from you. Fill out the form below or contact me through social media.",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "email@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Write your message here or tell me about your project...",
+    "sending": "Sending...",
+    "sent": "Sent!",
+    "sendButton": "Send Message",
+    "sendFailed": "Failed to send message",
+    "location": "Location",
+    "findMeOn": "Find me on:",
+    "available": "Currently Available",
+    "availableDesc": "Open for freelance & collaboration"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "as": "as Electronics Engineer"
+  }
+}

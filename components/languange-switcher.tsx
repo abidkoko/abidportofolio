@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useRef, useEffect } from "react"
 import { ChevronDown, Check, Globe } from "lucide-react"
-import { useLanguage, languages, type Language } from "@/contexts/language-context"
+import { useLanguage, languages, type Language } from "@/context/language-context"
 
 export function LanguageSwitcher() {
   const { language, setLanguage, languageInfo } = useLanguage()

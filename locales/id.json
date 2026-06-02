@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Tentang Saya",
+    "skills": "Keahlian",
+    "projects": "Project",
+    "certificates": "Sertifikat",
+    "gallery": "Dokumentasi",
+    "contact": "Kontak",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "welcome": "Selamat datang di portfolio saya",
+    "roles": [
+      "Electronics Engineering",
+      "Electrical Technician",
+      "Internet of Things (IoT) Developer",
+      "Electronics Enthusiast",
+      "PLC and Microcontroller Programming",
+      "Electrical Installation",
+      "Wiring Assembly",
+      "Responsibility",
+      "Problem Solving",
+      "Communication"
+    ],
+    "description": "Saya adalah Technician Elektronika Industri yang menciptakan solusi IoT inovatif, sistem embedded. Mengubah ide menjadi kenyataan melalui kode dan rangkaian elektronika.",
+    "downloadCV": "Download CV",
+    "viewProjects": "Lihat Project",
+    "contactMe": "Hubungi Saya"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "subtitle": "Teknik Elektronika Industri",
+    "description1": "Saya adalah lulusan Terbaik Teknik Elektronika Industri yang memiliki minat besar dalam pengembangan sistem Internet of Things (IoT), embedded system, dan otomasi berbasis mikrokontroler.",
+    "description2": "Keahlian utama saya meliputi pengembangan firmware untuk mikrokontroler seperti Arduino dan ESP32, desain rangkaian elektronika, serta integrasi sensor dan aktuator untuk berbagai proyek IoT dan sistem otomatisasi.",
+    "description3": "Saya percaya bahwa teknologi embedded system dan IoT memiliki potensi besar dalam membantu kehidupan sehari-hari dan industri modern, serta terus berusaha mengembangkan kemampuan di bidang teknologi dan inovasi elektronika.",
+    "location": "Lokasi",
+    "locationValue": "Bandung, Indonesia",
+    "language": "Bahasa",
+    "languageValue": "Indonesia, English",
+    "specialization": "Spesialisasi",
+    "specializationValue": "Internet of Things (IoT), Embedded System, Arduino & ESP32",
+    "timeline": {
+      "title": "Edukasi & Pengalaman",
+      "items": [
+        {
+          "year": "2026",
+          "title": "Kerja Lapangan",
+          "company": "PT PLN (Persero) GITET Bandung Selatan",
+          "location": "Bandung, Indonesia",
+          "description": "Tugas pokok saya memelihara peralatan transmisi 500 kV dan Melakukan inspeksi sistem grounding dan kelistrikan.",
+          "type": "work"
+        },
+        {
+          "year": "2026",
+          "title": "Teknik Elektronika Industri",
+          "company": "SMKN 1 Katapang",
+          "location": "Bandung, Indonesia",
+          "description": "Lulusan Terbaik Teknik Elektronika Industri dengan fokus pada embedded system dan IoT.",
+          "type": "education"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "title": "Keahlian",
+    "description": "Toolkit lengkap untuk membangun proyek elektronika inovatif, solusi IoT, dan aplikasi web modern.",
+    "otherTools": "Tools & Technologies lainnya:",
+    "items": [
+      { "name": "Arduino", "level": 95, "category": "Microcontroller" },
+      { "name": "ESP32", "level": 93, "category": "Microcontroller" },
+      { "name": "STM32", "level": 87, "category": "Microcontroller" },
+      { "name": "Embedded C/C++", "level": 90, "category": "Programming" },
+      { "name": "PLC Schneider", "level": 85, "category": "Programming" },
+      { "name": "PLC Omron", "level": 90, "category": "Programming" },
+      { "name": "Internet of Things (IoT) Systems", "level": 88, "category": "Systems" },
+      { "name": "PCB Design", "level": 95, "category": "Hardware" },
+      { "name": "Sensor Integration", "level": 92, "category": "Hardware" },
+      { "name": "AutoDesk Eagle", "level": 95, "category": "Software" },
+      { "name": "Microsoft Office", "level": 95, "category": "Word, Excel, Power Point" }
+    ]
+  },
+  "projects": {
+    "title": "Project",
+    "description": "Proyek elektronika dan IoT yang menunjukkan kemampuan saya dalam pengembangan embedded system, automation, dan teknologi modern.",
+    "viewOnGithub": "View on GitHub",
+    "items": [
+      {
+        "title": "Power Supply",
+        "description": "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
+        "tags": ["Electronics", "Power Supply", "PCB", "Arduino"]
+      },
+      {
+        "title": "LDR-Based Automatic Lighting System",
+        "description": "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
+        "tags": ["LDR", "Arduino", "Sensor", "Automation"]
+      },
+      {
+        "title": "7-Segment Digital Clock System",
+        "description": "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
+        "tags": ["Seven Segment", "RTC", "STM32", "Electronics", "C++"]
+      },
+      {
+        "title": "IoT-Based Smart Plant Watering System",
+        "description": "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
+        "tags": ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"]
+      },
+      {
+        "title": "RFID-Based IoT Attendance System",
+        "description": "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
+        "tags": ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"]
+      },
+      {
+        "title": "Automated School Gate Control System",
+        "description": "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
+        "tags": ["Automation", "Arduino", "IoT", "RFID", "C++"]
+      },
+      {
+        "title": "Bluetooth-Controlled RC Car",
+        "description": "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
+        "tags": ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"]
+      },
+      {
+        "title": "Analog Line Follower Robot",
+        "description": "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator.",
+        "tags": ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"]
+      },
+      {
+        "title": "Lockout Buzzer System",
+        "description": "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis.",
+        "tags": ["Digital Electronics", "Embedded Systems", "Digital Control", "Real-Time System"]
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Sertifikat",
+    "description": "Dokumentasi sertifikat, pelatihan, dan prestasi yang mencerminkan dedikasi saya dalam mengembangkan keterampilan di bidang teknologi, engineering, dan komunikasi bahasa Inggris secara berkelanjutan.",
+    "clickToView": "Klik untuk melihat sertifikat",
+    "credentialId": "Credential ID",
+    "items": [
+      {
+        "title": "TOEIC (Test of English for International Communication)",
+        "issuer": "ETS (Educational Testing Service)",
+        "date": "2025",
+        "description": "Berhasil memperoleh skor TOEIC yang menunjukkan kemampuan komunikasi bahasa Inggris dalam konteks profesional dan internasional.",
+        "credential": "TOEIC-590"
+      },
+      {
+        "title": "Lomba Kompetensi Siswa (LKS) Bidang Electronics",
+        "issuer": "Kementrian Pendidikan Dasar dan Menengah",
+        "date": "2025",
+        "description": "Juara 1 dalam kompetisi LKS bidang Electronics dengan kemampuan dalam perancangan rangkaian elektronika, troubleshooting, dan mikrokontroler.",
+        "credential": "LKS-2025-ELEC"
+      },
+      {
+        "title": "Olimpiade Sains Pemuda Indonesia (OSPI) Bidang Bahasa Inggris",
+        "issuer": "Pusat Kejuaraan Sains Nasional (PUSKANAS)",
+        "date": "2023",
+        "description": "Berhasil meraih Medali Perak pada ajang OSPI 2023 bidang Bahasa Inggris tingkat nasional.",
+        "credential": "OSPI-2023-SILVER"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Dokumentasi",
+    "description": "Sekilas tentang ruang kerja, proyek, dan perjalanan saya dalam mewujudkan ide menjadi kenyataan."
+  },
+  "contact": {
+    "title": "Mari Terhubung",
+    "description": "Memiliki proyek yang ingin direalisasikan atau ingin berdiskusi? Saya dengan senang hati ingin mendengar dari Anda. Isi formulir di bawah atau hubungi saya melalui media sosial.",
+    "sendMessage": "Kirim Pesan",
+    "name": "Nama",
+    "namePlaceholder": "Nama lengkap Anda",
+    "email": "Email",
+    "emailPlaceholder": "email@example.com",
+    "message": "Pesan",
+    "messagePlaceholder": "Tulis pesan Anda di sini atau Beri tahu saya tentang projek...",
+    "sending": "Mengirim...",
+    "sent": "Terkirim!",
+    "sendButton": "Kirim Pesan",
+    "sendFailed": "Gagal mengirim pesan",
+    "location": "Lokasi",
+    "findMeOn": "Temukan saya di:",
+    "available": "Saat Ini Tersedia",
+    "availableDesc": "Terbuka untuk freelance & kolaborasi"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "as": "as Electronics Engineer"
+  }
+}
