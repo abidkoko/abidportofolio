@@ -67,17 +67,61 @@
     "description": "Toolkit lengkap untuk membangun proyek elektronika inovatif, solusi IoT, dan aplikasi web modern.",
     "otherTools": "Tools & Technologies lainnya:",
     "items": [
-      { "name": "Arduino", "level": 95, "category": "Microcontroller" },
-      { "name": "ESP32", "level": 93, "category": "Microcontroller" },
-      { "name": "STM32", "level": 87, "category": "Microcontroller" },
-      { "name": "Embedded C/C++", "level": 90, "category": "Programming" },
-      { "name": "PLC Schneider", "level": 85, "category": "Programming" },
-      { "name": "PLC Omron", "level": 90, "category": "Programming" },
-      { "name": "Internet of Things (IoT) Systems", "level": 88, "category": "Systems" },
-      { "name": "PCB Design", "level": 95, "category": "Hardware" },
-      { "name": "Sensor Integration", "level": 92, "category": "Hardware" },
-      { "name": "AutoDesk Eagle", "level": 95, "category": "Software" },
-      { "name": "Microsoft Office", "level": 95, "category": "Word, Excel, Power Point" }
+      {
+        "name": "Arduino",
+        "level": 95,
+        "category": "Microcontroller"
+      },
+      {
+        "name": "ESP32",
+        "level": 93,
+        "category": "Microcontroller"
+      },
+      {
+        "name": "STM32",
+        "level": 87,
+        "category": "Microcontroller"
+      },
+      {
+        "name": "Embedded C/C++",
+        "level": 90,
+        "category": "Programming"
+      },
+      {
+        "name": "PLC Schneider",
+        "level": 85,
+        "category": "Programming"
+      },
+      {
+        "name": "PLC Omron",
+        "level": 90,
+        "category": "Programming"
+      },
+      {
+        "name": "Internet of Things (IoT) Systems",
+        "level": 88,
+        "category": "Systems"
+      },
+      {
+        "name": "PCB Design",
+        "level": 95,
+        "category": "Hardware"
+      },
+      {
+        "name": "Sensor Integration",
+        "level": 92,
+        "category": "Hardware"
+      },
+      {
+        "name": "AutoDesk Eagle",
+        "level": 95,
+        "category": "Software"
+      },
+      {
+        "name": "Microsoft Office",
+        "level": 95,
+        "category": "Word, Excel, Power Point"
+      }
     ]
   },
   "projects": {
@@ -88,47 +132,114 @@
       {
         "title": "Power Supply",
         "description": "Catu daya variabel berbasis elektronika yang dirancang untuk kebutuhan praktikum dan pengujian rangkaian elektronik.",
-        "tags": ["Electronics", "Power Supply", "PCB", "Arduino"]
+        "image": "",
+        "tags": [
+          "Electronics",
+          "Power Supply",
+          "PCB",
+          "Arduino"
+        ]
       },
       {
         "title": "LDR-Based Automatic Lighting System",
         "description": "Sistem lampu otomatis berbasis sensor LDR yang mampu menyesuaikan pencahayaan sesuai kondisi lingkungan.",
-        "tags": ["LDR", "Arduino", "Sensor", "Automation"]
+        "image": "",
+        "tags": [
+          "LDR",
+          "Arduino",
+          "Sensor",
+          "Automation"
+        ],
+        "github": "https://github.com/abidkoko/LDR-Based-Automatic-Lighting-System"
       },
       {
         "title": "7-Segment Digital Clock System",
         "description": "Jam digital berbasis seven segment display dengan desain modern dan akurasi waktu yang stabil.",
-        "tags": ["Seven Segment", "RTC", "STM32", "Electronics", "C++"]
+        "image": "",
+        "tags": [
+          "Seven Segment",
+          "RTC",
+          "STM32",
+          "Electronics",
+          "C++"
+        ],
+        "github": "https://github.com/abidkoko/7-Segment-Digital-Clock-System"
       },
       {
         "title": "IoT-Based Smart Plant Watering System",
         "description": "Sistem penyiram tanaman otomatis berbasis IoT dengan monitoring kelembaban tanah secara real-time.",
-        "tags": ["ESP32", "IoT", "Soil Sensor", "WiFi", "C++"]
+        "image": "",
+        "tags": [
+          "ESP32",
+          "IoT",
+          "Soil Sensor",
+          "WiFi",
+          "C++"
+        ]
       },
       {
         "title": "RFID-Based IoT Attendance System",
         "description": "Sistem absensi pintar berbasis RFID dan IoT dengan penyimpanan data otomatis dan monitoring online.",
-        "tags": ["RFID", "ESP32", "IoT", "Database", "WiFi", "C++"]
+        "image": "",
+        "tags": [
+          "RFID",
+          "ESP32",
+          "IoT",
+          "Database",
+          "WiFi",
+          "C++"
+        ],
+        "github": "https://github.com/abidkoko/RFID-Based-IoT-Attendance-System"
       },
       {
         "title": "Automated School Gate Control System",
         "description": "Implementasi gerbang sekolah otomatis berbasis mikrokontroler untuk meningkatkan keamanan dan efisiensi akses.",
-        "tags": ["Automation", "Arduino", "IoT", "RFID", "C++"]
+        "image": "",
+        "tags": [
+          "Automation",
+          "Arduino",
+          "IoT",
+          "RFID",
+          "C++"
+        ],
+        "github": "https://github.com/abidkoko/Automated-School-Gate-Control-System"
       },
       {
         "title": "Bluetooth-Controlled RC Car",
         "description": "Mobil remote control berbasis Bluetooth yang dapat dikendalikan melalui aplikasi smartphone secara wireless.",
-        "tags": ["Bluetooth", "HC-06", "Arduino", "Motor Driver", "C++"]
+        "image": "",
+        "tags": [
+          "Bluetooth",
+          "HC-06",
+          "Arduino",
+          "Motor Driver",
+          "C++"
+        ],
+        "github": "https://github.com/abidkoko/RC-CAR-BLUETOOTH"
       },
       {
         "title": "Analog Line Follower Robot",
         "description": "Robot line follower berbasis analog yang dirancang untuk mengikuti jalur secara otomatis menggunakan sensor infrared dan rangkaian komparator.",
-        "tags": ["Line Follower", "IR Sensor", "Motor Driver", "Electronics"]
+        "image": "",
+        "tags": [
+          "Line Follower",
+          "IR Sensor",
+          "Motor Driver",
+          "Electronics"
+        ],
+        "github": "https://github.com/abidkoko/Line-Follower-Analog"
       },
       {
         "title": "Lockout Buzzer System",
         "description": "Sistem buzzer cerdas untuk kompetisi cerdas cermat yang mampu mendeteksi peserta tercepat, mengunci input peserta lain secara otomatis.",
-        "tags": ["Digital Electronics", "Embedded Systems", "Digital Control", "Real-Time System"]
+        "image": "",
+        "tags": [
+          "Digital Electronics",
+          "Embedded Systems",
+          "Digital Control",
+          "Real-Time System"
+        ],
+        "github": "https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM"
       }
     ]
   },

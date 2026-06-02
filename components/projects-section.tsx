@@ -86,7 +86,7 @@ export function ProjectsSection() {
                 </div>
 
                 {/* GITHUB */}
-                {project.github && (
+                {project.github?.trim() && (
                   <a
                     href={project.github}
                     target="_blank"
