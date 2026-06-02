@@ -3,7 +3,7 @@
     "home": "Beranda",
     "about": "Tentang Saya",
     "skills": "Keahlian",
-    "projects": "Project",
+    "projects": "Proyek",
     "certificates": "Sertifikat",
     "gallery": "Dokumentasi",
     "contact": "Kontak",
@@ -81,7 +81,7 @@
     ]
   },
   "projects": {
-    "title": "Project",
+    "title": "Proyek",
     "description": "Proyek elektronika dan IoT yang menunjukkan kemampuan saya dalam pengembangan embedded system, automation, dan teknologi modern.",
     "viewOnGithub": "View on GitHub",
     "items": [
