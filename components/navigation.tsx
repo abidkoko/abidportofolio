@@ -78,15 +78,25 @@ export function Navigation() {
             <div className="hidden md:flex items-center gap-3">
 
               {/* LANGUAGE SWITCH */}
-              <button
-                onClick={() =>
-                  setLanguage(language === "id" ? "en" : "id")
-                }
-                className="px-3 py-2 rounded-lg border text-sm flex items-center gap-2 hover:bg-primary/10 transition"
+              <select
+                value={language}
+                onChange={(e) => setLanguage(e.target.value as "id" | "en")}
+                className="
+    px-4 py-2
+    rounded-lg
+    border border-white/10
+    bg-white/5
+    backdrop-blur-md
+    text-sm
+    text-white
+    cursor-pointer
+    hover:border-cyan-400/50
+    transition-all
+  "
               >
-                <span>{languageInfo.flag}</span>
-                <span>{languageInfo.code.toUpperCase()}</span>
-              </button>
+                <option value="en">🇺🇸 English</option>
+                <option value="id">🇮🇩 Bahasa Indonesia</option>
+              </select>
 
               {/* CTA BUTTON */}
               <motion.a
@@ -154,27 +164,23 @@ export function Navigation() {
                 ))}
 
                 {/* LANGUAGE MOBILE */}
-                <motion.li
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{
-                    delay: navItems.length * 0.05,
-                    duration: 0.3,
-                  }}
-                >
-                  <button
-                    onClick={() => setLanguage(language === "id" ? "en" : "id")}
-                    className="px-3 py-2 rounded-lg border text-sm flex items-center gap-2 hover:bg-primary/10 transition"
-                    aria-label="Change Language"
+                <motion.li>
+                  <select
+                    value={language}
+                    onChange={(e) => setLanguage(e.target.value as "id" | "en")}
+                    className="
+      w-full
+      px-4 py-3
+      rounded-lg
+      border border-white/10
+      bg-white/5
+      text-white
+      backdrop-blur-md
+    "
                   >
-                    <span className={language === "id" ? "font-bold text-primary" : "text-muted-foreground"}>
-                      ID
-                    </span>
-                    <span>|</span>
-                    <span className={language === "en" ? "font-bold text-primary" : "text-muted-foreground"}>
-                      EN
-                    </span>
-                  </button>
+                    <option value="en">🇺🇸 English</option>
+                    <option value="id">🇮🇩 Bahasa Indonesia</option>
+                  </select>
                 </motion.li>
 
                 {/* CTA MOBILE */}
