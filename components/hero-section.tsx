@@ -35,43 +35,42 @@ export function HeroSection() {
           setCurrentRole((prev) => (prev + 1) % roles.length)
         }
       }
-    }, isDeleting ? 50 : 100)
+    }, isDeleting ? 70 : 100)
 
     return () => clearTimeout(timeout)
   }, [displayText, isDeleting, currentRole, roles])
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden will-change-transform"
+    >
       <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
       <div className="absolute inset-0 bg-white/5" />
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
         <motion.div
-          className="absolute w-[500px] h-[500px] rounded-full bg-cyan-400/20 blur-[120px]"
-          style={{ top: "10%", left: "10%" }}
+          className="absolute w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] rounded-full bg-cyan-400/15 blur-[60px] lg:blur-[120px]" style={{ top: "10%", left: "10%" }}
           animate={{ x: [0, 60, 0], y: [0, 40, 0] }}
           transition={{ duration: 10, repeat: Infinity }}
         />
 
         <motion.div
-          className="absolute w-[400px] h-[400px] rounded-full bg-purple-500/20 blur-[120px]"
-          style={{ bottom: "10%", right: "10%" }}
+          className="absolute w-[280px] h-[280px] lg:w-[400px] lg:h-[400px] rounded-full bg-purple-500/15 blur-[60px] lg:blur-[120px]" style={{ bottom: "10%", right: "10%" }}
           animate={{ x: [0, -50, 0], y: [0, -30, 0] }}
           transition={{ duration: 12, repeat: Infinity }}
         />
 
         <motion.div
-          className="absolute w-[300px] h-[300px] rounded-full bg-blue-400/20 blur-[100px]"
-          style={{ top: "40%", right: "30%" }}
+          className="absolute w-[220px] h-[220px] lg:w-[300px] lg:h-[300px] rounded-full bg-blue-400/15 blur-[50px] lg:blur-[100px]" style={{ top: "40%", right: "30%" }}
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ duration: 8, repeat: Infinity }}
         />
 
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 will-change-transform">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-24">
 
           {/* IMAGE */}
@@ -84,7 +83,7 @@ export function HeroSection() {
               <motion.div
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 style={{ padding: "3px" }}
               >
                 <div className="w-full h-full rounded-full bg-background" />
@@ -156,7 +155,7 @@ export function HeroSection() {
                 href="/CV_M_Abid_Maulana.pdf"
                 download
                 whileTap={{ scale: 0.92 }}
-                whileHover={{ scale: 1.03 }}
+                whileHover={{ scale: 1.02 }}
                 className="relative px-6 py-3 rounded-xl
                border border-cyan-400/40
                bg-white/5 backdrop-blur-md
@@ -176,7 +175,7 @@ export function HeroSection() {
               <motion.a
                 href="#projects"
                 whileTap={{ scale: 0.92 }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
                 className="relative px-6 py-3 rounded-xl
                bg-gradient-to-r from-cyan-400 to-blue-500
                text-black font-semibold
@@ -196,7 +195,7 @@ export function HeroSection() {
               <motion.a
                 href="#contact"
                 whileTap={{ scale: 0.92 }}
-                whileHover={{ scale: 1.03 }}
+                whileHover={{ scale: 1.02 }}
                 className="relative px-6 py-3 rounded-xl
                glass border border-white/10
                text-white/80 backdrop-blur-md
