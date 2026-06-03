@@ -136,7 +136,13 @@ export function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-16 left-0 right-0 z-40 glass md:hidden"
+            className="
+fixed top-16 left-0 right-0 z-40 md:hidden
+bg-slate-950/95
+backdrop-blur-xl
+border-t border-white/10
+shadow-2xl
+"
           >
             <nav className="container mx-auto px-4 py-6">
               <ul className="flex flex-col gap-2">
