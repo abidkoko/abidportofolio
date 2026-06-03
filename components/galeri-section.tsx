@@ -18,11 +18,10 @@ export function GallerySection() {
     "/gallery/full 3d.jpeg",
     "/gallery/rfidbrd.png",
     "/gallery/LBS.jpeg",
-    "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
     "/gallery/IMG_20240531_215143.jpg",
+    "/gallery/LAYOUT PENYIRAM TANAMAN OTOMATIS.png",
     "/gallery/seven3d.png",
     "/gallery/gatebrdd.jpg",
-    "/gallery/gate3dd.jpg",
     "/gallery/car3d.jpg",
   ]
 
