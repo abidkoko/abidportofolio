@@ -49,24 +49,24 @@ export function HeroSection() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
         <motion.div
-          className="absolute w-[500px] h-[500px] rounded-full bg-cyan-400/20 blur-[120px]"
+          className="absolute w-[500px] h-[500px] rounded-full bg-cyan-400/20 blur-[80px]"
           style={{ top: "10%", left: "10%" }}
           animate={{ x: [0, 60, 0], y: [0, 40, 0] }}
-          transition={{ duration: 10, repeat: Infinity }}
+          transition={{ duration: 20, repeat: Infinity }}
         />
 
         <motion.div
-          className="absolute w-[400px] h-[400px] rounded-full bg-purple-500/20 blur-[120px]"
+          className="absolute w-[400px] h-[400px] rounded-full bg-purple-500/20 blur-[80px]"
           style={{ bottom: "10%", right: "10%" }}
           animate={{ x: [0, -50, 0], y: [0, -30, 0] }}
-          transition={{ duration: 12, repeat: Infinity }}
+          transition={{ duration: 24, repeat: Infinity }}
         />
 
         <motion.div
-          className="absolute w-[300px] h-[300px] rounded-full bg-blue-400/20 blur-[100px]"
+          className="absolute w-[300px] h-[300px] rounded-full bg-blue-400/20 blur-[70px]"
           style={{ top: "40%", right: "30%" }}
           animate={{ scale: [1, 1.2, 1] }}
-          transition={{ duration: 8, repeat: Infinity }}
+          transition={{ duration: 18, repeat: Infinity }}
         />
 
       </div>
@@ -84,7 +84,7 @@ export function HeroSection() {
               <motion.div
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-accent to-primary"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 style={{ padding: "3px" }}
               >
                 <div className="w-full h-full rounded-full bg-background" />
@@ -214,7 +214,7 @@ export function HeroSection() {
               <motion.a
                 href="https://www.linkedin.com/in/muhamad-abid-maulana-4a528234a/"
                 target="_blank"
-                whileHover={{ scale: 1.15, y: -2 }}
+                whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.9 }}
                 className="w-11 h-11 flex items-center justify-center rounded-full
                bg-white/5 backdrop-blur-md
@@ -230,7 +230,7 @@ export function HeroSection() {
               <motion.a
                 href="https://www.instagram.com/abidmauna"
                 target="_blank"
-                whileHover={{ scale: 1.15, y: -2 }}
+                whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.9 }}
                 className="w-11 h-11 flex items-center justify-center rounded-full
                bg-white/5 backdrop-blur-md
