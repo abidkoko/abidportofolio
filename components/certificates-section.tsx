@@ -21,6 +21,10 @@ const certificatesData = [
     credential: "OSPI-2023-SILVER",
   },
   {
+    image: "/certificates/cert_Bahasa Inggris - OSPI 2023-1.png",
+    credential: "0759805/BHM-PUSKANAS/OSPI-S/X/2023",
+  },
+  {
     image: "/certificates/cert_Informatika - NHC 2023-1.png",
     credential: "0768420/BHM-FOSNAS/NHC-S/XI/2023",
   },
