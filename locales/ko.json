@@ -146,8 +146,7 @@
         "tags": [
           "Electronics",
           "Power Supply",
-          "PCB",
-          "Arduino"
+          "PCB"
         ]
       },
       {
@@ -159,7 +158,8 @@
           "Arduino",
           "Sensor",
           "Automation"
-        ]
+        ],
+        "github": "https://github.com/abidkoko/LDR-Based-Automatic-Lighting-System"
       },
       {
         "title": "7세그먼트 디지털 시계 시스템",
@@ -171,7 +171,8 @@
           "STM32",
           "Electronics",
           "C++"
-        ]
+        ],
+        "github": "https://github.com/abidkoko/7-Segment-Digital-Clock-System"
       },
       {
         "title": "IoT 기반 스마트 식물 급수 시스템",
@@ -196,7 +197,8 @@
           "Database",
           "WiFi",
           "C++"
-        ]
+        ],
+        "github": "https://github.com/abidkoko/RFID-Based-IoT-Attendance-System"
       },
       {
         "title": "자동 학교 게이트 제어 시스템",
@@ -208,7 +210,8 @@
           "IoT",
           "RFID",
           "C++"
-        ]
+        ],
+        "github": "https://github.com/abidkoko/Automated-School-Gate-Control-System"
       },
       {
         "title": "블루투스 제어 RC 자동차",
@@ -220,7 +223,8 @@
           "Arduino",
           "Motor Driver",
           "C++"
-        ]
+        ],
+        "github": "https://github.com/abidkoko/RC-CAR-BLUETOOTH"
       },
       {
         "title": "아날로그 라인 트레이서 로봇",
@@ -231,7 +235,8 @@
           "IR Sensor",
           "Motor Driver",
           "Electronics"
-        ]
+        ],
+        "github": "https://github.com/abidkoko/Line-Follower-Analog"
       },
       {
         "title": "락아웃 버저 시스템",
@@ -241,7 +246,8 @@
           "Digital Electronics",
           "Embedded Systems",
           "Real-Time System"
-        ]
+        ],
+        "github": "https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM"
       }
     ]
   },
