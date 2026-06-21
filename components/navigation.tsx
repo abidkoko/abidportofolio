@@ -80,7 +80,7 @@ export function Navigation() {
               {/* LANGUAGE SWITCH */}
               <select
                 value={language}
-                onChange={(e) => setLanguage(e.target.value as "id" | "en")}
+                onChange={(e) => setLanguage(e.target.value as "id" | "en" | "ko")}
                 className="
     px-4 py-2
     rounded-lg
@@ -94,8 +94,9 @@ export function Navigation() {
     transition-all
   "
               >
-                <option value="en">🇺🇸 English</option>
+                <option value="en">🇬🇧 English</option>
                 <option value="id">🇮🇩 Bahasa Indonesia</option>
+                <option value="ko">🇰🇷 한국어</option>
               </select>
 
               {/* CTA BUTTON */}
@@ -173,19 +174,20 @@ shadow-2xl
                 <motion.li>
                   <select
                     value={language}
-                    onChange={(e) => setLanguage(e.target.value as "id" | "en")}
+                    onChange={(e) => setLanguage(e.target.value as "id" | "en" | "ko")}
                     className="
       w-full
       px-4 py-3
       rounded-lg
       border border-white/10
-      bg-white/5
+      bg-slate-900
       text-white
       backdrop-blur-md
     "
                   >
-                    <option value="en">🇺🇸 English</option>
+                    <option value="en">🇬🇧 English</option>
                     <option value="id">🇮🇩 Bahasa Indonesia</option>
+                    <option value="ko">🇰🇷 한국어</option>
                   </select>
                 </motion.li>
 
