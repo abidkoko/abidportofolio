@@ -159,7 +159,7 @@
           "Sensor",
           "Automation"
         ],
-        "github": "https://github.com/abidkoko/LDR-Based-Automatic-Lighting-System"
+        "github": " https://github.com/abidkoko/LDR-Based-Automatic-Lighting-System"
       },
       {
         "title": "7세그먼트 디지털 시계 시스템",
@@ -172,7 +172,7 @@
           "Electronics",
           "C++"
         ],
-        "github": "https://github.com/abidkoko/7-Segment-Digital-Clock-System"
+        "github": " https://github.com/abidkoko/7-Segment-Digital-Clock-System"
       },
       {
         "title": "IoT 기반 스마트 식물 급수 시스템",
@@ -198,7 +198,7 @@
           "WiFi",
           "C++"
         ],
-        "github": "https://github.com/abidkoko/RFID-Based-IoT-Attendance-System"
+        "github": " https://github.com/abidkoko/RFID-Based-IoT-Attendance-System"
       },
       {
         "title": "자동 학교 게이트 제어 시스템",
@@ -211,7 +211,7 @@
           "RFID",
           "C++"
         ],
-        "github": "https://github.com/abidkoko/Automated-School-Gate-Control-System"
+        "github": " https://github.com/abidkoko/Automated-School-Gate-Control-System"
       },
       {
         "title": "블루투스 제어 RC 자동차",
@@ -224,7 +224,7 @@
           "Motor Driver",
           "C++"
         ],
-        "github": "https://github.com/abidkoko/RC-CAR-BLUETOOTH"
+        "github": " https://github.com/abidkoko/RC-CAR-BLUETOOTH"
       },
       {
         "title": "아날로그 라인 트레이서 로봇",
@@ -236,7 +236,7 @@
           "Motor Driver",
           "Electronics"
         ],
-        "github": "https://github.com/abidkoko/Line-Follower-Analog"
+        "github": " https://github.com/abidkoko/Line-Follower-Analog"
       },
       {
         "title": "락아웃 버저 시스템",
@@ -247,7 +247,7 @@
           "Embedded Systems",
           "Real-Time System"
         ],
-        "github": "https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM"
+        "github": " https://github.com/abidkoko/LOCKOUT-BUZZER-SYSTEM"
       }
     ]
   },
@@ -277,6 +277,13 @@
         "date": "2023",
         "description": "2023년 전국 OSPI 영어 부문에서 은메달을 수상하였습니다.",
         "credential": "OSPI-2023-SILVER"
+      },
+      {
+        "title": "내셔널 히어로즈 컴피티션(NHC) 2023 정보학 부문",
+        "issuer": "전국 과학 올림피아드 페스티벌(FOSNAS)",
+        "date": "2023",
+        "description": "전국 규모의 정보학 대회에 적극적으로 참가하여 프로그래밍 및 문제 해결 역량을 발휘하였습니다.",
+        "credential": "0768420/BHM-FOSNAS/NHC-S/XI/2023"
       }
     ]
   },

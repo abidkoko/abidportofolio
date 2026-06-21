@@ -20,6 +20,10 @@ const certificatesData = [
     image: "/certificates/OSPI-ENG1.jpg",
     credential: "OSPI-2023-SILVER",
   },
+  {
+    image: "/certificates/cert_Informatika - NHC 2023-1.png",
+    credential: "0768420/BHM-FOSNAS/NHC-S/XI/2023",
+  },
 ]
 
 export function CertificatesSection() {
