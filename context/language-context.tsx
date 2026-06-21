@@ -2,11 +2,11 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react"
 
-// Import translations
 import id from "@/locales/id.json"
 import en from "@/locales/en.json"
+import ko from "@/locales/ko.json"
 
-export type Language = "id" | "en"
+export type Language = "id" | "en" | "ko"
 
 export interface LanguageInfo {
   code: Language
@@ -17,13 +17,33 @@ export interface LanguageInfo {
 }
 
 export const languages: LanguageInfo[] = [
-  { code: "id", name: "Indonesia", nativeName: "Indonesia", flag: "🇮🇩", dir: "ltr" },
-  { code: "en", name: "English", nativeName: "English", flag: "🇬🇧", dir: "ltr" },
+  {
+    code: "id",
+    name: "Indonesia",
+    nativeName: "Indonesia",
+    flag: "🇮🇩",
+    dir: "ltr",
+  },
+  {
+    code: "en",
+    name: "English",
+    nativeName: "English",
+    flag: "🇬🇧",
+    dir: "ltr",
+  },
+  {
+    code: "ko",
+    name: "Korean",
+    nativeName: "한국어",
+    flag: "🇰🇷",
+    dir: "ltr",
+  },
 ]
 
 const translations: Record<Language, typeof id> = {
   id,
   en,
+  ko,
 }
 
 interface LanguageContextType {
@@ -42,8 +62,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true)
+
     const savedLanguage = localStorage.getItem("language") as Language
-    if (savedLanguage && languages.some(l => l.code === savedLanguage)) {
+
+    if (
+      savedLanguage &&
+      languages.some((l) => l.code === savedLanguage)
+    ) {
       setLanguageState(savedLanguage)
     }
   }, [])
@@ -51,7 +76,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (mounted) {
       localStorage.setItem("language", language)
-      const dir = languages.find(l => l.code === language)?.dir || "ltr"
+
+      const dir =
+        languages.find((l) => l.code === language)?.dir || "ltr"
+
       document.documentElement.dir = dir
       document.documentElement.lang = language
     }
@@ -62,7 +90,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("language", lang)
   }
 
-  const languageInfo = languages.find(l => l.code === language) || languages[0]
+  const languageInfo =
+    languages.find((l) => l.code === language) || languages[0]
 
   const value: LanguageContextType = {
     language,
@@ -81,8 +110,12 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext)
+
   if (context === undefined) {
-    throw new Error("useLanguage must be used within a LanguageProvider")
+    throw new Error(
+      "useLanguage must be used within a LanguageProvider"
+    )
   }
+
   return context
 }

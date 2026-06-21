@@ -1,0 +1,304 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "skills": "기술",
+    "projects": "프로젝트",
+    "certificates": "자격증",
+    "gallery": "갤러리",
+    "contact": "연락처",
+    "hireMe": "채용 문의"
+  },
+  "hero": {
+    "welcome": "제 포트폴리오에 오신 것을 환영합니다",
+    "roles": [
+      "산업 전자공학",
+      "전기 기술자",
+      "사물인터넷(IoT) 개발자",
+      "전자공학 애호가",
+      "PLC 및 마이크로컨트롤러 프로그래밍",
+      "전기 설비",
+      "배선 조립",
+      "책임감",
+      "문제 해결 능력",
+      "의사소통 능력"
+    ],
+    "description": "저는 혁신적인 IoT 솔루션과 임베디드 시스템을 개발하는 산업 전자 기술자입니다. 코드와 전자 회로를 통해 아이디어를 현실로 구현합니다.",
+    "downloadCV": "이력서 다운로드",
+    "viewProjects": "프로젝트 보기",
+    "contactMe": "문의하기"
+  },
+  "about": {
+    "title": "소개",
+    "subtitle": "산업 전자공학",
+    "description1": "저는 산업 전자공학 분야의 우수 졸업생으로서 사물인터넷(IoT), 임베디드 시스템, 마이크로컨트롤러 기반 자동화 기술 개발에 큰 관심을 가지고 있습니다.",
+    "description2": "주요 전문 분야는 Arduino 및 ESP32와 같은 마이크로컨트롤러용 펌웨어 개발, 전자 회로 설계, 그리고 다양한 IoT 프로젝트와 자동화 시스템을 위한 센서 및 액추에이터 통합입니다.",
+    "description3": "저는 임베디드 시스템과 IoT 기술이 일상생활과 현대 산업에 큰 가치를 제공할 수 있다고 믿으며, 기술과 전자공학 혁신 분야에서 지속적으로 역량을 발전시키고 있습니다.",
+    "location": "위치",
+    "locationValue": "반둥, 인도네시아",
+    "language": "언어",
+    "languageValue": "인도네시아어, 영어",
+    "specialization": "전문 분야",
+    "specializationValue": "사물인터넷(IoT), 임베디드 시스템, Arduino 및 ESP32",
+    "timeline": {
+      "title": "학력 및 경력",
+      "items": [
+        {
+          "year": "2026",
+          "title": "산업 현장 실습",
+          "company": "PT PLN (Persero) GITET South Bandung",
+          "location": "반둥, 인도네시아",
+          "description": "500kV 송전 설비 유지보수와 접지 및 전기 시스템 점검 업무를 수행했습니다.",
+          "type": "work"
+        },
+        {
+          "year": "2026",
+          "title": "산업 전자공학",
+          "company": "SMKN 1 Katapang",
+          "location": "반둥, 인도네시아",
+          "description": "임베디드 시스템과 IoT를 중점적으로 학습한 산업 전자공학 우수 졸업생입니다.",
+          "type": "education"
+        }
+      ]
+    }
+  },
+  "skills": {
+    "title": "기술",
+    "description": "혁신적인 전자공학 프로젝트, IoT 솔루션 및 현대적인 웹 애플리케이션 개발을 위한 종합 기술 스택입니다.",
+    "otherTools": "기타 도구 및 기술:",
+    "tools": [
+      "AutoDesk Fusion",
+      "VS Code",
+      "VS Studio",
+      "Node-RED",
+      "Firebase",
+      "Blynk",
+      "ThingSpeak",
+      "MQTT"
+    ],
+    "items": [
+      {
+        "name": "Arduino",
+        "level": 95,
+        "category": "마이크로컨트롤러"
+      },
+      {
+        "name": "ESP32",
+        "level": 93,
+        "category": "마이크로컨트롤러"
+      },
+      {
+        "name": "STM32",
+        "level": 87,
+        "category": "마이크로컨트롤러"
+      },
+      {
+        "name": "Embedded C/C++",
+        "level": 90,
+        "category": "프로그래밍"
+      },
+      {
+        "name": "PLC Schneider",
+        "level": 85,
+        "category": "프로그래밍"
+      },
+      {
+        "name": "PLC Omron",
+        "level": 90,
+        "category": "프로그래밍"
+      },
+      {
+        "name": "Internet of Things (IoT) Systems",
+        "level": 88,
+        "category": "시스템"
+      },
+      {
+        "name": "PCB Design",
+        "level": 95,
+        "category": "하드웨어"
+      },
+      {
+        "name": "Sensor Integration",
+        "level": 92,
+        "category": "하드웨어"
+      },
+      {
+        "name": "AutoDesk Eagle",
+        "level": 95,
+        "category": "소프트웨어"
+      },
+      {
+        "name": "Microsoft Office",
+        "level": 95,
+        "category": "Word, Excel, PowerPoint"
+      }
+    ]
+  },
+  "projects": {
+    "title": "프로젝트",
+    "description": "임베디드 시스템 개발, 자동화 및 최신 기술 역량을 보여주는 전자공학 및 IoT 프로젝트입니다.",
+    "viewOnGithub": "GitHub에서 보기",
+    "items": [
+      {
+        "title": "전원 공급 장치",
+        "description": "실습 및 전자 회로 테스트를 위해 설계된 가변형 전자 전원 공급 장치입니다.",
+        "image": "/gallery/psu.png",
+        "tags": [
+          "Electronics",
+          "Power Supply",
+          "PCB",
+          "Arduino"
+        ]
+      },
+      {
+        "title": "LDR 기반 자동 조명 시스템",
+        "description": "주변 환경에 따라 조도를 자동으로 조절하는 LDR 센서 기반 조명 시스템입니다.",
+        "image": "/gallery/ldr.png",
+        "tags": [
+          "LDR",
+          "Arduino",
+          "Sensor",
+          "Automation"
+        ]
+      },
+      {
+        "title": "7세그먼트 디지털 시계 시스템",
+        "description": "현대적인 디자인과 안정적인 시간 정확도를 갖춘 7세그먼트 디지털 시계입니다.",
+        "image": "/gallery/seven3d.png",
+        "tags": [
+          "Seven Segment",
+          "RTC",
+          "STM32",
+          "Electronics",
+          "C++"
+        ]
+      },
+      {
+        "title": "IoT 기반 스마트 식물 급수 시스템",
+        "description": "토양 수분을 실시간으로 모니터링하는 IoT 기반 자동 급수 시스템입니다.",
+        "image": "/gallery/water.jpeg",
+        "tags": [
+          "ESP32",
+          "IoT",
+          "Soil Sensor",
+          "WiFi",
+          "C++"
+        ]
+      },
+      {
+        "title": "RFID 기반 IoT 출석 관리 시스템",
+        "description": "자동 데이터 저장 및 온라인 모니터링 기능을 갖춘 RFID 기반 스마트 출석 시스템입니다.",
+        "image": "/gallery/rfid3d.png",
+        "tags": [
+          "RFID",
+          "ESP32",
+          "IoT",
+          "Database",
+          "WiFi",
+          "C++"
+        ]
+      },
+      {
+        "title": "자동 학교 게이트 제어 시스템",
+        "description": "보안성과 출입 효율 향상을 위한 마이크로컨트롤러 기반 자동 학교 게이트 시스템입니다.",
+        "image": "/gallery/gate3dd.jpg",
+        "tags": [
+          "Automation",
+          "Arduino",
+          "IoT",
+          "RFID",
+          "C++"
+        ]
+      },
+      {
+        "title": "블루투스 제어 RC 자동차",
+        "description": "스마트폰 앱으로 무선 제어가 가능한 블루투스 기반 RC 자동차입니다.",
+        "image": "/gallery/car3d.jpg",
+        "tags": [
+          "Bluetooth",
+          "HC-06",
+          "Arduino",
+          "Motor Driver",
+          "C++"
+        ]
+      },
+      {
+        "title": "아날로그 라인 트레이서 로봇",
+        "description": "적외선 센서와 비교기 회로를 이용해 경로를 자동 추적하는 아날로그 라인 트레이서 로봇입니다.",
+        "image": "/gallery/LF3d.jpg",
+        "tags": [
+          "Line Follower",
+          "IR Sensor",
+          "Motor Driver",
+          "Electronics"
+        ]
+      },
+      {
+        "title": "락아웃 버저 시스템",
+        "description": "퀴즈 대회에서 가장 빠른 참가자를 감지하고 다른 입력을 자동으로 차단하는 스마트 버저 시스템입니다.",
+        "image": "/gallery/LBS.jpeg",
+        "tags": [
+          "Digital Electronics",
+          "Embedded Systems",
+          "Real-Time System"
+        ]
+      }
+    ]
+  },
+  "certificates": {
+    "title": "자격증 및 수료증",
+    "description": "기술, 공학 및 영어 의사소통 능력을 지속적으로 발전시키기 위한 저의 노력과 성과를 보여주는 자격증, 교육 및 수상 경력입니다.",
+    "clickToView": "자격증 보기",
+    "credentialId": "인증 번호",
+    "items": [
+      {
+        "title": "TOEIC (국제 영어 의사소통 시험)",
+        "issuer": "ETS (Educational Testing Service)",
+        "date": "2025",
+        "description": "국제 및 전문 환경에서의 영어 의사소통 능력을 입증하는 TOEIC 점수를 취득하였습니다.",
+        "credential": "TOEIC-590"
+      },
+      {
+        "title": "학생 기술 경진대회(LKS) 전자공학 부문",
+        "issuer": "인도네시아 초중등교육부",
+        "date": "2025",
+        "description": "전자 회로 설계, 문제 해결 및 마이크로컨트롤러 분야의 역량을 바탕으로 LKS 전자공학 부문 1위를 수상하였습니다.",
+        "credential": "LKS-2025-ELEC"
+      },
+      {
+        "title": "인도네시아 청소년 과학 올림피아드(OSPI) 영어 부문",
+        "issuer": "국가 과학 경진대회 센터(PUSKANAS)",
+        "date": "2023",
+        "description": "2023년 전국 OSPI 영어 부문에서 은메달을 수상하였습니다.",
+        "credential": "OSPI-2023-SILVER"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "갤러리",
+    "description": "아이디어를 현실로 만들어 가는 과정 속에서의 작업 공간, 프로젝트 및 성장 여정을 소개합니다."
+  },
+  "contact": {
+    "title": "함께 이야기해요",
+    "description": "실현하고 싶은 프로젝트가 있거나 기술적인 논의를 원하시나요? 언제든지 연락해 주세요. 아래 양식을 작성하거나 소셜 미디어를 통해 문의하실 수 있습니다.",
+    "sendMessage": "메시지 보내기",
+    "name": "이름",
+    "namePlaceholder": "성함을 입력하세요",
+    "email": "이메일",
+    "emailPlaceholder": "email@example.com",
+    "message": "메시지",
+    "messagePlaceholder": "메시지를 입력하거나 프로젝트에 대해 알려주세요...",
+    "sending": "전송 중...",
+    "sent": "전송 완료!",
+    "sendButton": "메시지 보내기",
+    "sendFailed": "메시지 전송 실패",
+    "location": "위치",
+    "findMeOn": "소셜 미디어:",
+    "available": "현재 연락 가능",
+    "availableDesc": "프리랜서 및 협업 프로젝트 환영"
+  },
+  "footer": {
+    "madeWith": "제작",
+    "as": "전자공학 엔지니어"
+  }
+}
