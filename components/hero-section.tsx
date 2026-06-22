@@ -152,7 +152,7 @@ export function HeroSection() {
 
               {/* DOWNLOAD CV */}
               <motion.a
-                href="/CV_M_Abid_Maulana.pdf"
+                href="/CV_M_ABID.pdf"
                 download
                 whileTap={{ scale: 0.92 }}
                 whileHover={{ scale: 1.02 }}

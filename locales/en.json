@@ -259,6 +259,13 @@
     "credentialId": "Credential ID",
     "items": [
       {
+        "title": "Internet of Things (IoT) Fundamentals",
+        "issuer": "Smart System Academy - PUSTEKHAN ITB",
+        "date": "2025",
+        "description": "Successfully completed an IoT fundamentals certification program, demonstrating knowledge of IoT systems, device integration, and application development.",
+        "credential": "Sert/SSA/2512116"
+      },
+      {
         "title": "TOEIC (Test of English for International Communication)",
         "issuer": "ETS (Educational Testing Service)",
         "date": "2025",

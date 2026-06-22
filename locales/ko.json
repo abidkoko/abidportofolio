@@ -258,6 +258,13 @@
     "credentialId": "인증 번호",
     "items": [
       {
+        "title": "사물인터넷(IoT) 기초",
+        "issuer": "스마트 시스템 아카데미 - PUSTEKHAN ITB",
+        "date": "2025",
+        "description": "IoT 장치 통합, IoT 애플리케이션 개발 및 시스템 테스트를 포함한 사물인터넷(IoT) 기초 인증 과정을 성공적으로 수료하였습니다.",
+        "credential": "Sert/SSA/2512116"
+      },
+      {
         "title": "TOEIC (국제 영어 의사소통 시험)",
         "issuer": "ETS (Educational Testing Service)",
         "date": "2025",

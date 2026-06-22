@@ -259,6 +259,13 @@
     "credentialId": "Credential ID",
     "items": [
       {
+        "title": "Internet of Things (IoT) Fundamentals",
+        "issuer": "Smart System Academy - PUSTEKHAN ITB",
+        "date": "2025",
+        "description": "Menyelesaikan program sertifikasi Internet of Things (IoT) Fundamentals dengan fokus pada integrasi perangkat IoT, pengembangan aplikasi IoT, serta pengujian sistem berbasis IoT.",
+        "credential": "Sert/SSA/2512116"
+      },
+      {
         "title": "TOEIC (Test of English for International Communication)",
         "issuer": "ETS (Educational Testing Service)",
         "date": "2025",

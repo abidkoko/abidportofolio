@@ -28,6 +28,10 @@ const certificatesData = [
     image: "/certificates/cert_Informatika - NHC 2023-1.png",
     credential: "0768420/BHM-FOSNAS/NHC-S/XI/2023",
   },
+  {
+    image: "/certificates/Sertifikat Uji Kompetensi-1.png",
+    credential: "Sert/SSA/2512116",
+  },
 ]
 
 export function CertificatesSection() {
