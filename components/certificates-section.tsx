@@ -9,6 +9,10 @@ import { useLanguage } from "@/context/language-context"
 /* ✅ STATIC DATA (IMAGE DI SINI, BUKAN JSON) */
 const certificatesData = [
   {
+    image: "/certificates/Sertifikat Uji Kompetensi-1.png",
+    credential: "Sert/SSA/2512116",
+  },
+  {
     image: "/certificates/TOEIC-ENG1.jpg",
     credential: "TOEIC-590",
   },
@@ -27,10 +31,6 @@ const certificatesData = [
   {
     image: "/certificates/cert_Informatika - NHC 2023-1.png",
     credential: "0768420/BHM-FOSNAS/NHC-S/XI/2023",
-  },
-  {
-    image: "/certificates/Sertifikat Uji Kompetensi-1.png",
-    credential: "Sert/SSA/2512116",
   },
 ]
 
