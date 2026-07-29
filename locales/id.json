@@ -259,6 +259,13 @@
     "credentialId": "Credential ID",
     "items": [
       {
+        "title": "Praktik Kerja Lapangan",
+        "issuer": "PT PLN (Persero) Unit Induk Transmisi Jawa Bagian Tengah - UPT Bandung",
+        "date": "2026",
+        "description": "Menyelesaikan program Praktik Kerja Lapangan (PKL) yang dilaksanakan mulai tanggal 05 Januari 2026 hingga 30 April 2026 di bawah pengawasan UPT Bandung.",
+        "credential": "-"
+      },
+      {
         "title": "Internet of Things (IoT) Fundamentals",
         "issuer": "Smart System Academy - PUSTEKHAN ITB",
         "date": "2025",

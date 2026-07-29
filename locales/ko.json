@@ -258,6 +258,13 @@
     "credentialId": "인증 번호",
     "items": [
       {
+        "title": "현장 실습 프로그램 (Field Internship)",
+        "issuer": "PT PLN (Persero) 중부 자바 송전 본부 - UPT 반둥 (Bandung)",
+        "date": "2026년",
+        "description": "2026년 1월 5일부터 2026년 4월 30일까지 UPT 반둥의 감독 하에 진행된 현장 실습 프로그램을 성공적으로 이수함.",
+        "credential": "-"
+      },
+      {
         "title": "사물인터넷(IoT) 기초",
         "issuer": "스마트 시스템 아카데미 - PUSTEKHAN ITB",
         "date": "2025",
