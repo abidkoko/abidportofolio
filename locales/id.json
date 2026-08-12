@@ -259,6 +259,13 @@
     "credentialId": "Credential ID",
     "items": [
       {
+        "title": "First Step Korean",
+        "issuer": "Yonsei University (via Coursera)",
+        "date": "2026",
+        "description": "Kursus online yang berfokus pada dasar-dasar bahasa Korea, mencakup kosakata dasar, tata bahasa, dan ekspresi untuk komunikasi sehari-hari.",
+        "credential": "NLOK7FMA6S8Z"
+      },
+      {
         "title": "Praktik Kerja Lapangan",
         "issuer": "PT PLN (Persero) Unit Induk Transmisi Jawa Bagian Tengah - UPT Bandung",
         "date": "2026",

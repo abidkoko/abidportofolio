@@ -259,6 +259,13 @@
     "credentialId": "Credential ID",
     "items": [
       {
+        "title": "First Step Korean",
+        "issuer": "Yonsei University (via Coursera)",
+        "date": "2026",
+        "description": "An online course focused on the fundamentals of the Korean language, covering basic vocabulary, grammar, and expressions for daily communication.",
+        "credential": "NLOK7FMA6S8Z"
+      },
+      {
         "title": "Field Internship Program",
         "issuer": "PT PLN (Persero) Central Java Transmission Parent Unit - UPT Bandung",
         "date": "2026",

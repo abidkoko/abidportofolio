@@ -258,6 +258,13 @@
     "credentialId": "인증 번호",
     "items": [
       {
+        "title": "퍼스트 스텝 코리안 (First Step Korean)",
+        "issuer": "연세대학교 (Yonsei University - Coursera)",
+        "date": "2026년",
+        "description": "기초 한국어 어휘, 문법 및 일상 대화 표현을 학습하는 연세대학교 온라인 과정을 성공적으로 이수함.",
+        "credential": "NLOK7FMA6S8Z"
+      },
+      {
         "title": "현장 실습 프로그램 (Field Internship)",
         "issuer": "PT PLN (Persero) 중부 자바 송전 본부 - UPT 반둥 (Bandung)",
         "date": "2026년",
@@ -267,42 +274,42 @@
       {
         "title": "사물인터넷(IoT) 기초",
         "issuer": "스마트 시스템 아카데미 - PUSTEKHAN ITB",
-        "date": "2025",
+        "date": "2025년",
         "description": "IoT 장치 통합, IoT 애플리케이션 개발 및 시스템 테스트를 포함한 사물인터넷(IoT) 기초 인증 과정을 성공적으로 수료하였습니다.",
         "credential": "Sert/SSA/2512116"
       },
       {
         "title": "TOEIC (국제 영어 의사소통 시험)",
         "issuer": "ETS (Educational Testing Service)",
-        "date": "2025",
+        "date": "2025년",
         "description": "국제 및 전문 환경에서의 영어 의사소통 능력을 입증하는 TOEIC 점수를 취득하였습니다.",
         "credential": "TOEIC-590"
       },
       {
         "title": "학생 기술 경진대회(LKS) 전자공학 부문",
         "issuer": "인도네시아 초중등교육부",
-        "date": "2025",
+        "date": "2025년",
         "description": "전자 회로 설계, 문제 해결 및 마이크로컨트롤러 분야의 역량을 바탕으로 LKS 전자공학 부문 1위를 수상하였습니다.",
         "credential": "LKS-2025-ELEC"
       },
       {
         "title": "인도네시아 청소년 과학 올림피아드(OSPI) 영어 부문",
         "issuer": "국가 과학 경진대회 센터(PUSKANAS)",
-        "date": "2023",
+        "date": "2023년",
         "description": "2023년 전국 OSPI 영어 부문에서 은메달을 수상하였습니다.",
         "credential": "OSPI-2023-SILVER"
       },
       {
         "title": "인도네시아 청소년 과학 올림피아드(OSPI) 영어 부문 참가 인증",
         "issuer": "국가 과학 경진대회 센터(PUSKANAS)",
-        "date": "2023",
+        "date": "2023년",
         "description": "전국 규모의 영어 올림피아드에 적극적으로 참가하여 영어 능력과 비판적 사고 역량을 발휘하였습니다.",
         "credential": "0759805/BHM-PUSKANAS/OSPI-S/X/2023"
       },
       {
         "title": "내셔널 히어로즈 컴피티션(NHC) 2023 정보학 부문 참가 인증",
         "issuer": "전국 과학 올림피아드 페스티벌(FOSNAS)",
-        "date": "2023",
+        "date": "2023년",
         "description": "전국 규모의 정보학 대회에 적극적으로 참가하여 프로그래밍 및 문제 해결 역량을 발휘하였습니다.",
         "credential": "0768420/BHM-FOSNAS/NHC-S/XI/2023"
       }
