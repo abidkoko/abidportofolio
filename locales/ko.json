@@ -258,6 +258,13 @@
     "credentialId": "인증 번호",
     "items": [
       {
+        "title": "세계로 가는 다리: 초급 한국어 I",
+        "issuer": "성균관대학교 (Coursera)",
+        "date": "2026",
+        "description": "어휘, 문장 구조, 필수 표현의 기초 지식을 구축하는 초급 한국어 능력 중심의 온라인 강의입니다.",
+        "credential": "EDKBHHIOJ4RM"
+      },
+      {
         "title": "퍼스트 스텝 코리안 (First Step Korean)",
         "issuer": "연세대학교 (Yonsei University - Coursera)",
         "date": "2026년",

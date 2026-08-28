@@ -259,6 +259,13 @@
     "credentialId": "Credential ID",
     "items": [
       {
+        "title": "A Bridge to the World: Korean Language for Beginners I",
+        "issuer": "Sungkyunkwan University (Coursera)",
+        "date": "2026",
+        "description": "An online course focused on introductory Korean language skills, building foundational knowledge in vocabulary, sentence structures, and essential expressions.",
+        "credential": "EDKBHHIOJ4RM"
+      },
+      {
         "title": "First Step Korean",
         "issuer": "Yonsei University (Coursera)",
         "date": "2026",

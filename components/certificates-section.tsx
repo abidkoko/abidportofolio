@@ -9,6 +9,10 @@ import { useLanguage } from "@/context/language-context"
 /* ✅ STATIC DATA (IMAGE DI SINI, BUKAN JSON) */
 const certificatesData = [
   {
+    image: "/certificates/Coursera EDKBHHIOJ4RM-1.png",
+    credential: "NLOK7FMA6S8Z",
+  },
+  {
     image: "/certificates/Coursera NLOK7FMA6S8Z-1.png",
     credential: "NLOK7FMA6S8Z",
   },
